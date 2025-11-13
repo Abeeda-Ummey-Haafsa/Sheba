@@ -1,0 +1,21 @@
+{
+  "name": "sheba-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.81.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^8.5.1",
+    "supabase": "^1.40.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

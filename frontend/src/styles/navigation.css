@@ -1,0 +1,8 @@
+/* Small tweaks for sticky nav transitions */
+.nav-shrink {
+  transform: translateY(-2px);
+}
+
+.services-dropdown {
+  min-width: 20rem;
+}
