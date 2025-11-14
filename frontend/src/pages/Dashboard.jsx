@@ -11,6 +11,14 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const displayName = userMetadata?.full_name || "User";
+    console.log("[Dashboard] Rendering with:", {
+      user_id: user?.id,
+      user_email: user?.email,
+      userMetadata,
+      displayName,
+    });
+
     const fetchUserData = async () => {
       try {
         // Fetch user's seniors (in a real app)
@@ -46,16 +54,19 @@ export default function Dashboard() {
             status: "Pending",
           },
         ]);
+
+        console.log("[Dashboard] Mock data loaded successfully");
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("[Dashboard] Error fetching data:", error);
         toast.error("Failed to load dashboard data");
       } finally {
         setLoading(false);
       }
     };
 
+    // Always fetch, regardless of user state (uses mock data anyway)
     fetchUserData();
-  }, [user?.id]);
+  }, [user?.id, userMetadata]);
 
   const containerVariants = {
     hidden: { opacity: 0 },

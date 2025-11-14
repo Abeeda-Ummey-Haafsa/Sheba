@@ -1,22 +1,22 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { motion } from "framer-motion";
 
 const ProtectedRoute = ({ children, role }) => {
   const { isAuthenticated, loading, userRole } = useAuth();
+  const location = useLocation();
 
   // Debug logging
   React.useEffect(() => {
-    console.log(
-      "ProtectedRoute - loading:",
+    console.log("[ProtectedRoute]", {
+      path: location.pathname,
       loading,
-      "authenticated:",
-      isAuthenticated,
-      "userRole:",
-      userRole
-    );
-  }, [loading, isAuthenticated, userRole]);
+      authenticated: isAuthenticated,
+      userRole,
+      requiredRole: role,
+    });
+  }, [loading, isAuthenticated, userRole, location.pathname, role]);
 
   if (loading) {
     return (
@@ -34,14 +34,28 @@ const ProtectedRoute = ({ children, role }) => {
   }
 
   if (!isAuthenticated) {
-    console.log("ProtectedRoute - redirecting to login (not authenticated)");
+    console.log("[ProtectedRoute] Redirecting to login (not authenticated)");
     return <Navigate to="/login" replace />;
   }
 
-  if (role && userRole !== role) {
-    // Redirect to appropriate dashboard based on role
+  if (role && userRole) {
+    // Allow 'family' as an alias for 'guardian'
+    const allowedForGuardian = ["guardian", "family"];
+    const roleIsGuardian = role === "guardian";
+
+    if (roleIsGuardian && allowedForGuardian.includes(userRole)) {
+      console.log("[ProtectedRoute] Guardian route - allowing access");
+      return children;
+    }
+
+    if (role === userRole) {
+      console.log("[ProtectedRoute] Role match - allowing access");
+      return children;
+    }
+
+    // Redirect only if role mismatch
     console.log(
-      "ProtectedRoute - redirecting (role mismatch. expected:",
+      "[ProtectedRoute] Role mismatch - required:",
       role,
       "got:",
       userRole
@@ -49,9 +63,13 @@ const ProtectedRoute = ({ children, role }) => {
     if (userRole === "caregiver") {
       return <Navigate to="/caregiver-dashboard" replace />;
     }
-    return <Navigate to="/dashboard" replace />;
+    if (userRole === "guardian" || userRole === "family") {
+      return <Navigate to="/dashboard" replace />;
+    }
+    return <Navigate to="/" replace />;
   }
 
+  // No role requirement, allow through
   return children;
 };
 

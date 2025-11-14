@@ -79,6 +79,26 @@ export const FileUpload = ({
   };
 
   const handleFile = (file) => {
+    // Validate file
+    const validExts = accept.split(",").map((ext) => ext.trim().toLowerCase());
+    const fileExt = "." + file.name.split(".").pop().toLowerCase();
+    const fileSizeMB = file.size / (1024 * 1024);
+
+    // Check file extension
+    const isValidExt = validExts.some(
+      (ext) => fileExt === ext || file.type.includes(ext.replace(".", ""))
+    );
+    if (!isValidExt && accept !== "*") {
+      alert(`Invalid file type. Please use one of: ${accept}`);
+      return;
+    }
+
+    // Check file size (max 10MB)
+    if (fileSizeMB > 10) {
+      alert("File size must be less than 10MB");
+      return;
+    }
+
     setFileName(file.name);
     onFileSelect(file);
   };

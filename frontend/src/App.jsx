@@ -10,17 +10,50 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import CaregiverDashboard from "./pages/CaregiverDashboard";
+import MyBookings from "./pages/MyBookings";
+import TrainingPortal from "./pages/TrainingPortal";
 import FindCaregivers from "./pages/FindCaregivers";
 import LiveTracking from "./pages/LiveTracking";
 import ActivityLogs from "./pages/ActivityLogs";
 import Profile from "./pages/Profile";
 import Debug from "./pages/Debug";
+import SeniorInterface from "./pages/SeniorInterface";
 
 function AppRoutes() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [showScroll, setShowScroll] = useState(false);
+  const [isInstallable, setIsInstallable] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
   const location = useLocation();
-  const { isAuthenticated, loading } = useAuth();
+  const { isAuthenticated, loading, userRole } = useAuth();
+
+  // PWA Install Prompt
+  useEffect(() => {
+    const handleBeforeInstallPrompt = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+      setIsInstallable(true);
+    };
+
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+    return () =>
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
+  }, []);
+
+  const handleInstallPWA = () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === "accepted") {
+          setIsInstallable(false);
+          setDeferredPrompt(null);
+        }
+      });
+    }
+  };
 
   useEffect(() => {
     const onScroll = () => setShowScroll(window.scrollY > 300);
@@ -43,6 +76,13 @@ function AppRoutes() {
     location.pathname === "/login" || location.pathname === "/signup";
 
   if (!loading && isAuthenticated && isAuthPage) {
+    // Redirect to appropriate dashboard based on role
+    if (userRole === "senior") {
+      return <Navigate to="/senior" replace />;
+    }
+    if (userRole === "caregiver") {
+      return <Navigate to="/caregiver-dashboard" replace />;
+    }
     return <Navigate to="/dashboard" replace />;
   }
 
@@ -53,6 +93,33 @@ function AppRoutes() {
         open={showMobileMenu}
         onClose={() => setShowMobileMenu(false)}
       />
+
+      {/* PWA Install Banner */}
+      {isInstallable && (
+        <div className="sticky top-20 z-40 bg-primary text-white p-4 flex items-center justify-between gap-4 shadow-lg">
+          <div className="flex items-center gap-2">
+            <span className="text-2xl">📱</span>
+            <div className="text-sm md:text-base">
+              <p className="font-bold">Sheba অ্যাপ ইনস্টল করুন</p>
+              <p className="text-primary/80 text-xs">আরও ভালো অভিজ্ঞতার জন্য</p>
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <button
+              onClick={handleInstallPWA}
+              className="px-4 py-2 bg-white text-primary rounded-lg font-bold text-sm hover:bg-gray-100 transition"
+            >
+              ইনস্টল / Install
+            </button>
+            <button
+              onClick={() => setIsInstallable(false)}
+              className="px-4 py-2 bg-primary/80 text-white rounded-lg hover:bg-primary/60 transition"
+            >
+              পরে / Later
+            </button>
+          </div>
+        </div>
+      )}
 
       <main className="pt-20">
         <Routes>
@@ -81,6 +148,22 @@ function AppRoutes() {
             element={
               <ProtectedRoute role="caregiver">
                 <CaregiverDashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/my-bookings"
+            element={
+              <ProtectedRoute role="caregiver">
+                <MyBookings />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/training"
+            element={
+              <ProtectedRoute role="caregiver">
+                <TrainingPortal />
               </ProtectedRoute>
             }
           />
@@ -115,6 +198,15 @@ function AppRoutes() {
             element={
               <ProtectedRoute>
                 <Profile />
+              </ProtectedRoute>
+            }
+          />
+          {/* Senior Protected Route */}
+          <Route
+            path="/senior/*"
+            element={
+              <ProtectedRoute role="senior">
+                <SeniorInterface />
               </ProtectedRoute>
             }
           />

@@ -13,6 +13,7 @@ Sheba is an eldercare platform designed for Bangladesh that simplifies the proce
 ### Key Features
 
 #### For Guardians (Families)
+
 - **Find Caregivers**: Browse and filter through verified caregivers with advanced filtering (gender, skills, distance, price)
 - **Live Tracking**: Real-time GPS tracking of assigned caregivers via interactive maps
 - **Activity Logs**: Timeline view of past caregiver activities with PDF export capabilities
@@ -21,6 +22,7 @@ Sheba is an eldercare platform designed for Bangladesh that simplifies the proce
 - **Bilingual Support**: Full English and Bangla (Bengali) language support
 
 #### For Caregivers
+
 - **Dashboard**: View assigned seniors and upcoming bookings
 - **Availability Management**: Set and manage work schedule
 - **Profile Verification**: Complete profile setup with document verification
@@ -28,6 +30,7 @@ Sheba is an eldercare platform designed for Bangladesh that simplifies the proce
 ### Technology Stack
 
 **Frontend:**
+
 - React 18.2.0
 - Vite 5.4.21 (Build tool)
 - React Router 6.14.2 (Navigation)
@@ -41,11 +44,13 @@ Sheba is an eldercare platform designed for Bangladesh that simplifies the proce
 - moment.js 2.29.4 (Date formatting with Bangla locale)
 
 **Backend:**
+
 - Node.js + Express.js
 - Supabase (Authentication & Database)
 - PostgreSQL (Database)
 
 **Additional:**
+
 - Leaflet 1.9.4 (Map library)
 - react-icons 4.12.0 (Icon library)
 - react-datepicker 4.21.0 (Date picker)
@@ -103,12 +108,14 @@ Sheba/
 ### Installation
 
 1. **Clone the repository:**
+
 ```bash
 git clone https://github.com/Abeeda-Ummey-Haafsa/Sheba.git
 cd Sheba
 ```
 
 2. **Setup Frontend:**
+
 ```bash
 cd frontend
 npm install
@@ -118,6 +125,7 @@ npm run dev
 ```
 
 3. **Setup Backend:**
+
 ```bash
 cd backend
 npm install
@@ -128,12 +136,14 @@ npm start
 ### Environment Setup
 
 Create `frontend/.env.local`:
+
 ```dotenv
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
 Create `backend/.env`:
+
 ```dotenv
 NODE_ENV=development
 PORT=5000
@@ -145,12 +155,14 @@ JWT_SECRET=your_jwt_secret
 ## 📖 Documentation
 
 ### Frontend Documentation
+
 - [Authentication Guide](./frontend/AUTHENTICATION_GUIDE.md)
 - [Setup Guide](./frontend/SETUP_GUIDE.md)
 - [Developer Reference](./frontend/DEVELOPER_REFERENCE.md)
 - [Supabase Setup SQL](./frontend/SUPABASE_SETUP.sql)
 
 ### Project Documentation
+
 - [Implementation Complete](./IMPLEMENTATION_COMPLETE.md)
 - [Quick Reference](./QUICK_REFERENCE.md)
 - [Delivery Summary](./DELIVERY_SUMMARY.md)
@@ -158,6 +170,7 @@ JWT_SECRET=your_jwt_secret
 ## 🎨 Design System
 
 ### Color Palette
+
 - **Primary Teal**: #14B8A6
 - **Secondary Orange**: #FB923C
 - **Accent Blue**: #3B82F6
@@ -167,6 +180,7 @@ JWT_SECRET=your_jwt_secret
 - **Background Light**: #F3F4F6
 
 ### Responsive Design
+
 - Mobile: < 768px (full-width, stacked layouts)
 - Tablet: 768px - 1024px (2-column layouts)
 - Desktop: > 1024px (3+ column layouts)
@@ -174,6 +188,7 @@ JWT_SECRET=your_jwt_secret
 ## 🌍 Bilingual Support
 
 All interfaces support both English and Bangla (Bengali):
+
 - Language switcher in navigation
 - Moment.js configured for Bangla date formatting
 - All labels, form fields, and messages translated
@@ -181,17 +196,19 @@ All interfaces support both English and Bangla (Bengali):
 ## 📱 Pages Overview
 
 ### Guardian Pages
-| Page | Purpose | Features |
-|------|---------|----------|
-| Dashboard | Home page | Overview, recent bookings, family members |
-| Find Caregivers | Caregiver discovery | Browse, filter, search, book caregivers |
-| Activity Logs | Service history | Timeline view, filtering, PDF export |
-| Live Tracking | GPS monitoring | Real-time map, marker details, live status |
-| Profile | Account management | Personal info, password, seniors CRUD, subscription |
+
+| Page            | Purpose             | Features                                            |
+| --------------- | ------------------- | --------------------------------------------------- |
+| Dashboard       | Home page           | Overview, recent bookings, family members           |
+| Find Caregivers | Caregiver discovery | Browse, filter, search, book caregivers             |
+| Activity Logs   | Service history     | Timeline view, filtering, PDF export                |
+| Live Tracking   | GPS monitoring      | Real-time map, marker details, live status          |
+| Profile         | Account management  | Personal info, password, seniors CRUD, subscription |
 
 ### Caregiver Pages
-| Page | Purpose | Features |
-|------|---------|----------|
+
+| Page                | Purpose       | Features                                 |
+| ------------------- | ------------- | ---------------------------------------- |
 | Caregiver Dashboard | Work overview | Assigned seniors, bookings, availability |
 
 ## 🔐 Authentication
@@ -208,6 +225,7 @@ All interfaces support both English and Bangla (Bengali):
 ### Running Locally
 
 **Frontend (Vite Dev Server):**
+
 ```bash
 cd frontend
 npm run dev
@@ -215,6 +233,7 @@ npm run dev
 ```
 
 **Backend (Node Server):**
+
 ```bash
 cd backend
 npm start
@@ -224,12 +243,14 @@ npm start
 ### Building for Production
 
 **Frontend:**
+
 ```bash
 npm run build
 npm run preview
 ```
 
 **Backend:**
+
 ```bash
 npm run build  # If applicable
 ```
@@ -237,6 +258,7 @@ npm run build  # If applicable
 ## 📊 Features Implementation Status
 
 ### Completed ✅
+
 - Frontend UI with React and Vite
 - Authentication system (Supabase)
 - Find Caregivers page with advanced filtering
@@ -252,12 +274,14 @@ npm run build  # If applicable
 - Protected routes
 
 ### In Progress 🔄
+
 - Backend API integration
 - Database schema optimization
 - Real Supabase data fetching
 - Real-time tracking with Supabase subscriptions
 
 ### Planned 📋
+
 - Payment integration (Stripe)
 - Email notifications
 - Admin dashboard
@@ -297,6 +321,7 @@ For support, email support@sheba.local or open an issue on GitHub.
 ## 📌 Version History
 
 ### v1.0.0 (Current)
+
 - Initial release
 - Core features implemented
 - Bilingual support

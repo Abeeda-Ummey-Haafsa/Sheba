@@ -97,6 +97,7 @@ export default function Signup() {
     watch,
     control,
     formState: { errors },
+    setValue,
   } = useForm({
     resolver: yupResolver(schema),
     defaultValues: { role: "guardian" },
@@ -104,20 +105,16 @@ export default function Signup() {
 
   const password = watch("password");
 
+  const handleFileSelect = (file) => {
+    setVerificationFile(file);
+    setValue("police_verification", file, { shouldValidate: true });
+  };
+
   const onSubmit = async (data) => {
     try {
-      // Upload verification file if caregiver
       let verificationUrl = null;
-      if (role === "caregiver" && verificationFile) {
-        const fileName = `${data.email}-${Date.now()}-verification`;
-        const { data: uploadData, error: uploadError } = await supabase.storage
-          .from("verifications")
-          .upload(fileName, verificationFile);
 
-        if (uploadError) throw uploadError;
-        verificationUrl = uploadData.path;
-      }
-
+      // Prepare metadata without verification URL (we'll update it after upload)
       const metadata = {
         full_name: data.full_name,
         role,
@@ -130,17 +127,88 @@ export default function Signup() {
           nid_number: data.nid_number,
           experience_years: data.experience_years,
           skills: selectedSkills,
-          police_verification_url: verificationUrl,
         }),
       };
 
+      // First create the user account
       const result = await signUp(data.email, data.password, metadata);
-      if (result.success) {
-        toast.success(
-          "Check your email to verify your account before logging in."
-        );
-        navigate("/login");
+      if (!result.success) {
+        throw new Error(result.error || "Signup failed");
       }
+
+      // If caregiver and a verification file was selected, try to upload it
+      if (role === "caregiver" && verificationFile) {
+        // Try to ensure we have an authenticated session for the new user.
+        // Attempt to sign in immediately (works when the project allows sign-in post-signup).
+        try {
+          await supabase.auth.signInWithPassword({
+            email: data.email,
+            password: data.password,
+          });
+        } catch (signinErr) {
+          // ignore - we'll try to read session below
+        }
+
+        const { data: sessionData } = await supabase.auth.getSession();
+        const currentUser = sessionData?.session?.user || result.user;
+
+        // If still no authenticated user, skip upload and ask user to upload after login
+        if (!currentUser || !sessionData?.session) {
+          toast.success(
+            "Signup successful. Please log in to upload your verification document."
+          );
+          navigate("/login");
+          return;
+        }
+
+        // Validate file client-side
+        const validTypes = [".pdf", ".jpg", ".jpeg", ".png"];
+        const fileExt =
+          "." + verificationFile.name.split(".").pop().toLowerCase();
+        const fileSizeMB = verificationFile.size / (1024 * 1024);
+
+        if (!validTypes.includes(fileExt)) {
+          throw new Error(
+            `Invalid file type. Please upload PDF, JPG, or PNG. Received: ${fileExt}`
+          );
+        }
+        if (fileSizeMB > 10) {
+          throw new Error("File size must be less than 10MB");
+        }
+
+        // Upload to existing bucket (bucket must be created in Supabase setup)
+        const fileName = `${data.email}-${Date.now()}-${verificationFile.name}`;
+        const { data: uploadData, error: uploadError } = await supabase.storage
+          .from("verifications")
+          .upload(fileName, verificationFile);
+
+        if (uploadError) {
+          console.error("Upload error details:", uploadError);
+          throw new Error(
+            `Failed to upload verification file: ${uploadError.message}. Make sure the verifications bucket exists in Supabase Storage.`
+          );
+        }
+
+        verificationUrl = uploadData.path;
+
+        // Update the profile row with the uploaded file path
+        try {
+          await supabase
+            .from("profiles")
+            .update({ police_verification_url: verificationUrl })
+            .eq("id", currentUser.id);
+        } catch (updateErr) {
+          console.warn(
+            "Failed to update profile with verification URL:",
+            updateErr
+          );
+        }
+      }
+
+      toast.success(
+        "Signup successful! Check your email to verify your account before logging in."
+      );
+      navigate("/login");
     } catch (error) {
       toast.error(error.message || "Signup failed");
     }
@@ -459,7 +527,7 @@ export default function Signup() {
                 <FileUpload
                   label="Police Verification Document (PDF, JPG, PNG)"
                   accept=".pdf,.jpg,.jpeg,.png"
-                  onFileSelect={setVerificationFile}
+                  onFileSelect={handleFileSelect}
                 />
                 {errors.police_verification && (
                   <p className="text-error text-xs mt-1">

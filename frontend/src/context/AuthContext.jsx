@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { supabase } from "../supabaseClient";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const AuthContext = createContext(null);
 
@@ -10,11 +11,80 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [userRole, setUserRole] = useState(null);
   const [userMetadata, setUserMetadata] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect mobile device
+  useEffect(() => {
+    const isMobileDevice =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+    const isSmallScreen = window.innerWidth < 768;
+    setIsMobile(isMobileDevice || isSmallScreen);
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768 || isMobileDevice);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   // Listen for auth state changes
+  const navigate = useNavigate();
   useEffect(() => {
     let isMounted = true;
     let loadingTimeout;
+    let isInitialized = false;
+
+    const fetchProfile = async (userId, userAuth = null) => {
+      try {
+        const { data: profile, error } = await supabase
+          .from("profiles")
+          .select("role, full_name, phone, location, skills, availability")
+          .eq("id", userId)
+          .single();
+
+        if (!isMounted) return;
+
+        if (!error && profile) {
+          console.log("[AuthContext] Profile fetched from DB:", profile);
+          setUserRole(profile.role);
+          setUserMetadata(profile);
+          // Senior auto-redirect
+          if (profile.role === "senior") {
+            navigate("/senior", { replace: true });
+          }
+        } else {
+          console.log(
+            "[AuthContext] No profile found in DB, using user metadata fallback",
+            userAuth?.user_metadata
+          );
+          // Fallback: use auth user metadata
+          const role = userAuth?.user_metadata?.role || "guardian";
+          const metadata = userAuth?.user_metadata || {};
+          setUserRole(role);
+          setUserMetadata(metadata);
+          if (role === "senior") {
+            navigate("/senior", { replace: true });
+          }
+        }
+      } catch (profileError) {
+        console.warn(
+          "[AuthContext] Profile fetch error:",
+          profileError.message,
+          "- using fallback",
+          userAuth?.user_metadata
+        );
+        if (isMounted) {
+          // Fallback to user metadata on error
+          const role = userAuth?.user_metadata?.role || "guardian";
+          const metadata = userAuth?.user_metadata || {};
+          setUserRole(role);
+          setUserMetadata(metadata);
+        }
+      }
+    };
 
     const getSession = async () => {
       try {
@@ -35,52 +105,23 @@ export const AuthProvider = ({ children }) => {
 
         if (session?.user) {
           console.log("[AuthContext] User authenticated, fetching profile...");
-          try {
-            // Fetch user role and metadata from profiles table
-            const { data: profile, error } = await supabase
-              .from("profiles")
-              .select("role, full_name, phone, location, skills, availability")
-              .eq("id", session.user.id)
-              .single();
-
-            if (!isMounted) return;
-
-            if (!error && profile) {
-              console.log("[AuthContext] Profile fetched:", profile.role);
-              setUserRole(profile.role);
-              setUserMetadata(profile);
-            } else {
-              console.log(
-                "[AuthContext] No profile found, using user metadata"
-              );
-              // Fallback to user metadata
-              setUserRole(session.user.user_metadata?.role || "user");
-              setUserMetadata(session.user.user_metadata || {});
-            }
-          } catch (profileError) {
-            console.warn(
-              "[AuthContext] Profile fetch error, using metadata fallback:",
-              profileError.message
-            );
-            // Fallback to user metadata
-            if (isMounted) {
-              setUserRole(session.user.user_metadata?.role || "user");
-              setUserMetadata(session.user.user_metadata || {});
-            }
-          }
+          await fetchProfile(session.user.id, session.user);
         } else {
           console.log("[AuthContext] No user session");
-          if (isMounted) {
-            setUserRole(null);
-            setUserMetadata(null);
-          }
+          setUserRole(null);
+          setUserMetadata(null);
         }
       } catch (error) {
         console.error("[AuthContext] Session fetch error:", error);
+        if (isMounted) {
+          setUserRole(null);
+          setUserMetadata(null);
+        }
       } finally {
         if (isMounted) {
           console.log("[AuthContext] Loading complete");
           setLoading(false);
+          isInitialized = true;
         }
       }
     };
@@ -94,61 +135,51 @@ export const AuthProvider = ({ children }) => {
           "[AuthContext] Loading timeout reached, forcing loading to false"
         );
         setLoading(false);
+        isInitialized = true;
       }
     }, 10000);
 
-    // Subscribe to auth changes
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event, session) => {
-      if (!isMounted) return;
+    // Subscribe to auth changes (only fire after initialization)
+    let subscription = null;
+    try {
+      const { data } = supabase.auth.onAuthStateChange(
+        async (event, session) => {
+          if (!isMounted || !isInitialized) return;
 
-      setSession(session);
-      setUser(session?.user ?? null);
-
-      if (session?.user) {
-        try {
-          // Re-fetch user metadata on auth state change
-          const { data: profile, error } = await supabase
-            .from("profiles")
-            .select("role, full_name, phone, location, skills, availability")
-            .eq("id", session.user.id)
-            .single();
-
-          if (!isMounted) return;
-
-          if (!error && profile) {
-            setUserRole(profile.role);
-            setUserMetadata(profile);
-          } else {
-            setUserRole(session.user.user_metadata?.role || "user");
-            setUserMetadata(session.user.user_metadata || {});
-          }
-        } catch (profileError) {
-          console.warn(
-            "Profile fetch error, using metadata fallback:",
-            profileError
+          console.log(
+            "[AuthContext] Auth state changed (event:",
+            event,
+            "session:",
+            session ? "exists" : "null",
+            ")"
           );
-          if (isMounted) {
-            setUserRole(session.user.user_metadata?.role || "user");
-            setUserMetadata(session.user.user_metadata || {});
+
+          setSession(session);
+          setUser(session?.user ?? null);
+
+          if (session?.user) {
+            await fetchProfile(session.user.id, session.user);
+          } else {
+            setUserRole(null);
+            setUserMetadata(null);
           }
         }
-      } else {
-        if (isMounted) {
-          setUserRole(null);
-          setUserMetadata(null);
-        }
-      }
-      if (isMounted) {
-        setLoading(false);
-      }
-    });
+      );
+
+      subscription = data?.subscription;
+    } catch (subErr) {
+      console.error(
+        "[AuthContext] onAuthStateChange subscription error:",
+        subErr
+      );
+      // Ensure loading doesn't remain stuck
+      if (isMounted) setLoading(false);
+    }
 
     return () => {
       isMounted = false;
       clearTimeout(loadingTimeout);
-      subscription?.unsubscribe();
+      subscription?.unsubscribe?.();
     };
   }, []);
 
@@ -169,27 +200,48 @@ export const AuthProvider = ({ children }) => {
         throw error;
       }
 
-      // Check if email is verified
-      if (!data.user.email_confirmed_at) {
-        await supabase.auth.signOut();
-        throw new Error(
-          "Please verify your email before logging in. A verification email has been sent to you."
-        );
-      }
+      // Check if email is verified (DEVELOPMENT MODE: Skipped for testing)
+      // TODO: Re-enable this check in production
+      // if (!data.user.email_confirmed_at) {
+      //   await supabase.auth.signOut();
+      //   throw new Error(
+      //     "Please verify your email before logging in. A verification email has been sent to you."
+      //   );
+      // }
 
       setSession(data.session);
       setUser(data.user);
 
       // Fetch user profile for role and metadata
-      const { data: profile } = await supabase
-        .from("profiles")
-        .select("role, full_name, phone, location, skills, availability")
-        .eq("id", data.user.id)
-        .single();
+      try {
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("role, full_name, phone, location, skills, availability")
+          .eq("id", data.user.id)
+          .single();
 
-      if (profile) {
-        setUserRole(profile.role);
-        setUserMetadata(profile);
+        if (profile) {
+          console.log("[AuthContext] signIn - Profile loaded:", profile.role);
+          setUserRole(profile.role);
+          setUserMetadata(profile);
+        } else {
+          console.warn(
+            "[AuthContext] signIn - Profile is null, using fallback"
+          );
+          // Fallback: try user metadata from auth
+          const role = data.user.user_metadata?.role || "guardian";
+          setUserRole(role);
+          setUserMetadata(data.user.user_metadata || {});
+        }
+      } catch (profileFetchError) {
+        console.warn(
+          "[AuthContext] signIn - Profile fetch failed:",
+          profileFetchError.message
+        );
+        // Fallback: use user metadata
+        const role = data.user.user_metadata?.role || "guardian";
+        setUserRole(role);
+        setUserMetadata(data.user.user_metadata || {});
       }
 
       toast.success("Login successful! Welcome back.");
@@ -211,7 +263,8 @@ export const AuthProvider = ({ children }) => {
         password,
         options: {
           data: metadata,
-          emailRedirectTo: `${window.location.origin}/login`,
+          // DEVELOPMENT MODE: Disabled email redirect for testing
+          // emailRedirectTo: `${window.location.origin}/login`,
         },
       });
 
@@ -307,6 +360,7 @@ export const AuthProvider = ({ children }) => {
     signOut,
     resetPassword,
     isAuthenticated: !!session,
+    isMobile,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

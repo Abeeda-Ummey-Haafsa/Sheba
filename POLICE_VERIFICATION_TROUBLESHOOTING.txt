@@ -1,0 +1,172 @@
+## Police Verification File Upload - Troubleshooting Guide
+
+### Issue: Dummy PDF files aren't working during signup
+
+---
+
+## ✅ What You Need to Do
+
+### Step 1: Run the SQL Setup in Supabase
+
+1. Go to: **Supabase Dashboard → SQL Editor → New Query**
+2. Copy all SQL from: `POLICE_VERIFICATION_SETUP.sql`
+3. Click **Run** to execute
+4. Verify the output shows the `verifications` bucket exists
+
+---
+
+### Step 2: Clear Browser Cache
+
+1. Open your app: http://localhost:5174
+2. Press: **F12** (Developer Tools)
+3. Go to: **Application → Storage**
+4. Click: **Clear Site Data**
+5. Close and reopen the tab
+
+---
+
+### Step 3: Test File Upload
+
+1. Go to: http://localhost:5174/signup
+2. Select: **Caregiver**
+3. Upload a real file:
+   - ✅ **Actual PDF file** (not dummy)
+   - ✅ Real image file (JPG/PNG)
+   - Maximum 10MB
+4. Try signup
+
+---
+
+## 🔧 File Requirements
+
+| Requirement | Details |
+|------------|---------|
+| **Accepted Formats** | `.pdf`, `.jpg`, `.jpeg`, `.png` |
+| **Maximum Size** | 10MB |
+| **File Must Be** | Valid/Real (dummy files may be rejected) |
+| **Upload Destination** | Supabase Storage → `verifications` bucket |
+
+---
+
+## 🐛 Common Issues & Fixes
+
+### Issue: "Failed to upload verification file: bucket does not exist"
+
+**Solution:**
+1. Run the `POLICE_VERIFICATION_SETUP.sql` script in Supabase
+2. Make sure `verifications` bucket appears in: Storage → Buckets
+3. Clear browser cache (Step 2 above)
+4. Try uploading again
+
+### Issue: "File type not allowed" or file won't select
+
+**Solution:**
+1. Use a real file (not a 0-byte dummy file)
+2. Check file extension: `.pdf` `.jpg` `.png` only
+3. File size must be under 10MB
+4. Browser will show alert if invalid - read it carefully
+
+### Issue: Upload hangs or says "wrong credentials"
+
+**Solution:**
+1. Check browser console (F12 → Console tab)
+2. Look for error messages
+3. Check Supabase RLS policies are active (run SQL script again)
+4. Make sure you're logged in before uploading
+
+### Issue: File uploads but signup fails later
+
+**Solution:**
+1. Check that `profiles` table and auth are set up
+2. Verify email is in correct format
+3. Check for any backend errors in Supabase logs
+
+---
+
+## 📋 Step-by-Step Video Guide
+
+1. **Go to Supabase Dashboard**
+   - Select your project
+   - Click: SQL Editor
+
+2. **Create new query**
+   - Copy: `POLICE_VERIFICATION_SETUP.sql` content
+   - Paste into editor
+   - Click: Run
+
+3. **Verify bucket exists**
+   - Go to: Storage → Buckets
+   - Should see: `verifications` (private)
+   - Should see: `avatars` (public)
+
+4. **Clear browser**
+   - F12 → Application → Storage
+   - Delete all site data
+   - Refresh page
+
+5. **Test upload**
+   - Go to: Signup (http://localhost:5174/signup)
+   - Choose: Caregiver role
+   - Upload: A real file (PDF or image)
+   - Should accept it immediately
+
+---
+
+## 💡 Pro Tips
+
+1. **Use real files** - Dummy/fake PDF files may not pass browser validation
+2. **Check file size** - If over 10MB, compress first
+3. **Use common formats** - PDF and JPG work best
+4. **Watch console** - F12 → Console shows upload errors with details
+5. **Try multiple times** - If network is slow, try again
+
+---
+
+## ✅ Success Indicators
+
+When setup is correct, you should see:
+
+- ✅ File upload appears in dashboard while selecting
+- ✅ Shows filename with checkmark
+- ✅ Signup form accepts the file
+- ✅ After signup, no error about verification file
+- ✅ Profile saves with police_verification_url
+
+---
+
+## 🔍 Debug Checklist
+
+Before asking for help, verify:
+
+- [ ] Ran `POLICE_VERIFICATION_SETUP.sql` in Supabase
+- [ ] `verifications` bucket exists in Supabase Storage
+- [ ] Cleared browser cache (F12 → Application → Clear Storage)
+- [ ] Using a real file (not dummy)
+- [ ] File is PDF/JPG/PNG format
+- [ ] File size under 10MB
+- [ ] Checking browser console (F12) for errors
+- [ ] Using correct email format
+- [ ] Password meets requirements
+
+---
+
+## 📞 If Still Not Working
+
+1. **Check browser console** (F12 → Console tab) for specific error
+2. **Screenshot the error message** - This helps diagnose
+3. **Try with different file** - Some files may be corrupted
+4. **Restart dev server** - Ctrl+C then `npm run dev` in frontend folder
+5. **Check Supabase logs** - Dashboard → Logs section for upload errors
+
+---
+
+## 🎯 Code Changes Made
+
+The signup form now:
+- ✅ Validates file type before upload
+- ✅ Validates file size (max 10MB)
+- ✅ Shows helpful error messages
+- ✅ Automatically creates bucket if missing
+- ✅ Provides better error details in console
+
+You should see validation alerts immediately when selecting invalid files.
