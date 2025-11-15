@@ -126,10 +126,10 @@ export default function CaregiverDashboard() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-text mb-1">
-                শেবা কেয়ারগিভার
+                সেবা কেয়ারগিভার
               </h1>
               <p className="text-gray-600 text-sm md:text-base">
-                Sheba Caregiver
+                Seba Caregiver
               </p>
             </div>
             <motion.button

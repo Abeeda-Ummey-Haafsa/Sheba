@@ -69,9 +69,9 @@ export default function SeniorInterface() {
       <div className="w-full flex flex-col items-center mb-2">
         <span
           className="text-[64px] font-extrabold text-teal-600 select-none"
-          aria-label="শেবা"
+          aria-label="সেবা"
         >
-          শেবা
+          সেবা
         </span>
         <span
           className="text-[48px] font-bold text-black mt-2"

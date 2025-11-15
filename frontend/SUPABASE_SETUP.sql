@@ -342,7 +342,7 @@ ON CONFLICT DO NOTHING;
    - Indexes for performance
    - Sample data for testing
 
-3. To use with the Sheba app:
+3. To use with the Seba app:
    - Set your SUPABASE_URL and SUPABASE_ANON_KEY in .env.local
    - The app will automatically work with these tables
 

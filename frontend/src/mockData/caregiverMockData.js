@@ -175,7 +175,7 @@ export const CAREGIVER_PROFILE_DATA = {
     },
     {
       name: "Elderly Care Specialist",
-      issuer: "Sheba Institute",
+      issuer: "Seba Institute",
       date: "2022",
     },
   ],

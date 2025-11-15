@@ -3,13 +3,23 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  server: {
+    middlewareMode: false,
+    port: 5173,
+    hmr: {
+      protocol: "ws",
+      host: "localhost",
+      port: 5173,
+      clientPort: 5173,
+    },
+  },
   plugins: [
     react(),
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
-        name: "Sheba Caregiver",
-        short_name: "Sheba CG",
+        name: "Seba Caregiver",
+        short_name: "Seba CG",
         description: "AI-powered eldercare platform for caregivers",
         theme_color: "#14B8A6",
         background_color: "#ffffff",

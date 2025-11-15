@@ -401,7 +401,7 @@ Time: Today 8:30 AM
 ## 📞 Support Contact (For Testing)
 
 ```
-Email Support:     support@sheba.health
+Email Support:     support@seba.health
 Phone:            +880 1XXX XXXXXX
 Available:        9 AM - 6 PM (Bangladesh Time)
 ```

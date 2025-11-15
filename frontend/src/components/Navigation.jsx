@@ -32,8 +32,6 @@ export default function Navigation({ onOpenMobile }) {
   const [scrolled, setScrolled] = useState(false);
   const [lang, setLang] = useState("EN");
   const [showUserMenu, setShowUserMenu] = useState(false);
-  const { isAuthenticated, user, userRole, userMetadata, signOut, isMobile } =
-    useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -94,13 +92,13 @@ export default function Navigation({ onOpenMobile }) {
             <Link
               to="/caregiver-dashboard"
               className="flex items-center gap-2"
-              title="Sheba"
+              title="Seba"
             >
               <div className="w-10 h-10 rounded-md bg-primary flex items-center justify-center text-white font-bold text-sm">
-                শে
+                সে
               </div>
               <div className="hidden sm:block">
-                <div className="text-lg font-semibold text-text">Sheba</div>
+                <div className="text-lg font-semibold text-text">Seba</div>
                 <div className="text-xs text-gray-500">CG</div>
               </div>
             </Link>
@@ -207,11 +205,11 @@ export default function Navigation({ onOpenMobile }) {
             className="flex items-center gap-2"
           >
             <div className="w-10 h-10 rounded-md bg-primary flex items-center justify-center text-white font-bold">
-              শে
+              সে
             </div>
             <div className="hidden sm:block">
-              <div className="text-lg font-semibold">Sheba</div>
-              <div className="text-xs text-gray-500">শেবা</div>
+              <div className="text-lg font-semibold">Seba</div>
+              <div className="text-xs text-gray-500">সেবা</div>
             </div>
           </Link>
 

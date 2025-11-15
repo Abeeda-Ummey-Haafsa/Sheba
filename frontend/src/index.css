@@ -55,6 +55,12 @@ body,
   select {
     @apply min-h-14 text-base;
   }
+
+  /* Radios and checkboxes should keep typical small sizes */
+  input[type="radio"],
+  input[type="checkbox"] {
+    @apply h-4 w-4 min-h-0 p-0 m-0 align-middle;
+  }
 }
 
 /* Touch-friendly spacing for mobile */

@@ -2,7 +2,7 @@
 
 ## 🎯 What You Got
 
-I've created comprehensive mock data for the Sheba caregiver portal. This includes everything needed to test caregiver signup, bookings, GPS check-in, activity logging, earnings, and training features.
+I've created comprehensive mock data for the Seba caregiver portal. This includes everything needed to test caregiver signup, bookings, GPS check-in, activity logging, earnings, and training features.
 
 ---
 
@@ -446,4 +446,4 @@ ACTIVITY_LOG_EXAMPLES.forEach((log) => {
 
 **Last Updated**: November 14, 2025
 **Version**: 1.0
-**Maintained By**: Sheba Development Team
+**Maintained By**: Seba Development Team

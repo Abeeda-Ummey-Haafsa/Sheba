@@ -1,6 +1,6 @@
-/* Service Worker for Sheba Caregiver PWA */
+/* Service Worker for Seba Caregiver PWA */
 
-const CACHE_NAME = "sheba-caregiver-v1";
+const CACHE_NAME = "seba-caregiver-v1";
 const urlsToCache = ["/", "/index.html", "/src/main.jsx", "/src/index.css"];
 
 // Install event - cache essential assets
@@ -121,11 +121,11 @@ self.addEventListener("push", (event) => {
       body: event.data.text(),
       icon: "/pwa-192x192.png",
       badge: "/pwa-192x192.png",
-      tag: "sheba-notification",
+      tag: "seba-notification",
       requireInteraction: false,
     };
     event.waitUntil(
-      self.registration.showNotification("Sheba Caregiver", options)
+      self.registration.showNotification("Seba Caregiver", options)
     );
   }
 });

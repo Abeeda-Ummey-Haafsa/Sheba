@@ -1,6 +1,6 @@
-# Sheba Frontend
+# Seba Frontend
 
-React + Vite + Tailwind CSS frontend for the Sheba AI Eldercare Platform.
+React + Vite + Tailwind CSS frontend for the Seba AI Eldercare Platform.
 
 ## Features
 
@@ -15,16 +15,19 @@ React + Vite + Tailwind CSS frontend for the Sheba AI Eldercare Platform.
 ## Quick Start
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
 2. Run dev server:
+
 ```bash
 npm run dev
 ```
 
 3. Build for production:
+
 ```bash
 npm run build
 ```
@@ -59,4 +62,3 @@ src/
 - React Leaflet
 - React Slick
 - Framer Motion
-

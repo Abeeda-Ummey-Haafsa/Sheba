@@ -68,18 +68,18 @@ export default function Login() {
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white mb-4">
-            <span className="text-2xl font-bold">শে</span>
+            <span className="text-2xl font-bold">সে</span>
           </div>
-          <h1 className="text-2xl font-bold text-text">Sheba</h1>
+          <h1 className="text-2xl font-bold text-text">Seba</h1>
           <p className="text-gray-500 text-sm">
-            শেবা - Care for your loved ones
+            সেবা - Care for your loved ones
           </p>
         </div>
 
         {/* Heading */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-text mb-2">Login to Sheba</h2>
-          <p className="text-gray-600">শেবায় লগইন করুন</p>
+          <h2 className="text-3xl font-bold text-text mb-2">Login to Seba</h2>
+          <p className="text-gray-600">সেবায় লগইন করুন</p>
         </div>
 
         {/* Form */}

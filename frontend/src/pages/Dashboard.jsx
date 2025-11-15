@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useAuth } from "../context/AuthContext";
 import { supabase } from "../supabaseClient";
 import toast from "react-hot-toast";
+import { initialSeniors } from "../mockData/seniors";
 
 export default function Dashboard() {
   const { user, userMetadata } = useAuth();
@@ -28,16 +29,17 @@ export default function Dashboard() {
         //   .eq('guardian_id', user?.id);
         // setUserSeniors(seniors || []);
 
-        // For now, use mock data
-        setUserSeniors([
-          {
-            id: 1,
-            name: "আম্মা",
-            age: 75,
-            condition: "Diabetes, Hypertension",
-          },
-          { id: 2, name: "দাদা", age: 82, condition: "Arthritis" },
-        ]);
+        // Use shared mock data
+        setUserSeniors(
+          initialSeniors.map((s) => ({
+            id: s.id,
+            name: s.name,
+            age: s.age,
+            condition: Array.isArray(s.conditions)
+              ? s.conditions.join(", ")
+              : s.conditions,
+          }))
+        );
 
         // Mock recent bookings
         setRecentBookings([
@@ -191,7 +193,7 @@ export default function Dashboard() {
             className="text-3xl font-bold text-text mb-8 text-center"
             variants={itemVariants}
           >
-            Why Sheba is Trusted by Families
+            Why Seba is Trusted by Families
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[

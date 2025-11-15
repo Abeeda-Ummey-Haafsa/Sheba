@@ -18,6 +18,9 @@ import ActivityLogs from "./pages/ActivityLogs";
 import Profile from "./pages/Profile";
 import Debug from "./pages/Debug";
 import SeniorInterface from "./pages/SeniorInterface";
+import SeniorAuthBridge from "./pages/SeniorAuthBridge";
+import SeniorSetupScreen from "./pages/SeniorSetupScreen";
+import FamilySeniorOnboarding from "./pages/FamilySeniorOnboarding";
 
 function AppRoutes() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -100,7 +103,7 @@ function AppRoutes() {
           <div className="flex items-center gap-2">
             <span className="text-2xl">📱</span>
             <div className="text-sm md:text-base">
-              <p className="font-bold">Sheba অ্যাপ ইনস্টল করুন</p>
+              <p className="font-bold">Seba অ্যাপ ইনস্টল করুন</p>
               <p className="text-primary/80 text-xs">আরও ভালো অভিজ্ঞতার জন্য</p>
             </div>
           </div>
@@ -123,14 +126,17 @@ function AppRoutes() {
 
       <main className="pt-20">
         <Routes>
+          {/* Senior Auth Bridge - wraps home/setup routes */}
+          <Route path="/" element={<SeniorAuthBridge />} />
           {/* Public Routes */}
-          <Route
-            path="/"
-            element={isAuthenticated ? <Navigate to="/dashboard" /> : <Home />}
-          />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/debug" element={<Debug />} />
+          <Route path="/senior-setup" element={<SeniorSetupScreen />} />
+          <Route
+            path="/family/onboard-senior"
+            element={<FamilySeniorOnboarding />}
+          />
 
           {/* Guardian Protected Routes */}
           <Route

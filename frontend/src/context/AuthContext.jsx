@@ -359,7 +359,14 @@ export const AuthProvider = ({ children }) => {
     signUp,
     signOut,
     resetPassword,
-    isAuthenticated: !!session,
+    // Programmatic senior login (paired device)
+    loginAsSenior: (seniorProfile) => {
+      setUser({ id: seniorProfile.id, email: seniorProfile.email || null });
+      setSession({ senior: true });
+      setUserRole("senior");
+      setUserMetadata(seniorProfile);
+    },
+    isAuthenticated: !!session || userRole === "senior",
     isMobile,
   };
 
