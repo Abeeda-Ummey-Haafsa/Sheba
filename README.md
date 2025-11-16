@@ -18,6 +18,7 @@ Sheba is an eldercare platform designed for Bangladesh that simplifies the proce
 - **Live Tracking**: Real-time GPS tracking of assigned caregivers via interactive maps
 - **Activity Logs**: Timeline view of past caregiver activities with PDF export capabilities
 - **Profile Management**: Manage family member profiles, change passwords, subscription management
+- **Senior Management**: Add/edit seniors with **2 pre-loaded mock seniors** for testing, GPS location picker, medical conditions tracking
 - **Booking System**: Book caregivers with date, time, and special request management
 - **Bilingual Support**: Full English and Bangla (Bengali) language support
 
@@ -220,6 +221,34 @@ All interfaces support both English and Bangla (Bengali):
 - Protected routes with ProtectedRoute component
 - Automatic session restoration
 
+## 🧪 Test Data & Mock Seniors
+
+### Pre-loaded Mock Seniors
+
+When you visit **Profile → Seniors** tab, you'll find **2 mock seniors** pre-loaded for testing:
+
+**Senior 1: আব্দুল করিম**
+
+- Age: 72, Male, Father
+- Location: মিরপুর ১০, ঢাকা
+- Conditions: ডায়াবেটিস, উচ্চ রক্তচাপ
+
+**Senior 2: ফাতেমা বেগম**
+
+- Age: 68, Female, Mother
+- Location: ধানমন্ডি ৩২, ঢাকা
+- Conditions: হৃদরোগ, ডিমেনশিয়া
+
+### Quick Actions
+
+- **View Seniors**: Login → Profile → Seniors tab
+- **Edit/Delete**: Use ✏️ and ❌ buttons to manage seniors
+- **Add New**: Click "+ Add Senior" to create additional profiles
+
+### Senior Dashboard Access
+
+Seniors can access their own dashboard by signing up directly through the Senior Sign-up page.
+
 ## 🛠️ Development
 
 ### Running Locally
@@ -255,6 +284,47 @@ npm run preview
 npm run build  # If applicable
 ```
 
+## 🧪 Test Accounts & Mock Data
+
+### Senior Login PINs
+
+For testing senior authentication, use these mock PINs:
+
+| Senior Name     | Simple PIN    | Mock PIN                   |
+| --------------- | ------------- | -------------------------- |
+| বেগম খাতুন      | `0001`        | `MOCK-1VIT`                |
+| করিম তালুকদার   | `0002`        | `MOCK-BOTK`                |
+| সাবিনা বেগম     | `0003`        | `MOCK-4PN0`                |
+| নূরজাহান আক্তার | `0004`        | See reference              |
+| ...and 117 more | `0005`-`0121` | See `SENIOR_PINS_QUICK.md` |
+
+**Quick Setup:**
+
+```bash
+# Generate all senior PINs
+cd mock
+node generateSeniorPins.js
+
+# Then load in browser console (copy content from mock/setup_senior_pins.js)
+```
+
+**📚 Documentation:**
+
+- **Quick Reference**: `SENIOR_PINS_QUICK.md` - Top 10 PINs
+- **Complete Guide**: `SENIOR_LOGIN_GUIDE.md` - Full documentation
+- **All PINs**: `mock/senior_pins_reference.json` - 121 seniors with 363 PINs
+- **Family/Caregiver**: `TEST_ACCOUNTS.md` - Other test accounts
+
+### Mock Data Files
+
+Located in `/mock` directory:
+
+- `seniors.json` - 121 senior profiles
+- `caregivers.json` - Caregiver profiles
+- `users.json` - Family user accounts
+- `activity_logs.json` - Activity history
+- `bookings.json` - Sample bookings
+
 ## 📊 Features Implementation Status
 
 ### Completed ✅
@@ -272,6 +342,8 @@ npm run build  # If applicable
 - Form validation with react-hook-form + yup
 - Toast notifications
 - Protected routes
+- **Senior PIN authentication system**
+- **Mock data generation (121 seniors, 363 PINs)**
 
 ### In Progress 🔄
 

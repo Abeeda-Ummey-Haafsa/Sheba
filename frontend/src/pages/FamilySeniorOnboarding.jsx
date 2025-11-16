@@ -72,7 +72,7 @@ export default function FamilySeniorOnboarding() {
         created_at: new Date(),
       };
 
-      const { error } = await supabase.from("senior_profiles").insert([record]);
+      const { error } = await supabase.from("seniors").insert([record]);
       if (error) throw error;
 
       toast.success("সফলভাবে সংযুক্ত হয়েছে — সেটআপ কোড: " + pin);

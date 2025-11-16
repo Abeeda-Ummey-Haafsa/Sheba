@@ -9,6 +9,7 @@ import {
 import authRoutes from "./src/routes/auth.js";
 import caregiversRoutes from "./src/routes/caregivers.js";
 import trackingRoutes from "./src/routes/tracking.js";
+import matchingRoutes from "./src/routes/matching.js";
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.get("/health", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/caregivers", caregiversRoutes);
 app.use("/api/tracking", trackingRoutes);
+app.use("/api/matching", matchingRoutes);
 
 // Error handling middleware (must be last)
 app.use(notFoundHandler);

@@ -5,14 +5,20 @@
   "type": "module",
   "scripts": {
     "dev": "node server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "generate:mock": "node mock/generate.js",
+    "seed:db": "node scripts/seedData.js",
+    "setup:db": "npm run generate:mock && npm run seed:db"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.9.0",
     "@supabase/supabase-js": "^2.81.1",
+    "@turf/turf": "^7.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
     "jsonwebtoken": "^8.5.1",
+    "moment": "^2.30.1",
     "supabase": "^1.40.0"
   },
   "devDependencies": {

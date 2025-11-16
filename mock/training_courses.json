@@ -1,0 +1,267 @@
+[
+  {
+    "id": "cd82827c-9d11-4cca-b0d5-6794f8d157ae",
+    "title_en": "Basic Senior Care",
+    "title_bn": "মৌলিক বয়স্ক যত্ন",
+    "modules": [
+      {
+        "title": "Introduction to Senior Care",
+        "title_bn": "বয়স্ক যত্নের ভূমিকা",
+        "duration": 30
+      },
+      {
+        "title": "Understanding Aging",
+        "title_bn": "বার্ধক্য বোঝা",
+        "duration": 45
+      },
+      {
+        "title": "Safety and Fall Prevention",
+        "title_bn": "নিরাপত্তা এবং পতন প্রতিরোধ",
+        "duration": 40
+      }
+    ],
+    "duration_min": 115,
+    "created_at": "2024-11-15T18:00:15.823Z"
+  },
+  {
+    "id": "89088d28-fcd1-4f2e-acd4-9afd25d0fbfb",
+    "title_en": "Diabetes Management",
+    "title_bn": "ডায়াবেটিস ব্যবস্থাপনা",
+    "modules": [
+      {
+        "title": "Understanding Diabetes",
+        "title_bn": "ডায়াবেটিস বোঝা",
+        "duration": 40
+      },
+      {
+        "title": "Blood Sugar Monitoring",
+        "title_bn": "রক্তে শর্করা পর্যবেক্ষণ",
+        "duration": 35
+      },
+      {
+        "title": "Meal Planning",
+        "title_bn": "খাবার পরিকল্পনা",
+        "duration": 40
+      },
+      {
+        "title": "Emergency Response",
+        "title_bn": "জরুরি প্রতিক্রিয়া",
+        "duration": 30
+      }
+    ],
+    "duration_min": 145,
+    "created_at": "2025-01-19T18:00:15.833Z"
+  },
+  {
+    "id": "00e020e0-36f8-4699-9978-5809a21d19fd",
+    "title_en": "Hypertension Care",
+    "title_bn": "উচ্চ রক্তচাপ যত্ন",
+    "modules": [
+      {
+        "title": "Blood Pressure Basics",
+        "title_bn": "রক্তচাপের মূল বিষয়",
+        "duration": 30
+      },
+      {
+        "title": "Medication Management",
+        "title_bn": "ওষুধ ব্যবস্থাপনা",
+        "duration": 40
+      },
+      {
+        "title": "Diet and Lifestyle",
+        "title_bn": "খাদ্য এবং জীবনযাপন",
+        "duration": 35
+      }
+    ],
+    "duration_min": 105,
+    "created_at": "2025-02-08T18:00:15.833Z"
+  },
+  {
+    "id": "c0904a4f-e876-4e2f-a32c-b74b47fc33e0",
+    "title_en": "Dementia and Alzheimer's Care",
+    "title_bn": "ডিমেনশিয়া এবং আলঝেইমার যত্ন",
+    "modules": [
+      {
+        "title": "Understanding Dementia",
+        "title_bn": "ডিমেনশিয়া বোঝা",
+        "duration": 50
+      },
+      {
+        "title": "Communication Strategies",
+        "title_bn": "যোগাযোগ কৌশল",
+        "duration": 40
+      },
+      {
+        "title": "Behavioral Management",
+        "title_bn": "আচরণ ব্যবস্থাপনা",
+        "duration": 45
+      },
+      {
+        "title": "Daily Care Routines",
+        "title_bn": "দৈনিক যত্ন রুটিন",
+        "duration": 35
+      }
+    ],
+    "duration_min": 170,
+    "created_at": "2025-03-10T18:00:15.833Z"
+  },
+  {
+    "id": "d5d80657-55e3-4400-9b0d-04dd2506c87b",
+    "title_en": "First Aid and Emergency Response",
+    "title_bn": "প্রাথমিক চিকিৎসা এবং জরুরি প্রতিক্রিয়া",
+    "modules": [
+      {
+        "title": "CPR Basics",
+        "title_bn": "সিপিআর মূল বিষয়",
+        "duration": 60
+      },
+      {
+        "title": "Choking Response",
+        "title_bn": "শ্বাসরোধ প্রতিক্রিয়া",
+        "duration": 30
+      },
+      {
+        "title": "Wound Care",
+        "title_bn": "ক্ষত যত্ন",
+        "duration": 40
+      },
+      {
+        "title": "Emergency Protocols",
+        "title_bn": "জরুরি প্রোটোকল",
+        "duration": 30
+      }
+    ],
+    "duration_min": 160,
+    "created_at": "2025-04-09T18:00:15.833Z"
+  },
+  {
+    "id": "8438a230-d4e8-4262-9d02-bf8fad441f3b",
+    "title_en": "Mobility and Rehabilitation",
+    "title_bn": "গতিশীলতা এবং পুনর্বাসন",
+    "modules": [
+      {
+        "title": "Safe Transfer Techniques",
+        "title_bn": "নিরাপদ স্থানান্তর কৌশল",
+        "duration": 45
+      },
+      {
+        "title": "Walking Assistance",
+        "title_bn": "হাঁটার সহায়তা",
+        "duration": 35
+      },
+      {
+        "title": "Exercise Programs",
+        "title_bn": "ব্যায়াম কর্মসূচি",
+        "duration": 50
+      }
+    ],
+    "duration_min": 130,
+    "created_at": "2025-04-29T18:00:15.833Z"
+  },
+  {
+    "id": "eb1c2860-a9b2-41e4-82f8-c95f61d40179",
+    "title_en": "Nutrition for Seniors",
+    "title_bn": "বয়স্কদের জন্য পুষ্টি",
+    "modules": [
+      {
+        "title": "Nutritional Needs",
+        "title_bn": "পুষ্টির প্রয়োজন",
+        "duration": 40
+      },
+      {
+        "title": "Meal Preparation",
+        "title_bn": "খাবার প্রস্তুতি",
+        "duration": 50
+      },
+      {
+        "title": "Special Diets",
+        "title_bn": "বিশেষ খাদ্য",
+        "duration": 45
+      }
+    ],
+    "duration_min": 135,
+    "created_at": "2025-05-19T18:00:15.833Z"
+  },
+  {
+    "id": "b89c1fa6-abe1-4275-913e-d79e965ae234",
+    "title_en": "Personal Hygiene and Bathing",
+    "title_bn": "ব্যক্তিগত স্বাস্থ্যবিধি এবং স্নান",
+    "modules": [
+      {
+        "title": "Bathing Techniques",
+        "title_bn": "স্নান কৌশল",
+        "duration": 40
+      },
+      {
+        "title": "Skin Care",
+        "title_bn": "ত্বকের যত্ন",
+        "duration": 30
+      },
+      {
+        "title": "Maintaining Dignity",
+        "title_bn": "মর্যাদা বজায় রাখা",
+        "duration": 25
+      }
+    ],
+    "duration_min": 95,
+    "created_at": "2025-06-08T18:00:15.833Z"
+  },
+  {
+    "id": "ca8b1177-b659-4493-8f9d-47447bbd76cd",
+    "title_en": "Mental Health and Emotional Support",
+    "title_bn": "মানসিক স্বাস্থ্য এবং আবেগিক সহায়তা",
+    "modules": [
+      {
+        "title": "Understanding Depression",
+        "title_bn": "বিষণ্নতা বোঝা",
+        "duration": 40
+      },
+      {
+        "title": "Active Listening",
+        "title_bn": "সক্রিয় শ্রবণ",
+        "duration": 35
+      },
+      {
+        "title": "Companionship Skills",
+        "title_bn": "সঙ্গী দক্ষতা",
+        "duration": 30
+      },
+      {
+        "title": "Stress Management",
+        "title_bn": "চাপ ব্যবস্থাপনা",
+        "duration": 35
+      }
+    ],
+    "duration_min": 140,
+    "created_at": "2025-06-28T18:00:15.833Z"
+  },
+  {
+    "id": "8a5369d3-d06a-4d65-a16c-f929a2e50d81",
+    "title_en": "End-of-Life and Palliative Care",
+    "title_bn": "জীবনের শেষ এবং প্যালিয়েটিভ কেয়ার",
+    "modules": [
+      {
+        "title": "Understanding Palliative Care",
+        "title_bn": "প্যালিয়েটিভ কেয়ার বোঝা",
+        "duration": 45
+      },
+      {
+        "title": "Pain Management",
+        "title_bn": "ব্যথা ব্যবস্থাপনা",
+        "duration": 40
+      },
+      {
+        "title": "Emotional Support",
+        "title_bn": "আবেগিক সহায়তা",
+        "duration": 35
+      },
+      {
+        "title": "Family Communication",
+        "title_bn": "পরিবার যোগাযোগ",
+        "duration": 30
+      }
+    ],
+    "duration_min": 150,
+    "created_at": "2025-07-18T18:00:15.833Z"
+  }
+]

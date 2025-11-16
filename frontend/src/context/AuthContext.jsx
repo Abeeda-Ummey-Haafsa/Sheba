@@ -47,6 +47,13 @@ export const AuthProvider = ({ children }) => {
 
         if (!isMounted) return;
 
+        // Suppress 404 errors if profiles table doesn't exist (PGRST116)
+        if (error && error.code === "PGRST116") {
+          console.log(
+            "[AuthContext] Profiles table not found - using auth metadata only"
+          );
+        }
+
         if (!error && profile) {
           console.log("[AuthContext] Profile fetched from DB:", profile);
           setUserRole(profile.role);

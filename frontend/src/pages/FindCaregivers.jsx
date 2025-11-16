@@ -5,132 +5,51 @@ import { motion, AnimatePresence } from "framer-motion";
 import toast from "react-hot-toast";
 import { FiSearch, FiX, FiStar, FiMapPin, FiPhone } from "react-icons/fi";
 
-const mockCaregivers = [
-  {
-    id: 1,
-    name: "Rahim Khan",
-    name_bn: "রহিম খান",
-    age: 35,
-    gender: "male",
-    gender_bn: "পুরুষ",
-    location: "Dhaka",
-    location_bn: "ঢাকা",
-    skills: ["Personal Care", "Nursing", "Medication"],
-    rating: 4.8,
-    reviews: 42,
-    hourly_rate: 300,
-    distance_km: 2,
-    photo: "https://via.placeholder.com/150/14B8A6/ffffff?text=RK",
-    bio: "Experienced in elderly care with 8+ years",
-    verified: true,
-  },
-  {
-    id: 2,
-    name: "Fatema Begum",
-    name_bn: "ফাতেমা বেগম",
-    age: 28,
-    gender: "female",
-    gender_bn: "মহিলা",
-    location: "Dhaka",
-    location_bn: "ঢাকা",
-    skills: ["Hygiene Support", "Companionship", "Meal Prep"],
-    rating: 4.9,
-    reviews: 38,
-    hourly_rate: 250,
-    distance_km: 5,
-    photo: "https://via.placeholder.com/150/FB923C/ffffff?text=FB",
-    bio: "Compassionate caregiver specialized in companionship",
-    verified: true,
-  },
-  {
-    id: 3,
-    name: "Karim Ali",
-    name_bn: "করিম আলী",
-    age: 42,
-    gender: "male",
-    gender_bn: "পুরুষ",
-    location: "Gulshan",
-    location_bn: "গুলশান",
-    skills: ["Physiotherapy", "Mobility Assistance", "Rehabilitation"],
-    rating: 4.7,
-    reviews: 25,
-    hourly_rate: 400,
-    distance_km: 8,
-    photo: "https://via.placeholder.com/150/3B82F6/ffffff?text=KA",
-    bio: "Physical therapy specialist for post-injury recovery",
-    verified: true,
-  },
-  {
-    id: 4,
-    name: "Nasrin Ahmed",
-    name_bn: "নাসরিন আহমেদ",
-    age: 31,
-    gender: "female",
-    gender_bn: "মহিলা",
-    location: "Dhanmondi",
-    location_bn: "ধানমণ্ডি",
-    skills: ["Diabetes Care", "Nutrition", "Medication"],
-    rating: 4.6,
-    reviews: 31,
-    hourly_rate: 280,
-    distance_km: 3,
-    photo: "https://via.placeholder.com/150/10B981/ffffff?text=NA",
-    bio: "Specialized in chronic disease management",
-    verified: true,
-  },
-  {
-    id: 5,
-    name: "Sujon Saha",
-    name_bn: "সুজন সাহা",
-    age: 38,
-    gender: "male",
-    gender_bn: "পুরুষ",
-    location: "Mirpur",
-    location_bn: "মিরপুর",
-    skills: ["Palliative Care", "Companionship", "Personal Care"],
-    rating: 4.8,
-    reviews: 45,
-    hourly_rate: 320,
-    distance_km: 12,
-    photo: "https://via.placeholder.com/150/EF4444/ffffff?text=SS",
-    bio: "End-of-life care specialist with compassion",
-    verified: true,
-  },
-  {
-    id: 6,
-    name: "Raiya Khan",
-    name_bn: "রাইয়া খান",
-    age: 26,
-    gender: "female",
-    gender_bn: "মহিলা",
-    location: "Banani",
-    location_bn: "বনানী",
-    skills: ["Meal Prep", "Hygiene Support", "Companionship"],
-    rating: 4.5,
-    reviews: 18,
-    hourly_rate: 220,
-    distance_km: 6,
-    photo: "https://via.placeholder.com/150/14B8A6/ffffff?text=RK2",
-    bio: "Young caregiver eager to help with daily activities",
-    verified: false,
-  },
-];
+// Transform generated mock data to match component format
+const transformCaregiver = (caregiver) => ({
+  id: caregiver.id,
+  name: caregiver.fullName,
+  name_bn: caregiver.fullName,
+  age: caregiver.experienceYears + 25, // Approximate age from experience
+  gender: caregiver.gender === "মহিলা" ? "female" : "male",
+  gender_bn: caregiver.gender,
+  location: caregiver.location.area,
+  location_bn: caregiver.location.area,
+  skills: caregiver.services,
+  rating: caregiver.ratings.averageRating,
+  reviews: caregiver.ratings.totalReviews,
+  hourly_rate: caregiver.hourlyRate,
+  distance_km: Math.floor(Math.random() * 15) + 1, // Random distance for now
+  photo: caregiver.profilePhoto,
+  bio: caregiver.description,
+  verified: caregiver.verification.nidVerified,
+});
 
 const allSkills = [
   { en: "Personal Care", bn: "ব্যক্তিগত যত্ন" },
   { en: "Medication", bn: "ওষুধ" },
+  { en: "Medication Management", bn: "ওষুধ ব্যবস্থাপনা" },
   { en: "Physiotherapy", bn: "ফিজিওথেরাপি" },
   { en: "Companionship", bn: "সঙ্গ দেওয়া" },
   { en: "Nursing", bn: "নার্সিং" },
   { en: "Palliative Care", bn: "প্যালিয়েটিভ যত্ন" },
   { en: "Hygiene Support", bn: "স্বাস্থ্যবিধি সহায়তা" },
-  { en: "Meal Prep", bn: "খাবার প্রস্তুতি" },
+  { en: "Meal Preparation", bn: "খাবার প্রস্তুতি" },
+  { en: "Diabetes Care", bn: "ডায়াবেটিস যত্ন" },
+  { en: "Blood Pressure Monitoring", bn: "রক্তচাপ পর্যবেক্ষণ" },
+  { en: "Wound Care", bn: "ক্ষত যত্ন" },
+  { en: "Mobility Assistance", bn: "গতিশীলতা সহায়তা" },
+  { en: "Dementia Care", bn: "ডিমেনশিয়া যত্ন" },
+  { en: "Rehabilitation", bn: "পুনর্বাসন" },
+  { en: "Respiratory Care", bn: "শ্বাসযন্ত্র যত্ন" },
+  { en: "Post-Surgery Care", bn: "অস্ত্রোপচার পরবর্তী যত্ন" },
+  { en: "Mental Health Support", bn: "মানসিক স্বাস্থ্য সহায়তা" },
 ];
 
 export default function FindCaregivers() {
-  const [caregivers, setCaregivers] = useState(mockCaregivers);
-  const [loading, setLoading] = useState(false);
-  const [filteredCaregivers, setFilteredCaregivers] = useState(mockCaregivers);
+  const [caregivers, setCaregivers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [filteredCaregivers, setFilteredCaregivers] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
   const [showFilters, setShowFilters] = useState(false);
   const [selectedProfile, setSelectedProfile] = useState(null);
@@ -138,10 +57,28 @@ export default function FindCaregivers() {
   const [filters, setFilters] = useState({
     gender: "",
     skills: [],
-    distance: 50,
-    priceMin: 100,
-    priceMax: 1000,
+    distance: 100, // Increased from 50 to show all caregivers
+    priceMin: 0, // Changed from 100 to include all prices
+    priceMax: 2000, // Increased from 1000 to include all prices
   });
+
+  // Load mock data from public folder on component mount
+  useEffect(() => {
+    const loadMockData = async () => {
+      try {
+        const response = await fetch("/caregivers.json");
+        const data = await response.json();
+        const transformedData = data.map(transformCaregiver);
+        setCaregivers(transformedData);
+        setFilteredCaregivers(transformedData);
+        setLoading(false);
+      } catch (error) {
+        console.error("Error loading caregiver data:", error);
+        setLoading(false);
+      }
+    };
+    loadMockData();
+  }, []);
 
   useEffect(() => {
     let result = caregivers;
@@ -180,7 +117,7 @@ export default function FindCaregivers() {
           }
         />
       ))}
-      <span className="text-sm text-gray-600 ml-1">{rating}</span>
+      <span className="text-sm text-gray-600 ml-1">{rating.toFixed(1)}</span>
     </div>
   );
 
@@ -193,7 +130,9 @@ export default function FindCaregivers() {
           className="mb-8"
         >
           <h1 className="text-4xl font-bold text-text mb-2">Find Caregivers</h1>
-          <p className="text-gray-600">যত্নকারী খুঁজুন</p>
+          <p className="text-gray-600">
+            যত্নকারী খুঁজুন • {caregivers.length} caregivers available
+          </p>
         </motion.div>
 
         <motion.div
@@ -297,7 +236,7 @@ export default function FindCaregivers() {
                 <input
                   type="range"
                   min="0"
-                  max="50"
+                  max="100"
                   value={filters.distance}
                   onChange={(e) =>
                     setFilters((prev) => ({
@@ -313,7 +252,7 @@ export default function FindCaregivers() {
                   setFilters({
                     gender: "",
                     skills: [],
-                    distance: 50,
+                    distance: 100,
                     priceMin: 100,
                     priceMax: 1000,
                   })
@@ -345,7 +284,7 @@ export default function FindCaregivers() {
                       key={caregiver.id}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1 }}
+                      transition={{ delay: index * 0.05 }}
                       className="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition group"
                     >
                       <div className="relative h-48 overflow-hidden bg-gray-100">
@@ -382,6 +321,11 @@ export default function FindCaregivers() {
                               {skill}
                             </span>
                           ))}
+                          {caregiver.skills.length > 2 && (
+                            <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
+                              +{caregiver.skills.length - 2} more
+                            </span>
+                          )}
                         </div>
                         <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
                           <FiMapPin size={16} />
@@ -473,6 +417,9 @@ export default function FindCaregivers() {
                     </p>
                     <p>
                       <StarRating rating={selectedProfile.rating} />
+                      <span className="text-gray-600 ml-2">
+                        ({selectedProfile.reviews} reviews)
+                      </span>
                     </p>
                     <p>
                       <span className="font-semibold">Rate:</span> ৳

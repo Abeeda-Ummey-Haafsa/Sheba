@@ -12,6 +12,7 @@ import {
   FiChevronDown,
 } from "react-icons/fi";
 import "../styles/navigation.css";
+import logoImage from "../../images/WhatsApp Image 2025-11-15 at 00.41.38_732b5c76.jpg";
 
 const services = [
   "Personal Care",
@@ -94,9 +95,11 @@ export default function Navigation({ onOpenMobile }) {
               className="flex items-center gap-2"
               title="Seba"
             >
-              <div className="w-10 h-10 rounded-md bg-primary flex items-center justify-center text-white font-bold text-sm">
-                সে
-              </div>
+              <img
+                src={logoImage}
+                alt="Seba"
+                className="w-10 h-10 rounded-md object-cover"
+              />
               <div className="hidden sm:block">
                 <div className="text-lg font-semibold text-text">Seba</div>
                 <div className="text-xs text-gray-500">CG</div>
@@ -204,9 +207,11 @@ export default function Navigation({ onOpenMobile }) {
             to={isAuthenticated ? "/dashboard" : "/"}
             className="flex items-center gap-2"
           >
-            <div className="w-10 h-10 rounded-md bg-primary flex items-center justify-center text-white font-bold">
-              সে
-            </div>
+            <img
+              src={logoImage}
+              alt="Seba"
+              className="w-10 h-10 rounded-md object-cover"
+            />
             <div className="hidden sm:block">
               <div className="text-lg font-semibold">Seba</div>
               <div className="text-xs text-gray-500">সেবা</div>
@@ -280,6 +285,18 @@ export default function Navigation({ onOpenMobile }) {
                     }
                   >
                     Find Caregivers
+                  </NavLink>
+                  <NavLink
+                    to="/smart-match"
+                    className={({ isActive }) =>
+                      `px-3 py-2 text-base ${
+                        isActive
+                          ? "underline text-primary font-semibold"
+                          : "hover:underline"
+                      }`
+                    }
+                  >
+                    🎯 Smart Match
                   </NavLink>
                   <NavLink
                     to="/activity-logs"

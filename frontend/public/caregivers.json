@@ -1,0 +1,4547 @@
+[
+  {
+    "id": "43c366fe-c659-4e48-943d-471dd33ee83d",
+    "userId": "d0c07a6c-bed2-41d1-84df-f846fedeaada",
+    "fullName": "আয়েশা খান",
+    "email": "daphnee81@gmail.com",
+    "phone": "+8801831493510",
+    "nidNumber": "32093870238935",
+    "experienceYears": 1,
+    "services": [
+      "Diabetes Care",
+      "Companionship",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Rampura",
+      "address": "50, Rampura",
+      "latitude": 23.777729031570622,
+      "longitude": 90.42419861921809
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 1 বছরের অভিজ্ঞতা। Diabetes Care, Companionship এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=tLqzJhy4",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-31T17:06:23.863Z"
+    },
+    "ratings": {
+      "averageRating": 3.92,
+      "totalReviews": 43,
+      "fiveStarCount": 51,
+      "fourStarCount": 8,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 233,
+    "createdAt": "2024-12-16T17:06:23.863Z",
+    "area": "badda",
+    "sub_area": "নটুন বাজার",
+    "address_line": "House 43, Road 16"
+  },
+  {
+    "id": "da9df385-ea7b-4564-b945-cfe29e9c1402",
+    "userId": "2116329c-ea95-4bce-ab5f-101d0db62329",
+    "fullName": "আঞ্জুমান সুলতানা",
+    "email": "llewellyn_gerlach-schamberger@gmail.com",
+    "phone": "+8801471889471",
+    "nidNumber": "36636769232003",
+    "experienceYears": 12,
+    "services": [
+      "Mental Health Support",
+      "Meal Preparation",
+      "Post-Surgery Care",
+      "Respiratory Care",
+      "Diabetes Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Tejgaon",
+      "address": "39, Tejgaon",
+      "latitude": 23.795796982035174,
+      "longitude": 90.41174109120203
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 12 বছরের অভিজ্ঞতা। Mental Health Support, Meal Preparation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=4nLbpFFa",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-02-16T17:06:23.867Z"
+    },
+    "ratings": {
+      "averageRating": 4.67,
+      "totalReviews": 49,
+      "fiveStarCount": 80,
+      "fourStarCount": 12,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 588,
+    "createdAt": "2025-02-06T17:06:23.867Z",
+    "area": "gulshan",
+    "sub_area": "নিকেতন",
+    "address_line": "House 50, Road 11"
+  },
+  {
+    "id": "cafe21f5-d45a-4a6c-a5d2-3a1b8da0ca72",
+    "userId": "870fa6b7-3924-47a2-aa31-453403d5f9d1",
+    "fullName": "বেগম নাহার",
+    "email": "tracey_dooley@hotmail.com",
+    "phone": "+8801596514392",
+    "nidNumber": "67367255197173",
+    "experienceYears": 1,
+    "services": [
+      "Companionship",
+      "Medication Management"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Khilgaon",
+      "address": "52, Khilgaon",
+      "latitude": 23.70650707205818,
+      "longitude": 90.43109794257855
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 1 বছরের অভিজ্ঞতা। Companionship, Medication Management এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=3hLWiifb",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-04T17:06:23.867Z"
+    },
+    "ratings": {
+      "averageRating": 3.65,
+      "totalReviews": 40,
+      "fiveStarCount": 35,
+      "fourStarCount": 10,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 266,
+    "createdAt": "2025-02-14T17:06:23.867Z",
+    "area": "jatrabari",
+    "sub_area": "সায়েদাবাদ",
+    "address_line": "House 12, Road 7"
+  },
+  {
+    "id": "ace4b678-51b1-4069-992c-e62a552b65ea",
+    "userId": "2023acd0-3155-43c9-90c7-07ae05bb68d8",
+    "fullName": "জাহিদ চৌধুরী",
+    "email": "isaac.beatty88@hotmail.com",
+    "phone": "+8801628960207",
+    "nidNumber": "83658266831496",
+    "experienceYears": 4,
+    "services": [
+      "Mental Health Support",
+      "Nursing",
+      "Personal Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Kalyanpur",
+      "address": "26, Kalyanpur",
+      "latitude": 23.760776219062066,
+      "longitude": 90.35667228266574
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 4 বছরের অভিজ্ঞতা। Mental Health Support, Nursing এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=g2LoSwT8",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-13T17:06:23.872Z"
+    },
+    "ratings": {
+      "averageRating": 4.38,
+      "totalReviews": 59,
+      "fiveStarCount": 72,
+      "fourStarCount": 12,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 419,
+    "createdAt": "2025-09-17T17:06:23.872Z",
+    "area": "mohammadpur",
+    "sub_area": "বশির উদ্দিন রোড",
+    "address_line": "House 30, Road 8"
+  },
+  {
+    "id": "35fda4f7-666b-40a2-8a4f-290dfdd3ce28",
+    "userId": "aafb6365-254f-4d98-b3b5-b999e6fd3846",
+    "fullName": "শাহনাজ রহমান",
+    "email": "aubrey_romaguera@gmail.com",
+    "phone": "+8801548216390",
+    "nidNumber": "92930260261774",
+    "experienceYears": 10,
+    "services": [
+      "Wound Care",
+      "Meal Preparation",
+      "Companionship",
+      "Mental Health Support",
+      "Blood Pressure Monitoring",
+      "Respiratory Care",
+      "Nursing"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "182, Banani",
+      "latitude": 23.78163760791048,
+      "longitude": 90.42641399370645
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Wound Care, Meal Preparation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=viob3bTs",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-01-25T17:06:23.873Z"
+    },
+    "ratings": {
+      "averageRating": 4.54,
+      "totalReviews": 25,
+      "fiveStarCount": 24,
+      "fourStarCount": 6,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 506,
+    "createdAt": "2025-01-04T17:06:23.873Z",
+    "area": "badda",
+    "sub_area": "মেরুল বাড্ডা",
+    "address_line": "House 44, Road 9"
+  },
+  {
+    "id": "10d7cc18-ce69-4f71-a5b7-db71f496c526",
+    "userId": "383676fc-9107-4d0b-9c6f-19b8c276805b",
+    "fullName": "রুমানা নাহার",
+    "email": "davon.marquardt30@yahoo.com",
+    "phone": "+8801430525003",
+    "nidNumber": "13710456141637",
+    "experienceYears": 7,
+    "services": [
+      "Companionship",
+      "Respiratory Care",
+      "Nursing",
+      "Palliative Care",
+      "Medication Management",
+      "Personal Care",
+      "Mental Health Support",
+      "Dementia Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Rampura",
+      "address": "100, Rampura",
+      "latitude": 23.80430380297247,
+      "longitude": 90.35732659611557
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 7 বছরের অভিজ্ঞতা। Companionship, Respiratory Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=nfxHigPi",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-17T17:06:23.873Z"
+    },
+    "ratings": {
+      "averageRating": 4.89,
+      "totalReviews": 102,
+      "fiveStarCount": 82,
+      "fourStarCount": 7,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 569,
+    "createdAt": "2025-07-23T17:06:23.873Z",
+    "area": "mirpur",
+    "sub_area": "শেওড়াপাড়া",
+    "address_line": "House 22, Road 11"
+  },
+  {
+    "id": "97f53a72-4c9f-499c-931f-3baf96c0e7fa",
+    "userId": "a5218b60-2992-4e32-b523-4219fa6f7f1f",
+    "fullName": "রাশেদ তালুকদার",
+    "email": "tracy_pouros@gmail.com",
+    "phone": "+8801551978914",
+    "nidNumber": "39077453640417",
+    "experienceYears": 12,
+    "services": [
+      "Diabetes Care",
+      "Physiotherapy",
+      "Meal Preparation",
+      "Dementia Care",
+      "Palliative Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Tejgaon",
+      "address": "95, Tejgaon",
+      "latitude": 23.804116888073462,
+      "longitude": 90.35262956170179
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 12 বছরের অভিজ্ঞতা। Diabetes Care, Physiotherapy এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=3TCkTiZ1",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-23T17:06:23.873Z"
+    },
+    "ratings": {
+      "averageRating": 4.84,
+      "totalReviews": 22,
+      "fiveStarCount": 86,
+      "fourStarCount": 5,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 516,
+    "createdAt": "2025-03-19T17:06:23.873Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ১০",
+    "address_line": "House 23, Road 7"
+  },
+  {
+    "id": "bc523068-4288-42e9-8f94-108f8eadf30b",
+    "userId": "947842c6-140a-4d07-b4d0-8cfa45a6d750",
+    "fullName": "নূরজাহান রহমান",
+    "email": "watson.lind35@hotmail.com",
+    "phone": "+8801903633391",
+    "nidNumber": "33380691407053",
+    "experienceYears": 12,
+    "services": [
+      "Companionship",
+      "Palliative Care",
+      "Mental Health Support",
+      "Respiratory Care",
+      "Personal Care",
+      "Nursing",
+      "Dementia Care",
+      "Mobility Assistance"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mohammadpur",
+      "address": "2, Mohammadpur",
+      "latitude": 23.75399310235469,
+      "longitude": 90.4292863699575
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 12 বছরের অভিজ্ঞতা। Companionship, Palliative Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=8WGvc3bW",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-09-14T17:06:23.873Z"
+    },
+    "ratings": {
+      "averageRating": 4.84,
+      "totalReviews": 24,
+      "fiveStarCount": 74,
+      "fourStarCount": 10,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 571,
+    "createdAt": "2025-08-21T17:06:23.873Z",
+    "area": "rampura",
+    "sub_area": "মালিবাগ",
+    "address_line": "House 27, Road 13"
+  },
+  {
+    "id": "1a13cdb9-d067-465e-85a4-f4043e4d8466",
+    "userId": "1a352e71-82d1-49c1-bdf3-ff3b21f6304c",
+    "fullName": "তাসলিমা রহমান",
+    "email": "nicklaus_denesik31@gmail.com",
+    "phone": "+8801564489113",
+    "nidNumber": "33674215134884",
+    "experienceYears": 10,
+    "services": [
+      "Mobility Assistance",
+      "Personal Care",
+      "Respiratory Care",
+      "Meal Preparation",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "4, Banani",
+      "latitude": 23.745133989664087,
+      "longitude": 90.42628095105961
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Mobility Assistance, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=M0YY5S4X",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-16T17:06:23.874Z"
+    },
+    "ratings": {
+      "averageRating": 4.74,
+      "totalReviews": 30,
+      "fiveStarCount": 21,
+      "fourStarCount": 7,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 540,
+    "createdAt": "2025-06-08T17:06:23.874Z",
+    "area": "khilgaon",
+    "sub_area": "গোড়ান",
+    "address_line": "House 34, Road 6"
+  },
+  {
+    "id": "edfd2f08-910e-458a-99af-094627edfeb9",
+    "userId": "7fee7006-cf56-4ac0-baf7-3d1ee57340b3",
+    "fullName": "রোকেয়া রহমান",
+    "email": "giuseppe.terry41@hotmail.com",
+    "phone": "+8801386825698",
+    "nidNumber": "85806626409857",
+    "experienceYears": 10,
+    "services": [
+      "Physiotherapy",
+      "Medication Management",
+      "Meal Preparation",
+      "Mobility Assistance",
+      "Blood Pressure Monitoring",
+      "Wound Care",
+      "Companionship",
+      "Nursing"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Agargaon",
+      "address": "177, Agargaon",
+      "latitude": 23.77966551400725,
+      "longitude": 90.42741143002094
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Physiotherapy, Medication Management এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=LyC3Rj8c",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-11-08T17:06:23.874Z"
+    },
+    "ratings": {
+      "averageRating": 4.69,
+      "totalReviews": 119,
+      "fiveStarCount": 70,
+      "fourStarCount": 8,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 544,
+    "createdAt": "2025-11-05T17:06:23.874Z",
+    "area": "badda",
+    "sub_area": "বাড্ডা",
+    "address_line": "House 8, Road 4"
+  },
+  {
+    "id": "250188e4-8875-40bf-a5f2-91ae4f5d6cfc",
+    "userId": "b3bd9461-7b5c-495b-b092-d03ac0d10ab4",
+    "fullName": "রোকেয়া শর্মা",
+    "email": "dixie.grimes82@gmail.com",
+    "phone": "+8801457614743",
+    "nidNumber": "27164798422998",
+    "experienceYears": 7,
+    "services": [
+      "Palliative Care",
+      "Personal Care",
+      "Meal Preparation",
+      "Blood Pressure Monitoring",
+      "Diabetes Care",
+      "Companionship",
+      "Medication Management",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Shyamoli",
+      "address": "196, Shyamoli",
+      "latitude": 23.792629196610946,
+      "longitude": 90.4071462626845
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 7 বছরের অভিজ্ঞতা। Palliative Care, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Y94yVWEl",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-07T17:06:23.874Z"
+    },
+    "ratings": {
+      "averageRating": 4.57,
+      "totalReviews": 23,
+      "fiveStarCount": 59,
+      "fourStarCount": 7,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 585,
+    "createdAt": "2025-09-17T17:06:23.874Z",
+    "area": "banani",
+    "sub_area": "বনানী ডিওএইচএস",
+    "address_line": "House 24, Road 11"
+  },
+  {
+    "id": "8c2a81ae-446f-4917-9b70-43fa20c83e19",
+    "userId": "8d34d2b6-f36b-4e24-ab61-1602913f488a",
+    "fullName": "আহমেদ হক",
+    "email": "braxton_maggio@yahoo.com",
+    "phone": "+8801462461681",
+    "nidNumber": "05969732719583",
+    "experienceYears": 13,
+    "services": [
+      "Blood Pressure Monitoring",
+      "Medication Management",
+      "Wound Care",
+      "Mobility Assistance",
+      "Physiotherapy"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "41, Banani",
+      "latitude": 23.745483955587304,
+      "longitude": 90.37820343910231
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Blood Pressure Monitoring, Medication Management এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Uu7S2s0A",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-27T17:06:23.874Z"
+    },
+    "ratings": {
+      "averageRating": 4.56,
+      "totalReviews": 71,
+      "fiveStarCount": 25,
+      "fourStarCount": 8,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 537,
+    "createdAt": "2025-07-08T17:06:23.874Z",
+    "area": "dhanmondi",
+    "sub_area": "ধানমন্ডি ৪/এ",
+    "address_line": "House 16, Road 3"
+  },
+  {
+    "id": "3aba4a5b-2283-4d55-8b5f-ff2481d00594",
+    "userId": "bad9e926-1c81-4b57-aa07-90e88e31452e",
+    "fullName": "খাদিজা খান",
+    "email": "lonie.bosco@gmail.com",
+    "phone": "+8801895592311",
+    "nidNumber": "89254461138953",
+    "experienceYears": 9,
+    "services": [
+      "Mental Health Support",
+      "Mobility Assistance",
+      "Medication Management",
+      "Physiotherapy",
+      "Respiratory Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "148, Badda",
+      "latitude": 23.808191584563414,
+      "longitude": 90.35552647877024
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 9 বছরের অভিজ্ঞতা। Mental Health Support, Mobility Assistance এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=PN0WIUhE",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-09-08T17:06:23.874Z"
+    },
+    "ratings": {
+      "averageRating": 4.94,
+      "totalReviews": 49,
+      "fiveStarCount": 59,
+      "fourStarCount": 9,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 544,
+    "createdAt": "2025-08-16T17:06:23.874Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ১২",
+    "address_line": "House 15, Road 11"
+  },
+  {
+    "id": "e04e16c9-4671-433e-99a8-c19d09146ed2",
+    "userId": "0eacaf93-d94b-4c54-aac5-814c14d48b8f",
+    "fullName": "শাহনাজ খাতুন",
+    "email": "ines.vonrueden@gmail.com",
+    "phone": "+8801545365179",
+    "nidNumber": "07032415139498",
+    "experienceYears": 12,
+    "services": [
+      "Dementia Care",
+      "Medication Management",
+      "Personal Care",
+      "Mental Health Support",
+      "Wound Care",
+      "Nursing"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Gulshan",
+      "address": "135, Gulshan",
+      "latitude": 23.746310875209854,
+      "longitude": 90.42253838632669
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 12 বছরের অভিজ্ঞতা। Dementia Care, Medication Management এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=gajsJRHw",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-26T17:06:23.875Z"
+    },
+    "ratings": {
+      "averageRating": 4.93,
+      "totalReviews": 86,
+      "fiveStarCount": 36,
+      "fourStarCount": 11,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 583,
+    "createdAt": "2024-12-19T17:06:23.875Z",
+    "area": "khilgaon",
+    "sub_area": "খিলগাঁও",
+    "address_line": "House 20, Road 3"
+  },
+  {
+    "id": "008af8d6-c51d-4dac-b5fe-4b383b19b853",
+    "userId": "23e094e5-949a-4635-9100-75979f5a8a67",
+    "fullName": "সাবিনা আহমেদ",
+    "email": "roosevelt.beatty74@yahoo.com",
+    "phone": "+8801879850179",
+    "nidNumber": "95765558327588",
+    "experienceYears": 6,
+    "services": [
+      "Dementia Care",
+      "Mental Health Support",
+      "Physiotherapy"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "65, Banani",
+      "latitude": 23.707885708753757,
+      "longitude": 90.41042579366619
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 6 বছরের অভিজ্ঞতা। Dementia Care, Mental Health Support এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=FlubUv9v",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-13T17:06:23.875Z"
+    },
+    "ratings": {
+      "averageRating": 4.37,
+      "totalReviews": 36,
+      "fiveStarCount": 72,
+      "fourStarCount": 9,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 370,
+    "createdAt": "2025-06-10T17:06:23.875Z",
+    "area": "old_dhaka",
+    "sub_area": "চকবাজার",
+    "address_line": "House 26, Road 2"
+  },
+  {
+    "id": "2db34d93-7977-44a1-8f3b-5430a44fb5ad",
+    "userId": "f2300a3f-9fba-4f7e-a76a-791884e22e65",
+    "fullName": "আবদুল খান",
+    "email": "viva_padberg96@gmail.com",
+    "phone": "+8801379927224",
+    "nidNumber": "82745380583140",
+    "experienceYears": 5,
+    "services": [
+      "Medication Management",
+      "Mobility Assistance",
+      "Mental Health Support",
+      "Dementia Care",
+      "Personal Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Uttara",
+      "address": "120, Uttara",
+      "latitude": 23.74623060694519,
+      "longitude": 90.42720142151857
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Medication Management, Mobility Assistance এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=b3MZe1GX",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-10T17:06:23.875Z"
+    },
+    "ratings": {
+      "averageRating": 4.1,
+      "totalReviews": 42,
+      "fiveStarCount": 34,
+      "fourStarCount": 11,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 362,
+    "createdAt": "2024-12-07T17:06:23.875Z",
+    "area": "khilgaon",
+    "sub_area": "খিলগাঁও",
+    "address_line": "House 13, Road 3"
+  },
+  {
+    "id": "5b62e205-073b-4455-b8b4-6620d9f73f3c",
+    "userId": "0718b7ed-133e-4718-90c0-8a1759025a75",
+    "fullName": "আলী তালুকদার",
+    "email": "emery_goyette@hotmail.com",
+    "phone": "+8801921312373",
+    "nidNumber": "86329479447316",
+    "experienceYears": 11,
+    "services": [
+      "Mental Health Support",
+      "Mobility Assistance",
+      "Respiratory Care",
+      "Personal Care",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mirpur",
+      "address": "23, Mirpur",
+      "latitude": 23.796739273277332,
+      "longitude": 90.4077225307075
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 11 বছরের অভিজ্ঞতা। Mental Health Support, Mobility Assistance এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Y5W5ySss",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-09T17:06:23.875Z"
+    },
+    "ratings": {
+      "averageRating": 4.6,
+      "totalReviews": 106,
+      "fiveStarCount": 27,
+      "fourStarCount": 7,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 562,
+    "createdAt": "2025-06-20T17:06:23.875Z",
+    "area": "banani",
+    "sub_area": "বনানী",
+    "address_line": "House 14, Road 18"
+  },
+  {
+    "id": "e9ef8300-f6f3-4c14-ae1a-f0a8ceb865e6",
+    "userId": "6ed33db8-8dce-4c94-b004-07b5c72c517d",
+    "fullName": "সাবিনা রহমান",
+    "email": "sandrine.hilll53@yahoo.com",
+    "phone": "+8801678958834",
+    "nidNumber": "28525824409940",
+    "experienceYears": 10,
+    "services": [
+      "Personal Care",
+      "Respiratory Care",
+      "Physiotherapy",
+      "Nursing",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Gulshan",
+      "address": "74, Gulshan",
+      "latitude": 23.759590332058917,
+      "longitude": 90.39488696908009
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Personal Care, Respiratory Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=DY73h3cg",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-11T17:06:23.876Z"
+    },
+    "ratings": {
+      "averageRating": 4.76,
+      "totalReviews": 56,
+      "fiveStarCount": 45,
+      "fourStarCount": 10,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 580,
+    "createdAt": "2025-10-09T17:06:23.876Z",
+    "area": "tejgaon",
+    "sub_area": "বিজয় নগর",
+    "address_line": "House 39, Road 13"
+  },
+  {
+    "id": "0eec0112-9c4b-40cd-9425-04ba1bf624bd",
+    "userId": "31b5ba5f-2f25-412f-a872-1b3fd60417a1",
+    "fullName": "আঞ্জুমান দাস",
+    "email": "marcellus81@gmail.com",
+    "phone": "+8801483717505",
+    "nidNumber": "37663144851993",
+    "experienceYears": 2,
+    "services": [
+      "Nursing",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "26, Banani",
+      "latitude": 23.809059101364173,
+      "longitude": 90.35143699416305
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 2 বছরের অভিজ্ঞতা। Nursing, Post-Surgery Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=tAArlub5",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-09T17:06:23.876Z"
+    },
+    "ratings": {
+      "averageRating": 3.84,
+      "totalReviews": 67,
+      "fiveStarCount": 60,
+      "fourStarCount": 10,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 222,
+    "createdAt": "2025-06-14T17:06:23.876Z",
+    "area": "mirpur",
+    "sub_area": "পল্লবী",
+    "address_line": "House 17, Road 1"
+  },
+  {
+    "id": "41ed1f41-5cbf-4aef-9b29-17ed3a13f04c",
+    "userId": "9393a9db-4fc6-4b82-a993-ea827e455f2f",
+    "fullName": "সুলতানা চৌধুরী",
+    "email": "glen_corwin53@hotmail.com",
+    "phone": "+8801966397299",
+    "nidNumber": "36006259750384",
+    "experienceYears": 11,
+    "services": [
+      "Medication Management",
+      "Meal Preparation",
+      "Mental Health Support",
+      "Diabetes Care",
+      "Post-Surgery Care",
+      "Mobility Assistance"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Motijheel",
+      "address": "176, Motijheel",
+      "latitude": 23.78887536260428,
+      "longitude": 90.4044840664448
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 11 বছরের অভিজ্ঞতা। Medication Management, Meal Preparation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=LYcOxIh1",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-19T17:06:23.876Z"
+    },
+    "ratings": {
+      "averageRating": 4.67,
+      "totalReviews": 104,
+      "fiveStarCount": 85,
+      "fourStarCount": 10,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 544,
+    "createdAt": "2025-03-18T17:06:23.876Z",
+    "area": "banani",
+    "sub_area": "বনানী",
+    "address_line": "House 39, Road 15"
+  },
+  {
+    "id": "b453a266-6b69-4751-9b71-ee9558f79059",
+    "userId": "b3272d0e-4704-41ca-8db1-ca793d969e16",
+    "fullName": "রাশেদ ইসলাম",
+    "email": "anthony_walsh31@hotmail.com",
+    "phone": "+8801427087395",
+    "nidNumber": "83689374790607",
+    "experienceYears": 7,
+    "services": [
+      "Diabetes Care",
+      "Physiotherapy",
+      "Medication Management",
+      "Palliative Care",
+      "Dementia Care",
+      "Personal Care",
+      "Rehabilitation",
+      "Nursing"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "119, Badda",
+      "latitude": 23.7961948801639,
+      "longitude": 90.403768054041
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 7 বছরের অভিজ্ঞতা। Diabetes Care, Physiotherapy এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=A1PINIPc",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-15T17:06:23.876Z"
+    },
+    "ratings": {
+      "averageRating": 4.97,
+      "totalReviews": 33,
+      "fiveStarCount": 25,
+      "fourStarCount": 14,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 565,
+    "createdAt": "2025-02-25T17:06:23.876Z",
+    "area": "banani",
+    "sub_area": "বনানী",
+    "address_line": "House 21, Road 8"
+  },
+  {
+    "id": "71fa0798-f639-4b53-b63b-b9063041c360",
+    "userId": "fa4d9d56-db68-4c00-8c7a-4b589a0d7228",
+    "fullName": "পারভিন পারভীন",
+    "email": "noemie.mcglynn93@gmail.com",
+    "phone": "+8801406310810",
+    "nidNumber": "65641435642095",
+    "experienceYears": 3,
+    "services": [
+      "Personal Care",
+      "Meal Preparation",
+      "Companionship",
+      "Nursing"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Gulshan",
+      "address": "96, Gulshan",
+      "latitude": 23.71083434928961,
+      "longitude": 90.4308260765793
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 3 বছরের অভিজ্ঞতা। Personal Care, Meal Preparation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=QH5xDHUa",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-12-05T17:06:23.877Z"
+    },
+    "ratings": {
+      "averageRating": 4.14,
+      "totalReviews": 74,
+      "fiveStarCount": 41,
+      "fourStarCount": 14,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 394,
+    "createdAt": "2025-11-13T17:06:23.877Z",
+    "area": "jatrabari",
+    "sub_area": "শনির আখড়া",
+    "address_line": "House 9, Road 1"
+  },
+  {
+    "id": "8ec4058c-8afe-4e72-9270-33ae37403e0e",
+    "userId": "4183354c-9c73-4653-a6f8-7d58377d87ef",
+    "fullName": "আয়েশা রহমান",
+    "email": "neal15@gmail.com",
+    "phone": "+8801346354502",
+    "nidNumber": "59831033795724",
+    "experienceYears": 13,
+    "services": [
+      "Blood Pressure Monitoring",
+      "Personal Care",
+      "Physiotherapy",
+      "Dementia Care",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Kalyanpur",
+      "address": "2, Kalyanpur",
+      "latitude": 23.748756842026573,
+      "longitude": 90.3773298877801
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Blood Pressure Monitoring, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=bp1xlCQg",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-01-23T17:06:23.877Z"
+    },
+    "ratings": {
+      "averageRating": 4.73,
+      "totalReviews": 40,
+      "fiveStarCount": 58,
+      "fourStarCount": 11,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 531,
+    "createdAt": "2025-01-14T17:06:23.877Z",
+    "area": "dhanmondi",
+    "sub_area": "ধানমন্ডি ৮/এ",
+    "address_line": "House 30, Road 5"
+  },
+  {
+    "id": "afbcd601-811b-42d0-ba7d-af01661b8151",
+    "userId": "2351331b-6e65-4b33-8d7f-395755a0df83",
+    "fullName": "শিরিন পারভীন",
+    "email": "dallas_kiehn17@gmail.com",
+    "phone": "+8801520001277",
+    "nidNumber": "32368646577644",
+    "experienceYears": 10,
+    "services": [
+      "Mental Health Support",
+      "Companionship",
+      "Diabetes Care",
+      "Wound Care",
+      "Rehabilitation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Agargaon",
+      "address": "84, Agargaon",
+      "latitude": 23.746872886367154,
+      "longitude": 90.4220207092395
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Mental Health Support, Companionship এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=xKfgvIIL",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-01-08T17:06:23.877Z"
+    },
+    "ratings": {
+      "averageRating": 4.78,
+      "totalReviews": 99,
+      "fiveStarCount": 59,
+      "fourStarCount": 10,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 538,
+    "createdAt": "2024-12-14T17:06:23.877Z",
+    "area": "khilgaon",
+    "sub_area": "খিলগাঁও",
+    "address_line": "House 44, Road 10"
+  },
+  {
+    "id": "75e08a98-1789-4bc1-9aa1-5b6324bf9363",
+    "userId": "57570826-8c21-4d8a-bd78-a71d3a63380d",
+    "fullName": "ফাতেমা রায়",
+    "email": "otho_considine42@hotmail.com",
+    "phone": "+8801704411177",
+    "nidNumber": "38034326427881",
+    "experienceYears": 8,
+    "services": [
+      "Diabetes Care",
+      "Blood Pressure Monitoring",
+      "Nursing",
+      "Physiotherapy",
+      "Medication Management",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Motijheel",
+      "address": "53, Motijheel",
+      "latitude": 23.748207554294126,
+      "longitude": 90.38110862722294
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 8 বছরের অভিজ্ঞতা। Diabetes Care, Blood Pressure Monitoring এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=8ucQkDRV",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-03T17:06:23.878Z"
+    },
+    "ratings": {
+      "averageRating": 4.98,
+      "totalReviews": 35,
+      "fiveStarCount": 32,
+      "fourStarCount": 9,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 565,
+    "createdAt": "2025-05-23T17:06:23.878Z",
+    "area": "dhanmondi",
+    "sub_area": "ধানমন্ডি ৪/এ",
+    "address_line": "House 13, Road 14"
+  },
+  {
+    "id": "86a0da0a-720e-4f8d-9e36-58b6386da74e",
+    "userId": "bac9e2db-848c-4889-84e4-48c0e9f8858d",
+    "fullName": "তারেক হক",
+    "email": "emerald_nicolas97@yahoo.com",
+    "phone": "+8801648992982",
+    "nidNumber": "74045781335080",
+    "experienceYears": 14,
+    "services": [
+      "Palliative Care",
+      "Mobility Assistance",
+      "Personal Care",
+      "Companionship",
+      "Medication Management",
+      "Diabetes Care",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Dhanmondi",
+      "address": "18, Dhanmondi",
+      "latitude": 23.809569222749992,
+      "longitude": 90.35772189539415
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 14 বছরের অভিজ্ঞতা। Palliative Care, Mobility Assistance এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=deb6Lhh9",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-15T17:06:23.878Z"
+    },
+    "ratings": {
+      "averageRating": 4.65,
+      "totalReviews": 69,
+      "fiveStarCount": 92,
+      "fourStarCount": 11,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 564,
+    "createdAt": "2025-07-31T17:06:23.878Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ৬",
+    "address_line": "House 40, Road 12"
+  },
+  {
+    "id": "90f26976-226f-4b4c-b756-e5d2d8e34f4a",
+    "userId": "6be48c22-861c-44e2-a73b-10a43ebca260",
+    "fullName": "করিম মল্লিক",
+    "email": "otis66@hotmail.com",
+    "phone": "+8801936158513",
+    "nidNumber": "34993835680023",
+    "experienceYears": 3,
+    "services": [
+      "Companionship",
+      "Personal Care",
+      "Wound Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Motijheel",
+      "address": "148, Motijheel",
+      "latitude": 23.770387135083293,
+      "longitude": 90.37294474866222
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 3 বছরের অভিজ্ঞতা। Companionship, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=mjukmHf2",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-09-11T17:06:23.878Z"
+    },
+    "ratings": {
+      "averageRating": 4.49,
+      "totalReviews": 25,
+      "fiveStarCount": 87,
+      "fourStarCount": 13,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 392,
+    "createdAt": "2025-08-22T17:06:23.878Z",
+    "area": "shyamoli",
+    "sub_area": "কলাবাগান",
+    "address_line": "House 33, Road 10"
+  },
+  {
+    "id": "bdee76fe-fbb2-427c-a3fa-9ea8d051edbe",
+    "userId": "4cd81b8a-b478-487e-82d6-fb508a19d40b",
+    "fullName": "শাহনাজ পারভীন",
+    "email": "ted.herzog@gmail.com",
+    "phone": "+8801735781757",
+    "nidNumber": "99395260146124",
+    "experienceYears": 9,
+    "services": [
+      "Companionship",
+      "Blood Pressure Monitoring",
+      "Medication Management",
+      "Meal Preparation",
+      "Diabetes Care",
+      "Post-Surgery Care",
+      "Nursing",
+      "Rehabilitation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Gulshan",
+      "address": "32, Gulshan",
+      "latitude": 23.78822337480696,
+      "longitude": 90.41091217822526
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 9 বছরের অভিজ্ঞতা। Companionship, Blood Pressure Monitoring এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=PPmrr17s",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-05-30T17:06:23.878Z"
+    },
+    "ratings": {
+      "averageRating": 4.65,
+      "totalReviews": 40,
+      "fiveStarCount": 27,
+      "fourStarCount": 7,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 547,
+    "createdAt": "2025-05-04T17:06:23.878Z",
+    "area": "gulshan",
+    "sub_area": "গুলশান ২",
+    "address_line": "House 15, Road 16"
+  },
+  {
+    "id": "be608db2-95c7-4c6c-8ca6-63e7c2fc3c67",
+    "userId": "c1b9fc3a-2559-4055-93d4-9be5f65295e1",
+    "fullName": "মোহাম্মদ খান",
+    "email": "brennon.johnson@hotmail.com",
+    "phone": "+8801828160857",
+    "nidNumber": "80592564264421",
+    "experienceYears": 14,
+    "services": [
+      "Personal Care",
+      "Physiotherapy",
+      "Blood Pressure Monitoring",
+      "Mobility Assistance",
+      "Respiratory Care",
+      "Nursing"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Agargaon",
+      "address": "191, Agargaon",
+      "latitude": 23.751377251333572,
+      "longitude": 90.43125439491564
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 14 বছরের অভিজ্ঞতা। Personal Care, Physiotherapy এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=bEkfGm4u",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-14T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 4.83,
+      "totalReviews": 108,
+      "fiveStarCount": 99,
+      "fourStarCount": 7,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 530,
+    "createdAt": "2025-08-05T17:06:23.879Z",
+    "area": "khilgaon",
+    "sub_area": "বাসাবো",
+    "address_line": "House 35, Road 20"
+  },
+  {
+    "id": "78f4c85c-58a7-4351-a339-71f687761a7f",
+    "userId": "6f5eb28b-a90f-41c4-816d-e384d297328f",
+    "fullName": "মোহাম্মদ রহমান",
+    "email": "earnestine_champlin@yahoo.com",
+    "phone": "+8801852082508",
+    "nidNumber": "56530690221024",
+    "experienceYears": 6,
+    "services": [
+      "Dementia Care",
+      "Personal Care",
+      "Companionship"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Khilgaon",
+      "address": "100, Khilgaon",
+      "latitude": 23.78109340671981,
+      "longitude": 90.42250932611482
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 6 বছরের অভিজ্ঞতা। Dementia Care, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=6VITEBim",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-21T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 4.31,
+      "totalReviews": 90,
+      "fiveStarCount": 92,
+      "fourStarCount": 5,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 389,
+    "createdAt": "2024-12-11T17:06:23.879Z",
+    "area": "badda",
+    "sub_area": "মেরুল বাড্ডা",
+    "address_line": "House 48, Road 12"
+  },
+  {
+    "id": "1941299a-e4f2-4c43-87f9-cffa2694c217",
+    "userId": "ef1e0289-93f7-408c-8250-052479694727",
+    "fullName": "আঞ্জুমান পারভীন",
+    "email": "adolphus_beier@yahoo.com",
+    "phone": "+8801739876263",
+    "nidNumber": "20674862700159",
+    "experienceYears": 9,
+    "services": [
+      "Respiratory Care",
+      "Wound Care",
+      "Medication Management",
+      "Mobility Assistance",
+      "Diabetes Care",
+      "Personal Care",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Khilgaon",
+      "address": "94, Khilgaon",
+      "latitude": 23.77581002700345,
+      "longitude": 90.42912786465924
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 9 বছরের অভিজ্ঞতা। Respiratory Care, Wound Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=5iOiAhle",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-26T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 4.97,
+      "totalReviews": 112,
+      "fiveStarCount": 65,
+      "fourStarCount": 11,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 533,
+    "createdAt": "2025-05-29T17:06:23.879Z",
+    "area": "badda",
+    "sub_area": "শাহজাদপুর",
+    "address_line": "House 26, Road 11"
+  },
+  {
+    "id": "946306cd-4335-4fad-b025-eb412c52dab3",
+    "userId": "c42c5338-4dc9-4bd6-bbae-f2c2b28d6d25",
+    "fullName": "আঞ্জুমান খান",
+    "email": "hildegard.gutkowski99@yahoo.com",
+    "phone": "+8801979522583",
+    "nidNumber": "17579907407264",
+    "experienceYears": 9,
+    "services": [
+      "Blood Pressure Monitoring",
+      "Rehabilitation",
+      "Palliative Care",
+      "Respiratory Care",
+      "Physiotherapy"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "168, Mogbazar",
+      "latitude": 23.71056974738022,
+      "longitude": 90.42953471520629
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 9 বছরের অভিজ্ঞতা। Blood Pressure Monitoring, Rehabilitation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=sVmjigNy",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-02-24T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 4.63,
+      "totalReviews": 110,
+      "fiveStarCount": 36,
+      "fourStarCount": 13,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 500,
+    "createdAt": "2025-02-23T17:06:23.879Z",
+    "area": "jatrabari",
+    "sub_area": "যাত্রাবাড়ী",
+    "address_line": "House 38, Road 16"
+  },
+  {
+    "id": "b614eec2-8e22-484b-8c1d-c9c0b91722c7",
+    "userId": "7576acde-ccd9-4edb-8a73-e68b90f3efcc",
+    "fullName": "পারভিন খান",
+    "email": "haleigh.stehr71@gmail.com",
+    "phone": "+8801449978722",
+    "nidNumber": "16982400015452",
+    "experienceYears": 5,
+    "services": [
+      "Post-Surgery Care",
+      "Nursing",
+      "Physiotherapy",
+      "Respiratory Care",
+      "Dementia Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "195, Mogbazar",
+      "latitude": 23.873038270121874,
+      "longitude": 90.39659060398745
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Post-Surgery Care, Nursing এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=XW3rE6Tl",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-22T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 4.28,
+      "totalReviews": 78,
+      "fiveStarCount": 75,
+      "fourStarCount": 14,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 357,
+    "createdAt": "2025-05-25T17:06:23.879Z",
+    "area": "uttara",
+    "sub_area": "উত্তরা সেক্টর ১",
+    "address_line": "House 47, Road 16"
+  },
+  {
+    "id": "4ad88d29-d1e8-4c93-904f-3cdb475dd795",
+    "userId": "ab55cd3b-48b6-4dbc-b630-2f886c47e229",
+    "fullName": "শাহ হক",
+    "email": "janelle_aufderhar55@gmail.com",
+    "phone": "+8801323931805",
+    "nidNumber": "12945824523484",
+    "experienceYears": 3,
+    "services": [
+      "Post-Surgery Care",
+      "Nursing",
+      "Respiratory Care",
+      "Palliative Care",
+      "Wound Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mirpur",
+      "address": "7, Mirpur",
+      "latitude": 23.831698594174824,
+      "longitude": 90.41388263391794
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 3 বছরের অভিজ্ঞতা। Post-Surgery Care, Nursing এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=3VdwII7c",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-03T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 4.29,
+      "totalReviews": 61,
+      "fiveStarCount": 45,
+      "fourStarCount": 13,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 351,
+    "createdAt": "2025-07-28T17:06:23.879Z",
+    "area": "uttarkhan",
+    "sub_area": "দক্ষিণখান",
+    "address_line": "House 31, Road 5"
+  },
+  {
+    "id": "ffc4769b-8c0e-463e-ac44-2d6c72666e1e",
+    "userId": "f44cf844-22a7-4ac4-9525-b0f344be829a",
+    "fullName": "তাসলিমা নাহার",
+    "email": "merl95@gmail.com",
+    "phone": "+8801707604872",
+    "nidNumber": "04206040466222",
+    "experienceYears": 7,
+    "services": [
+      "Dementia Care",
+      "Post-Surgery Care",
+      "Palliative Care",
+      "Rehabilitation",
+      "Mobility Assistance",
+      "Physiotherapy"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Dhanmondi",
+      "address": "184, Dhanmondi",
+      "latitude": 23.70941225807558,
+      "longitude": 90.432188629685
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 7 বছরের অভিজ্ঞতা। Dementia Care, Post-Surgery Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=G5De5y01",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-26T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 4.71,
+      "totalReviews": 37,
+      "fiveStarCount": 33,
+      "fourStarCount": 7,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 552,
+    "createdAt": "2025-04-14T17:06:23.879Z",
+    "area": "jatrabari",
+    "sub_area": "সায়েদাবাদ",
+    "address_line": "House 38, Road 3"
+  },
+  {
+    "id": "0e403563-76cd-4ca1-bdf4-c8cff28c9665",
+    "userId": "8cb8ea47-3d8d-4bce-9f00-21c96ed38727",
+    "fullName": "জাহানারা হক",
+    "email": "kameron.nader@hotmail.com",
+    "phone": "+8801351015106",
+    "nidNumber": "94593029838550",
+    "experienceYears": 4,
+    "services": [
+      "Post-Surgery Care",
+      "Personal Care",
+      "Medication Management",
+      "Rehabilitation",
+      "Companionship"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Shyamoli",
+      "address": "194, Shyamoli",
+      "latitude": 23.870715931868418,
+      "longitude": 90.39420318560347
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 4 বছরের অভিজ্ঞতা। Post-Surgery Care, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=pt2So1kr",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-09T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 4.2,
+      "totalReviews": 87,
+      "fiveStarCount": 58,
+      "fourStarCount": 10,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 426,
+    "createdAt": "2025-03-17T17:06:23.879Z",
+    "area": "uttara",
+    "sub_area": "উত্তরা সেক্টর ৬",
+    "address_line": "House 25, Road 6"
+  },
+  {
+    "id": "57044037-e8ab-411c-9fed-ac784ae4723f",
+    "userId": "2831a7bf-c9cc-4d64-beb3-938cee3bd0d0",
+    "fullName": "রুমানা রহমান",
+    "email": "darron.marquardt@hotmail.com",
+    "phone": "+8801946079847",
+    "nidNumber": "71415918090848",
+    "experienceYears": 2,
+    "services": [
+      "Respiratory Care",
+      "Companionship",
+      "Medication Management"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Motijheel",
+      "address": "82, Motijheel",
+      "latitude": 23.758904722062905,
+      "longitude": 90.35981248163314
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 2 বছরের অভিজ্ঞতা। Respiratory Care, Companionship এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=DrWTAKYp",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-03T17:06:23.879Z"
+    },
+    "ratings": {
+      "averageRating": 3.68,
+      "totalReviews": 76,
+      "fiveStarCount": 22,
+      "fourStarCount": 8,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 212,
+    "createdAt": "2025-03-11T17:06:23.879Z",
+    "area": "mohammadpur",
+    "sub_area": "শ্যামলী",
+    "address_line": "House 46, Road 17"
+  },
+  {
+    "id": "072c0cd1-8509-430d-b304-1dc3a1832e5a",
+    "userId": "9af06666-d9c9-4b7d-b23d-caafb53e1a3e",
+    "fullName": "আয়েশা রায়",
+    "email": "rowena1@yahoo.com",
+    "phone": "+8801882100429",
+    "nidNumber": "69432844869106",
+    "experienceYears": 5,
+    "services": [
+      "Mobility Assistance",
+      "Blood Pressure Monitoring",
+      "Respiratory Care",
+      "Rehabilitation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Dhanmondi",
+      "address": "34, Dhanmondi",
+      "latitude": 23.811127408519678,
+      "longitude": 90.35741914903035
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Mobility Assistance, Blood Pressure Monitoring এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=lGSDyN6Q",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-16T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.06,
+      "totalReviews": 117,
+      "fiveStarCount": 64,
+      "fourStarCount": 12,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 382,
+    "createdAt": "2025-07-16T17:06:23.880Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ২",
+    "address_line": "House 3, Road 20"
+  },
+  {
+    "id": "6951bf85-0d12-4061-b330-bc7b933c3ceb",
+    "userId": "8bcb4c75-e056-41dc-9bd5-513443a58cee",
+    "fullName": "রুমানা খাতুন",
+    "email": "martin17@yahoo.com",
+    "phone": "+8801791451991",
+    "nidNumber": "90001354089349",
+    "experienceYears": 15,
+    "services": [
+      "Medication Management",
+      "Personal Care",
+      "Mental Health Support",
+      "Mobility Assistance",
+      "Companionship",
+      "Rehabilitation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Tejgaon",
+      "address": "95, Tejgaon",
+      "latitude": 23.804912166886268,
+      "longitude": 90.35312638339231
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 15 বছরের অভিজ্ঞতা। Medication Management, Personal Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=6Evlg7bw",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-11-10T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.74,
+      "totalReviews": 91,
+      "fiveStarCount": 58,
+      "fourStarCount": 8,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 539,
+    "createdAt": "2025-10-21T17:06:23.880Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ২",
+    "address_line": "House 3, Road 8"
+  },
+  {
+    "id": "2fa4fae7-ff83-4f92-b799-f7255e93592d",
+    "userId": "df7f721d-b98d-4c33-87d4-a8e930ab1322",
+    "fullName": "জাহিদ তালুকদার",
+    "email": "sylvan21@yahoo.com",
+    "phone": "+8801959750703",
+    "nidNumber": "16921433503705",
+    "experienceYears": 3,
+    "services": [
+      "Diabetes Care",
+      "Respiratory Care",
+      "Medication Management",
+      "Mobility Assistance",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "58, Mogbazar",
+      "latitude": 23.748317654491384,
+      "longitude": 90.43154833840848
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 3 বছরের অভিজ্ঞতা। Diabetes Care, Respiratory Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=g9kKraBf",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-02-18T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.27,
+      "totalReviews": 36,
+      "fiveStarCount": 48,
+      "fourStarCount": 12,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 371,
+    "createdAt": "2025-01-31T17:06:23.880Z",
+    "area": "khilgaon",
+    "sub_area": "গোড়ান",
+    "address_line": "House 21, Road 13"
+  },
+  {
+    "id": "ee273670-7e34-4787-b769-c3a06104c859",
+    "userId": "08c00c4a-d4cc-4124-8ff7-8910f749e3ad",
+    "fullName": "খাদিজা রহমান",
+    "email": "betty_braun@hotmail.com",
+    "phone": "+8801586348681",
+    "nidNumber": "50358231824862",
+    "experienceYears": 11,
+    "services": [
+      "Blood Pressure Monitoring",
+      "Nursing",
+      "Respiratory Care",
+      "Meal Preparation",
+      "Medication Management",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Kalyanpur",
+      "address": "10, Kalyanpur",
+      "latitude": 23.74215602090874,
+      "longitude": 90.37533236096898
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 11 বছরের অভিজ্ঞতা। Blood Pressure Monitoring, Nursing এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=HE2kUDM7",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-07T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.73,
+      "totalReviews": 102,
+      "fiveStarCount": 49,
+      "fourStarCount": 11,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 542,
+    "createdAt": "2025-02-18T17:06:23.880Z",
+    "area": "dhanmondi",
+    "sub_area": "ধানমন্ডি ২৭",
+    "address_line": "House 6, Road 15"
+  },
+  {
+    "id": "051f5015-f9e0-4afc-a23c-5d1492c90798",
+    "userId": "0848338e-7b33-496e-bbc8-cde88ca9e48f",
+    "fullName": "সালমা খাতুন",
+    "email": "armando15@yahoo.com",
+    "phone": "+8801766503019",
+    "nidNumber": "49404475162432",
+    "experienceYears": 6,
+    "services": [
+      "Meal Preparation",
+      "Rehabilitation",
+      "Dementia Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Gulshan",
+      "address": "123, Gulshan",
+      "latitude": 23.79416432769344,
+      "longitude": 90.41693066686021
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 6 বছরের অভিজ্ঞতা। Meal Preparation, Rehabilitation এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=JZIC6RQr",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-01-07T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.23,
+      "totalReviews": 74,
+      "fiveStarCount": 36,
+      "fourStarCount": 6,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 393,
+    "createdAt": "2024-12-22T17:06:23.880Z",
+    "area": "gulshan",
+    "sub_area": "নিকেতন",
+    "address_line": "House 34, Road 9"
+  },
+  {
+    "id": "bde68adc-9e23-4a23-8e87-cf3b868a714b",
+    "userId": "feff91c3-d639-4351-b5ab-c94a87ecea29",
+    "fullName": "সাবিনা খান",
+    "email": "baby.altenwerth80@hotmail.com",
+    "phone": "+8801892383165",
+    "nidNumber": "52577881361352",
+    "experienceYears": 10,
+    "services": [
+      "Wound Care",
+      "Mobility Assistance",
+      "Companionship",
+      "Mental Health Support",
+      "Personal Care",
+      "Dementia Care",
+      "Physiotherapy",
+      "Medication Management"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "167, Mogbazar",
+      "latitude": 23.7978717874161,
+      "longitude": 90.40901673069826
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Wound Care, Mobility Assistance এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=sPwWBljT",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-22T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.65,
+      "totalReviews": 71,
+      "fiveStarCount": 83,
+      "fourStarCount": 9,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 592,
+    "createdAt": "2025-04-01T17:06:23.880Z",
+    "area": "banani",
+    "sub_area": "মহাখালী ডিওএইচএস",
+    "address_line": "House 47, Road 13"
+  },
+  {
+    "id": "b40ad236-893d-45fe-8d47-9fe0f8f68a0d",
+    "userId": "9c9704ec-5e52-48ce-9dfd-cdb5bf8f9849",
+    "fullName": "নাসির রহমান",
+    "email": "anastasia.lakin@hotmail.com",
+    "phone": "+8801826232732",
+    "nidNumber": "46582130002683",
+    "experienceYears": 13,
+    "services": [
+      "Wound Care",
+      "Mobility Assistance",
+      "Rehabilitation",
+      "Medication Management",
+      "Meal Preparation",
+      "Respiratory Care",
+      "Physiotherapy"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "15, Badda",
+      "latitude": 23.790192070674923,
+      "longitude": 90.42016044514628
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Wound Care, Mobility Assistance এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Z5pBcSDI",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-05-04T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.72,
+      "totalReviews": 118,
+      "fiveStarCount": 93,
+      "fourStarCount": 7,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 509,
+    "createdAt": "2025-04-07T17:06:23.880Z",
+    "area": "gulshan",
+    "sub_area": "গুলশান ১",
+    "address_line": "House 38, Road 17"
+  },
+  {
+    "id": "0d103440-b55e-457c-9ed8-df8b0715361b",
+    "userId": "fb45d8e8-dfd7-4e3d-8eb7-cf869e153c58",
+    "fullName": "রেহানা শর্মা",
+    "email": "miracle_mckenzie@hotmail.com",
+    "phone": "+8801824223866",
+    "nidNumber": "88201169579551",
+    "experienceYears": 2,
+    "services": [
+      "Mobility Assistance",
+      "Medication Management"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Tejgaon",
+      "address": "173, Tejgaon",
+      "latitude": 23.78357789868535,
+      "longitude": 90.42183637682558
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 2 বছরের অভিজ্ঞতা। Mobility Assistance, Medication Management এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=mOPxkg6C",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-09-15T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 3.55,
+      "totalReviews": 53,
+      "fiveStarCount": 88,
+      "fourStarCount": 6,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 210,
+    "createdAt": "2025-09-10T17:06:23.880Z",
+    "area": "badda",
+    "sub_area": "শাহজাদপুর",
+    "address_line": "House 38, Road 10"
+  },
+  {
+    "id": "4aa46d00-9e4d-486d-a459-9da0f4e419fb",
+    "userId": "c7558ef5-b852-4701-8636-d72af9eb81cb",
+    "fullName": "রোকেয়া বেগম",
+    "email": "gladyce70@yahoo.com",
+    "phone": "+8801613168838",
+    "nidNumber": "15198725515570",
+    "experienceYears": 8,
+    "services": [
+      "Meal Preparation",
+      "Dementia Care",
+      "Rehabilitation",
+      "Companionship",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mohammadpur",
+      "address": "16, Mohammadpur",
+      "latitude": 23.790991242407443,
+      "longitude": 90.40553750071275
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 8 বছরের অভিজ্ঞতা। Meal Preparation, Dementia Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=y5pgQkaB",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-02-16T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.51,
+      "totalReviews": 94,
+      "fiveStarCount": 67,
+      "fourStarCount": 8,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 574,
+    "createdAt": "2025-01-18T17:06:23.880Z",
+    "area": "banani",
+    "sub_area": "কাকরাইল",
+    "address_line": "House 33, Road 11"
+  },
+  {
+    "id": "c5c85d0f-ae53-4c32-923c-372d8f2c816b",
+    "userId": "9a03d32c-1694-4035-98da-420a14b76c76",
+    "fullName": "আঞ্জুমান বেগম",
+    "email": "raven_jacobson@hotmail.com",
+    "phone": "+8801427695711",
+    "nidNumber": "77795348045863",
+    "experienceYears": 13,
+    "services": [
+      "Physiotherapy",
+      "Nursing",
+      "Respiratory Care",
+      "Blood Pressure Monitoring",
+      "Diabetes Care",
+      "Medication Management",
+      "Palliative Care",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Rampura",
+      "address": "24, Rampura",
+      "latitude": 23.788718669703226,
+      "longitude": 90.41780981509548
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Physiotherapy, Nursing এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=53ysNBZx",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-13T17:06:23.880Z"
+    },
+    "ratings": {
+      "averageRating": 4.7,
+      "totalReviews": 106,
+      "fiveStarCount": 77,
+      "fourStarCount": 13,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 536,
+    "createdAt": "2025-07-20T17:06:23.880Z",
+    "area": "gulshan",
+    "sub_area": "বারিধারা ডিওএইচএস",
+    "address_line": "House 36, Road 3"
+  },
+  {
+    "id": "08007d44-9636-437c-b9f1-d54812395498",
+    "userId": "a77f7cd5-0e41-4c86-93f1-bd15e1c3a337",
+    "fullName": "তাসলিমা রায়",
+    "email": "makenzie_jacobi23@gmail.com",
+    "phone": "+8801979579953",
+    "nidNumber": "51734827071274",
+    "experienceYears": 10,
+    "services": [
+      "Blood Pressure Monitoring",
+      "Wound Care",
+      "Post-Surgery Care",
+      "Dementia Care",
+      "Physiotherapy",
+      "Mobility Assistance",
+      "Rehabilitation",
+      "Personal Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "159, Badda",
+      "latitude": 23.8081105032077,
+      "longitude": 90.36065885530562
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Blood Pressure Monitoring, Wound Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=03sVV0F1",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-23T17:06:23.881Z"
+    },
+    "ratings": {
+      "averageRating": 4.75,
+      "totalReviews": 29,
+      "fiveStarCount": 42,
+      "fourStarCount": 8,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 534,
+    "createdAt": "2025-10-16T17:06:23.881Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ১২",
+    "address_line": "House 22, Road 6"
+  },
+  {
+    "id": "824ee25b-960a-4cad-ace3-60ca16ea73cc",
+    "userId": "f98c3edf-0f78-4755-ab29-3158667eb514",
+    "fullName": "রোকেয়া বেগম",
+    "email": "niko.veum47@hotmail.com",
+    "phone": "+8801445074059",
+    "nidNumber": "60857944686121",
+    "experienceYears": 6,
+    "services": [
+      "Post-Surgery Care",
+      "Respiratory Care",
+      "Blood Pressure Monitoring",
+      "Diabetes Care",
+      "Physiotherapy"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Tejgaon",
+      "address": "133, Tejgaon",
+      "latitude": 23.791210025372287,
+      "longitude": 90.4029442625633
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 6 বছরের অভিজ্ঞতা। Post-Surgery Care, Respiratory Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=8CXsXLhx",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-23T17:06:23.881Z"
+    },
+    "ratings": {
+      "averageRating": 4.23,
+      "totalReviews": 57,
+      "fiveStarCount": 93,
+      "fourStarCount": 10,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 445,
+    "createdAt": "2025-10-21T17:06:23.881Z",
+    "area": "banani",
+    "sub_area": "বনানী ডিওএইচএস",
+    "address_line": "House 9, Road 5"
+  },
+  {
+    "id": "f9cf514a-a787-40a5-94c9-cbfb289e611c",
+    "userId": "c9fa0220-d5e7-444f-bcef-64a49c547c6a",
+    "fullName": "সুলতানা চৌধুরী",
+    "email": "name_altenwerth@hotmail.com",
+    "phone": "+8801693320936",
+    "nidNumber": "19270499319745",
+    "experienceYears": 13,
+    "services": [
+      "Companionship",
+      "Mental Health Support",
+      "Blood Pressure Monitoring",
+      "Medication Management",
+      "Dementia Care",
+      "Palliative Care",
+      "Personal Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Uttara",
+      "address": "102, Uttara",
+      "latitude": 23.72991553424224,
+      "longitude": 90.4216301582629
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Companionship, Mental Health Support এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=irYW65zE",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-02-15T17:06:23.881Z"
+    },
+    "ratings": {
+      "averageRating": 4.72,
+      "totalReviews": 68,
+      "fiveStarCount": 72,
+      "fourStarCount": 9,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 521,
+    "createdAt": "2025-01-25T17:06:23.881Z",
+    "area": "motijheel",
+    "sub_area": "মতিঝিল",
+    "address_line": "House 20, Road 20"
+  },
+  {
+    "id": "b474b999-473a-4606-8e5c-082484e81a9d",
+    "userId": "bfb81886-1773-475e-a44b-ccd693b88330",
+    "fullName": "রাবেয়া দাস",
+    "email": "julio_funk@yahoo.com",
+    "phone": "+8801842647157",
+    "nidNumber": "29254964852365",
+    "experienceYears": 15,
+    "services": [
+      "Personal Care",
+      "Nursing",
+      "Respiratory Care",
+      "Meal Preparation",
+      "Mobility Assistance",
+      "Physiotherapy",
+      "Blood Pressure Monitoring"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Khilgaon",
+      "address": "192, Khilgaon",
+      "latitude": 23.836508449146294,
+      "longitude": 90.41047593813536
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 15 বছরের অভিজ্ঞতা। Personal Care, Nursing এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=YmhOBmOo",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-25T17:06:23.881Z"
+    },
+    "ratings": {
+      "averageRating": 4.73,
+      "totalReviews": 59,
+      "fiveStarCount": 80,
+      "fourStarCount": 6,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 588,
+    "createdAt": "2025-07-31T17:06:23.881Z",
+    "area": "uttarkhan",
+    "sub_area": "ভাসানটেক",
+    "address_line": "House 6, Road 14"
+  },
+  {
+    "id": "0dbee6ed-575c-4143-8dff-8a5a78f22059",
+    "userId": "384c2e10-8b23-49e0-b4ad-f5f2f5bd8068",
+    "fullName": "ফাতেমা শর্মা",
+    "email": "rosemarie.leannon2@hotmail.com",
+    "phone": "+8801515289897",
+    "nidNumber": "55458435037782",
+    "experienceYears": 6,
+    "services": [
+      "Companionship",
+      "Palliative Care",
+      "Blood Pressure Monitoring",
+      "Mobility Assistance"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Dhanmondi",
+      "address": "68, Dhanmondi",
+      "latitude": 23.710049415328562,
+      "longitude": 90.4313609693939
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 6 বছরের অভিজ্ঞতা। Companionship, Palliative Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=rIQXZE61",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-11-02T17:06:23.881Z"
+    },
+    "ratings": {
+      "averageRating": 4.2,
+      "totalReviews": 56,
+      "fiveStarCount": 64,
+      "fourStarCount": 6,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 389,
+    "createdAt": "2025-10-13T17:06:23.881Z",
+    "area": "jatrabari",
+    "sub_area": "শনির আখড়া",
+    "address_line": "House 13, Road 13"
+  },
+  {
+    "id": "33b31ec2-1464-4ef3-abb2-e44bb27b698c",
+    "userId": "8d0b5610-026d-4cd3-8d7c-1ebd89cf472b",
+    "fullName": "শিরিন হক",
+    "email": "allene62@hotmail.com",
+    "phone": "+8801765977594",
+    "nidNumber": "23954403625215",
+    "experienceYears": 13,
+    "services": [
+      "Physiotherapy",
+      "Medication Management",
+      "Personal Care",
+      "Wound Care",
+      "Meal Preparation",
+      "Respiratory Care",
+      "Companionship"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "119, Badda",
+      "latitude": 23.82990505043081,
+      "longitude": 90.41886205839846
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Physiotherapy, Medication Management এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=CWgoeh7i",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-24T17:06:23.882Z"
+    },
+    "ratings": {
+      "averageRating": 4.79,
+      "totalReviews": 58,
+      "fiveStarCount": 38,
+      "fourStarCount": 12,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 537,
+    "createdAt": "2025-07-17T17:06:23.882Z",
+    "area": "uttarkhan",
+    "sub_area": "দক্ষিণখান",
+    "address_line": "House 29, Road 4"
+  },
+  {
+    "id": "df07bf5e-4d47-446e-91b1-79447e34f551",
+    "userId": "274a4ca3-6467-4943-84cc-0a0580b70998",
+    "fullName": "রেহানা পারভীন",
+    "email": "elisha_murazik@gmail.com",
+    "phone": "+8801789110989",
+    "nidNumber": "17921780463887",
+    "experienceYears": 3,
+    "services": [
+      "Palliative Care",
+      "Meal Preparation",
+      "Diabetes Care",
+      "Rehabilitation",
+      "Blood Pressure Monitoring"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Rampura",
+      "address": "55, Rampura",
+      "latitude": 23.73039007890756,
+      "longitude": 90.4129451911474
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 3 বছরের অভিজ্ঞতা। Palliative Care, Meal Preparation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=ArIsZXKy",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-05-03T17:06:23.882Z"
+    },
+    "ratings": {
+      "averageRating": 4.44,
+      "totalReviews": 95,
+      "fiveStarCount": 30,
+      "fourStarCount": 14,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 447,
+    "createdAt": "2025-04-08T17:06:23.882Z",
+    "area": "motijheel",
+    "sub_area": "পল্টন",
+    "address_line": "House 13, Road 12"
+  },
+  {
+    "id": "9a044286-52c4-42f2-a488-13b42ec593bc",
+    "userId": "c7cb638c-b81f-4479-8374-45201b8bb83f",
+    "fullName": "আবদুল তালুকদার",
+    "email": "brian.harber-johns@gmail.com",
+    "phone": "+8801410593126",
+    "nidNumber": "11385368961526",
+    "experienceYears": 6,
+    "services": [
+      "Personal Care",
+      "Companionship",
+      "Post-Surgery Care",
+      "Wound Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Shyamoli",
+      "address": "176, Shyamoli",
+      "latitude": 23.77791904250515,
+      "longitude": 90.4274022635532
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 6 বছরের অভিজ্ঞতা। Personal Care, Companionship এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=uFMRRUZY",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-21T17:06:23.882Z"
+    },
+    "ratings": {
+      "averageRating": 4.5,
+      "totalReviews": 77,
+      "fiveStarCount": 48,
+      "fourStarCount": 7,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 415,
+    "createdAt": "2025-03-28T17:06:23.882Z",
+    "area": "badda",
+    "sub_area": "শাহজাদপুর",
+    "address_line": "House 37, Road 13"
+  },
+  {
+    "id": "b9a609b4-90ba-42e9-8818-ad5fc8048273",
+    "userId": "03c96795-b7b3-4266-9e8f-e270dadc7ec1",
+    "fullName": "ফাতেমা খাতুন",
+    "email": "hollis.armstrong@yahoo.com",
+    "phone": "+8801782267460",
+    "nidNumber": "66967080334208",
+    "experienceYears": 7,
+    "services": [
+      "Physiotherapy",
+      "Diabetes Care",
+      "Personal Care",
+      "Dementia Care",
+      "Respiratory Care",
+      "Companionship",
+      "Medication Management",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mohammadpur",
+      "address": "17, Mohammadpur",
+      "latitude": 23.808838803975796,
+      "longitude": 90.36078514799084
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 7 বছরের অভিজ্ঞতা। Physiotherapy, Diabetes Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=mXwGKvkl",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-29T17:06:23.882Z"
+    },
+    "ratings": {
+      "averageRating": 4.87,
+      "totalReviews": 114,
+      "fiveStarCount": 32,
+      "fourStarCount": 7,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 593,
+    "createdAt": "2025-10-10T17:06:23.882Z",
+    "area": "mirpur",
+    "sub_area": "কল্যাণপুর",
+    "address_line": "House 33, Road 7"
+  },
+  {
+    "id": "1d3ae11f-0c47-44b2-bcd8-afe323177a53",
+    "userId": "626de4ed-d1b0-4def-9640-d7494e792fd8",
+    "fullName": "পারভিন দাস",
+    "email": "murphy_schimmel@gmail.com",
+    "phone": "+8801741101484",
+    "nidNumber": "96823863768886",
+    "experienceYears": 5,
+    "services": [
+      "Palliative Care",
+      "Wound Care",
+      "Meal Preparation",
+      "Rehabilitation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Kalyanpur",
+      "address": "127, Kalyanpur",
+      "latitude": 23.7627647979331,
+      "longitude": 90.3907615316674
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Palliative Care, Wound Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Osm70FPr",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-10T17:06:23.882Z"
+    },
+    "ratings": {
+      "averageRating": 4.48,
+      "totalReviews": 52,
+      "fiveStarCount": 71,
+      "fourStarCount": 7,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 351,
+    "createdAt": "2025-05-13T17:06:23.882Z",
+    "area": "tejgaon",
+    "sub_area": "কারওয়ান বাজার",
+    "address_line": "House 39, Road 16"
+  },
+  {
+    "id": "e77f9bd3-cb98-4a55-a244-4669026f7594",
+    "userId": "a7290224-a871-4a81-bc11-17521eeab2bd",
+    "fullName": "মাহমুদা রায়",
+    "email": "mark.hauck@yahoo.com",
+    "phone": "+8801591115727",
+    "nidNumber": "42519781969322",
+    "experienceYears": 1,
+    "services": [
+      "Medication Management",
+      "Respiratory Care",
+      "Dementia Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Khilgaon",
+      "address": "32, Khilgaon",
+      "latitude": 23.869324086681672,
+      "longitude": 90.39604527676612
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 1 বছরের অভিজ্ঞতা। Medication Management, Respiratory Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ec90DtlT",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-04T17:06:23.883Z"
+    },
+    "ratings": {
+      "averageRating": 3.75,
+      "totalReviews": 44,
+      "fiveStarCount": 32,
+      "fourStarCount": 8,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 237,
+    "createdAt": "2025-05-08T17:06:23.883Z",
+    "area": "uttara",
+    "sub_area": "উত্তরা সেক্টর ৬",
+    "address_line": "House 43, Road 1"
+  },
+  {
+    "id": "6c127a3c-1a39-4a1e-8da5-0430a6f9c464",
+    "userId": "0e38dccb-7174-4337-8a1f-b301068f60b6",
+    "fullName": "রাশেদ হক",
+    "email": "marcus84@hotmail.com",
+    "phone": "+8801528521379",
+    "nidNumber": "38519563188440",
+    "experienceYears": 10,
+    "services": [
+      "Meal Preparation",
+      "Personal Care",
+      "Palliative Care",
+      "Medication Management",
+      "Post-Surgery Care",
+      "Diabetes Care",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "184, Mogbazar",
+      "latitude": 23.810089820477593,
+      "longitude": 90.35267823555937
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Meal Preparation, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=XtBEXuCd",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-24T17:06:23.883Z"
+    },
+    "ratings": {
+      "averageRating": 4.85,
+      "totalReviews": 78,
+      "fiveStarCount": 92,
+      "fourStarCount": 13,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 571,
+    "createdAt": "2025-04-05T17:06:23.883Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ১",
+    "address_line": "House 14, Road 15"
+  },
+  {
+    "id": "233ddd99-f476-46f3-8b5b-11f69dd94ce9",
+    "userId": "3b60d7ee-afcc-429b-a425-2ef29fe26d5b",
+    "fullName": "রুমানা বেগম",
+    "email": "lou69@gmail.com",
+    "phone": "+8801689491699",
+    "nidNumber": "94464171683376",
+    "experienceYears": 5,
+    "services": [
+      "Physiotherapy",
+      "Post-Surgery Care",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "152, Mogbazar",
+      "latitude": 23.767713427323695,
+      "longitude": 90.36538001089365
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Physiotherapy, Post-Surgery Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=fLhPNviC",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-04T17:06:23.883Z"
+    },
+    "ratings": {
+      "averageRating": 4.4,
+      "totalReviews": 81,
+      "fiveStarCount": 99,
+      "fourStarCount": 14,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 445,
+    "createdAt": "2025-06-14T17:06:23.883Z",
+    "area": "shyamoli",
+    "sub_area": "শ্যামলী রিং রোড",
+    "address_line": "House 36, Road 17"
+  },
+  {
+    "id": "6ccf449f-c352-42bc-9354-ea95636b6dc9",
+    "userId": "2053eabf-de9f-4aa6-be98-dced3f1d0d42",
+    "fullName": "রাবেয়া দাস",
+    "email": "bulah46@gmail.com",
+    "phone": "+8801327369660",
+    "nidNumber": "02011293103565",
+    "experienceYears": 12,
+    "services": [
+      "Palliative Care",
+      "Personal Care",
+      "Companionship",
+      "Respiratory Care",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "28, Badda",
+      "latitude": 23.745421157466687,
+      "longitude": 90.37281321662783
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 12 বছরের অভিজ্ঞতা। Palliative Care, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=V9Pw41zx",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-09-04T17:06:23.883Z"
+    },
+    "ratings": {
+      "averageRating": 4.57,
+      "totalReviews": 109,
+      "fiveStarCount": 32,
+      "fourStarCount": 6,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 573,
+    "createdAt": "2025-08-11T17:06:23.883Z",
+    "area": "dhanmondi",
+    "sub_area": "সাত মসজিদ রোড",
+    "address_line": "House 15, Road 12"
+  },
+  {
+    "id": "a4cd6aef-1c78-4f3d-bc2d-a0c516833e8d",
+    "userId": "2520486a-89f4-4f33-ba2a-8dcb2321e64c",
+    "fullName": "ফারুক বেপারী",
+    "email": "yazmin.batz39@gmail.com",
+    "phone": "+8801741076523",
+    "nidNumber": "13391412336461",
+    "experienceYears": 5,
+    "services": [
+      "Personal Care",
+      "Physiotherapy",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Uttara",
+      "address": "65, Uttara",
+      "latitude": 23.79484612536313,
+      "longitude": 90.41425891131638
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Personal Care, Physiotherapy এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=ENYoLESN",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-02-27T17:06:23.883Z"
+    },
+    "ratings": {
+      "averageRating": 4.06,
+      "totalReviews": 116,
+      "fiveStarCount": 99,
+      "fourStarCount": 8,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 410,
+    "createdAt": "2025-02-01T17:06:23.883Z",
+    "area": "gulshan",
+    "sub_area": "বাড্ডা",
+    "address_line": "House 49, Road 4"
+  },
+  {
+    "id": "24c72d0f-ab11-47f9-86d0-44f796cfacda",
+    "userId": "adaedcee-0ba0-4611-b4e1-671e26c7ce6a",
+    "fullName": "হোসেন খান",
+    "email": "drew.turcotte@hotmail.com",
+    "phone": "+8801701307905",
+    "nidNumber": "09653891591167",
+    "experienceYears": 7,
+    "services": [
+      "Blood Pressure Monitoring",
+      "Medication Management",
+      "Palliative Care",
+      "Respiratory Care",
+      "Rehabilitation",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Motijheel",
+      "address": "91, Motijheel",
+      "latitude": 23.873080174794378,
+      "longitude": 90.40256585374775
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 7 বছরের অভিজ্ঞতা। Blood Pressure Monitoring, Medication Management এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Nxk5s8xk",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-11-11T17:06:23.883Z"
+    },
+    "ratings": {
+      "averageRating": 4.84,
+      "totalReviews": 58,
+      "fiveStarCount": 46,
+      "fourStarCount": 9,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 531,
+    "createdAt": "2025-11-08T17:06:23.883Z",
+    "area": "uttara",
+    "sub_area": "জসীমউদ্দীন",
+    "address_line": "House 26, Road 17"
+  },
+  {
+    "id": "bf4408fa-08b3-4611-8ab4-553a79ad2c9f",
+    "userId": "602a9b7e-6789-482c-aa62-d5ebc9b12e93",
+    "fullName": "জাহানারা খান",
+    "email": "maximo42@gmail.com",
+    "phone": "+8801891465197",
+    "nidNumber": "51793050520744",
+    "experienceYears": 8,
+    "services": [
+      "Post-Surgery Care",
+      "Nursing",
+      "Mobility Assistance",
+      "Palliative Care",
+      "Medication Management",
+      "Meal Preparation",
+      "Dementia Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Uttara",
+      "address": "39, Uttara",
+      "latitude": 23.7449810589915,
+      "longitude": 90.37197538489833
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 8 বছরের অভিজ্ঞতা। Post-Surgery Care, Nursing এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=PD1OrtU4",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-09-10T17:06:23.884Z"
+    },
+    "ratings": {
+      "averageRating": 4.63,
+      "totalReviews": 43,
+      "fiveStarCount": 72,
+      "fourStarCount": 14,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 589,
+    "createdAt": "2025-08-12T17:06:23.884Z",
+    "area": "dhanmondi",
+    "sub_area": "ধানমন্ডি ২",
+    "address_line": "House 32, Road 10"
+  },
+  {
+    "id": "9ab5c02e-81f2-4d6e-83b3-1f20503e5bbd",
+    "userId": "ca350041-0937-4f94-ab5f-fd04c208a1a5",
+    "fullName": "বেগম পারভীন",
+    "email": "edwina28@gmail.com",
+    "phone": "+8801747589180",
+    "nidNumber": "89381058424607",
+    "experienceYears": 10,
+    "services": [
+      "Meal Preparation",
+      "Wound Care",
+      "Mobility Assistance",
+      "Personal Care",
+      "Diabetes Care",
+      "Companionship",
+      "Nursing",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Uttara",
+      "address": "65, Uttara",
+      "latitude": 23.750490755738067,
+      "longitude": 90.42530563999892
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Meal Preparation, Wound Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Lm8Yunwh",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-02T17:06:23.884Z"
+    },
+    "ratings": {
+      "averageRating": 4.95,
+      "totalReviews": 65,
+      "fiveStarCount": 91,
+      "fourStarCount": 6,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 528,
+    "createdAt": "2025-06-10T17:06:23.884Z",
+    "area": "khilgaon",
+    "sub_area": "তিলপাপাড়া",
+    "address_line": "House 48, Road 3"
+  },
+  {
+    "id": "0ec58804-ac43-4372-b8c2-1004bb16e2ea",
+    "userId": "aad20e7e-30b2-4dd6-a6a1-1c19ec48ec53",
+    "fullName": "সালাম তালুকদার",
+    "email": "arno.herzog42@gmail.com",
+    "phone": "+8801542185193",
+    "nidNumber": "85394705005736",
+    "experienceYears": 2,
+    "services": [
+      "Blood Pressure Monitoring",
+      "Diabetes Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Tejgaon",
+      "address": "105, Tejgaon",
+      "latitude": 23.79605651520644,
+      "longitude": 90.41726828318005
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 2 বছরের অভিজ্ঞতা। Blood Pressure Monitoring, Diabetes Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=seQ3ifNU",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-26T17:06:23.884Z"
+    },
+    "ratings": {
+      "averageRating": 3.9,
+      "totalReviews": 101,
+      "fiveStarCount": 63,
+      "fourStarCount": 12,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 289,
+    "createdAt": "2025-03-21T17:06:23.884Z",
+    "area": "gulshan",
+    "sub_area": "গুলশান ১",
+    "address_line": "House 11, Road 1"
+  },
+  {
+    "id": "d6af1f6e-ce8e-42d3-bbb8-9e639c2142ac",
+    "userId": "57085106-1b92-47c3-84e5-44d590a469e3",
+    "fullName": "মাহমুদা হক",
+    "email": "albertha18@gmail.com",
+    "phone": "+8801375152738",
+    "nidNumber": "17302380667739",
+    "experienceYears": 14,
+    "services": [
+      "Personal Care",
+      "Physiotherapy",
+      "Medication Management",
+      "Companionship",
+      "Mental Health Support",
+      "Diabetes Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "35, Badda",
+      "latitude": 23.808526277187248,
+      "longitude": 90.36086556351006
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 14 বছরের অভিজ্ঞতা। Personal Care, Physiotherapy এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=eZ7P77a1",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-01-15T17:06:23.884Z"
+    },
+    "ratings": {
+      "averageRating": 4.78,
+      "totalReviews": 20,
+      "fiveStarCount": 71,
+      "fourStarCount": 14,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 587,
+    "createdAt": "2024-12-22T17:06:23.884Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ১",
+    "address_line": "House 37, Road 11"
+  },
+  {
+    "id": "6fe8960b-5eb1-4dfc-83d2-0cb137137ce6",
+    "userId": "1abb9254-41b9-46d4-8ed8-bacfaa0aa5fa",
+    "fullName": "নাসরিন দাস",
+    "email": "lisandro.stanton@gmail.com",
+    "phone": "+8801722666265",
+    "nidNumber": "74618905235105",
+    "experienceYears": 4,
+    "services": [
+      "Personal Care",
+      "Rehabilitation",
+      "Companionship",
+      "Diabetes Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Tejgaon",
+      "address": "120, Tejgaon",
+      "latitude": 23.787370974793138,
+      "longitude": 90.4166716283209
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 4 বছরের অভিজ্ঞতা। Personal Care, Rehabilitation এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=4pzeAhFH",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-16T17:06:23.884Z"
+    },
+    "ratings": {
+      "averageRating": 4.31,
+      "totalReviews": 104,
+      "fiveStarCount": 72,
+      "fourStarCount": 10,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 351,
+    "createdAt": "2025-09-17T17:06:23.884Z",
+    "area": "gulshan",
+    "sub_area": "নিকেতন",
+    "address_line": "House 24, Road 20"
+  },
+  {
+    "id": "acf7435f-0062-4d78-8696-28dc441d7e4d",
+    "userId": "338b3495-01f6-45f4-9c06-73d75c43cd32",
+    "fullName": "তাসলিমা আহমেদ",
+    "email": "maverick51@gmail.com",
+    "phone": "+8801337290098",
+    "nidNumber": "13296211289539",
+    "experienceYears": 4,
+    "services": [
+      "Wound Care",
+      "Mental Health Support",
+      "Personal Care",
+      "Rehabilitation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "79, Mogbazar",
+      "latitude": 23.7547455467406,
+      "longitude": 90.39647087504699
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 4 বছরের অভিজ্ঞতা। Wound Care, Mental Health Support এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=YFveEath",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-03T17:06:23.885Z"
+    },
+    "ratings": {
+      "averageRating": 4.24,
+      "totalReviews": 94,
+      "fiveStarCount": 58,
+      "fourStarCount": 7,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 369,
+    "createdAt": "2025-07-23T17:06:23.885Z",
+    "area": "tejgaon",
+    "sub_area": "বিজয় নগর",
+    "address_line": "House 6, Road 14"
+  },
+  {
+    "id": "b3e92a5d-1d26-42c2-800e-ae85f0f83fe3",
+    "userId": "8ae18abc-0943-4e5f-b4ad-9220f67ad1a4",
+    "fullName": "বেগম শর্মা",
+    "email": "albertha4@yahoo.com",
+    "phone": "+8801482868448",
+    "nidNumber": "29777398735035",
+    "experienceYears": 15,
+    "services": [
+      "Personal Care",
+      "Companionship",
+      "Palliative Care",
+      "Medication Management",
+      "Rehabilitation",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "183, Banani",
+      "latitude": 23.75768565772843,
+      "longitude": 90.36055359977924
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 15 বছরের অভিজ্ঞতা। Personal Care, Companionship এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=XVNpVfgi",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-17T17:06:23.885Z"
+    },
+    "ratings": {
+      "averageRating": 4.66,
+      "totalReviews": 67,
+      "fiveStarCount": 73,
+      "fourStarCount": 13,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 580,
+    "createdAt": "2025-03-11T17:06:23.885Z",
+    "area": "mohammadpur",
+    "sub_area": "আদাবর",
+    "address_line": "House 12, Road 19"
+  },
+  {
+    "id": "c7c38379-4647-43ba-be1e-a7b8d811cbf3",
+    "userId": "2bdf3be7-2989-4f9a-bbff-764f88a90a81",
+    "fullName": "মাহমুদা বেগম",
+    "email": "quinn.hegmann@hotmail.com",
+    "phone": "+8801932821989",
+    "nidNumber": "67775789439994",
+    "experienceYears": 7,
+    "services": [
+      "Palliative Care",
+      "Mobility Assistance",
+      "Respiratory Care",
+      "Physiotherapy",
+      "Mental Health Support",
+      "Nursing",
+      "Medication Management"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Motijheel",
+      "address": "133, Motijheel",
+      "latitude": 23.83558178305908,
+      "longitude": 90.41288078850437
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 7 বছরের অভিজ্ঞতা। Palliative Care, Mobility Assistance এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=zzpw5eHZ",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-23T17:06:23.885Z"
+    },
+    "ratings": {
+      "averageRating": 4.72,
+      "totalReviews": 23,
+      "fiveStarCount": 30,
+      "fourStarCount": 7,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 536,
+    "createdAt": "2025-04-04T17:06:23.885Z",
+    "area": "uttarkhan",
+    "sub_area": "উত্তরখান",
+    "address_line": "House 27, Road 12"
+  },
+  {
+    "id": "4b9a222a-83e7-4cf9-988a-136bf38d2419",
+    "userId": "ee9629a8-ad37-45f1-84b7-069e094c2632",
+    "fullName": "ফাতেমা পারভীন",
+    "email": "chelsey14@yahoo.com",
+    "phone": "+8801631687918",
+    "nidNumber": "28566891192844",
+    "experienceYears": 9,
+    "services": [
+      "Personal Care",
+      "Rehabilitation",
+      "Nursing",
+      "Mental Health Support",
+      "Companionship",
+      "Mobility Assistance",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Agargaon",
+      "address": "29, Agargaon",
+      "latitude": 23.761117747377135,
+      "longitude": 90.4280068107515
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 9 বছরের অভিজ্ঞতা। Personal Care, Rehabilitation এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=WOJmK7yp",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-09T17:06:23.885Z"
+    },
+    "ratings": {
+      "averageRating": 4.8,
+      "totalReviews": 49,
+      "fiveStarCount": 40,
+      "fourStarCount": 7,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 551,
+    "createdAt": "2025-06-22T17:06:23.885Z",
+    "area": "rampura",
+    "sub_area": "বনশ্রী",
+    "address_line": "House 45, Road 17"
+  },
+  {
+    "id": "8fd0a3fa-e3e5-4bb9-b06b-6c549932b019",
+    "userId": "f2b2f671-9667-40ed-8286-38d2729848b1",
+    "fullName": "ফারুক মিয়া",
+    "email": "ellis_nikolaus@gmail.com",
+    "phone": "+8801537386051",
+    "nidNumber": "72871180252702",
+    "experienceYears": 2,
+    "services": [
+      "Wound Care",
+      "Medication Management",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Gulshan",
+      "address": "9, Gulshan",
+      "latitude": 23.802252820275925,
+      "longitude": 90.3589461052333
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 2 বছরের অভিজ্ঞতা। Wound Care, Medication Management এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=8Re2XIDv",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-27T17:06:23.885Z"
+    },
+    "ratings": {
+      "averageRating": 3.51,
+      "totalReviews": 39,
+      "fiveStarCount": 40,
+      "fourStarCount": 11,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 241,
+    "createdAt": "2024-12-07T17:06:23.885Z",
+    "area": "mirpur",
+    "sub_area": "পল্লবী",
+    "address_line": "House 18, Road 10"
+  },
+  {
+    "id": "92bd81ef-6011-4dd2-8c55-ab74c42ea2db",
+    "userId": "4c6e8450-dc80-4142-926c-4598ab0c03b1",
+    "fullName": "খাদিজা পারভীন",
+    "email": "justine74@yahoo.com",
+    "phone": "+8801981276060",
+    "nidNumber": "49874071147146",
+    "experienceYears": 3,
+    "services": [
+      "Nursing",
+      "Mobility Assistance",
+      "Wound Care",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "131, Banani",
+      "latitude": 23.872350018995853,
+      "longitude": 90.39883053222147
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 3 বছরের অভিজ্ঞতা। Nursing, Mobility Assistance এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=mVX3Gd8U",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-11-17T17:06:23.885Z"
+    },
+    "ratings": {
+      "averageRating": 4.33,
+      "totalReviews": 53,
+      "fiveStarCount": 96,
+      "fourStarCount": 6,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 442,
+    "createdAt": "2025-10-27T17:06:23.885Z",
+    "area": "uttara",
+    "sub_area": "উত্তরা সেক্টর ১৩",
+    "address_line": "House 42, Road 3"
+  },
+  {
+    "id": "b1e157ee-db9a-49db-8f6f-26cf79bf41b1",
+    "userId": "3aa7d97f-2139-435a-addf-88dd92dde85e",
+    "fullName": "রফিক রহমান",
+    "email": "margarete97@hotmail.com",
+    "phone": "+8801415159215",
+    "nidNumber": "38797083665816",
+    "experienceYears": 5,
+    "services": [
+      "Personal Care",
+      "Post-Surgery Care",
+      "Respiratory Care",
+      "Rehabilitation",
+      "Companionship"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Rampura",
+      "address": "8, Rampura",
+      "latitude": 23.778158247669648,
+      "longitude": 90.42765696017223
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Personal Care, Post-Surgery Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=s2c1wejc",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-09-28T17:06:23.886Z"
+    },
+    "ratings": {
+      "averageRating": 4,
+      "totalReviews": 24,
+      "fiveStarCount": 59,
+      "fourStarCount": 12,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 438,
+    "createdAt": "2025-09-13T17:06:23.886Z",
+    "area": "badda",
+    "sub_area": "শাহজাদপুর",
+    "address_line": "House 45, Road 7"
+  },
+  {
+    "id": "deed3f43-e153-4b7e-abc6-3c2760b9f7bc",
+    "userId": "2b800b7e-7a56-4abd-82d6-dbb8d3d40967",
+    "fullName": "খাদিজা আক্তার",
+    "email": "helena.wiegand@gmail.com",
+    "phone": "+8801335837049",
+    "nidNumber": "61208388390747",
+    "experienceYears": 1,
+    "services": [
+      "Post-Surgery Care",
+      "Physiotherapy"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Uttara",
+      "address": "143, Uttara",
+      "latitude": 23.790236102800417,
+      "longitude": 90.41150844256039
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 1 বছরের অভিজ্ঞতা। Post-Surgery Care, Physiotherapy এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=fFHbeDNa",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-30T17:06:23.886Z"
+    },
+    "ratings": {
+      "averageRating": 3.84,
+      "totalReviews": 73,
+      "fiveStarCount": 29,
+      "fourStarCount": 14,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 294,
+    "createdAt": "2025-03-08T17:06:23.886Z",
+    "area": "gulshan",
+    "sub_area": "বারিধারা",
+    "address_line": "House 49, Road 10"
+  },
+  {
+    "id": "7619ca40-1d76-4b68-bee2-fdfdaa5c661a",
+    "userId": "7fa4b056-8944-4644-9fa9-a2c7f72ee969",
+    "fullName": "রেহানা খান",
+    "email": "marcella_kozey26@gmail.com",
+    "phone": "+8801859897648",
+    "nidNumber": "28528857780493",
+    "experienceYears": 7,
+    "services": [
+      "Wound Care",
+      "Nursing",
+      "Dementia Care",
+      "Personal Care",
+      "Rehabilitation",
+      "Companionship"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Khilgaon",
+      "address": "49, Khilgaon",
+      "latitude": 23.790082198188408,
+      "longitude": 90.40744927143041
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 7 বছরের অভিজ্ঞতা। Wound Care, Nursing এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=1k43yYid",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-07-25T17:06:23.886Z"
+    },
+    "ratings": {
+      "averageRating": 4.52,
+      "totalReviews": 65,
+      "fiveStarCount": 24,
+      "fourStarCount": 12,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 557,
+    "createdAt": "2025-06-29T17:06:23.886Z",
+    "area": "banani",
+    "sub_area": "বনানী ডিওএইচএস",
+    "address_line": "House 34, Road 7"
+  },
+  {
+    "id": "760486ec-6600-4a22-b4fd-bd55080dd7a8",
+    "userId": "b793ad98-fca1-4ec4-beb8-c779f9e73cb1",
+    "fullName": "রেহানা সুলতানা",
+    "email": "jermey79@yahoo.com",
+    "phone": "+8801703936405",
+    "nidNumber": "72339320334469",
+    "experienceYears": 9,
+    "services": [
+      "Wound Care",
+      "Diabetes Care",
+      "Physiotherapy",
+      "Medication Management",
+      "Meal Preparation",
+      "Dementia Care",
+      "Companionship",
+      "Post-Surgery Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Rampura",
+      "address": "17, Rampura",
+      "latitude": 23.781160691984347,
+      "longitude": 90.42431225390868
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 9 বছরের অভিজ্ঞতা। Wound Care, Diabetes Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=cmbgFrzC",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-22T17:06:23.886Z"
+    },
+    "ratings": {
+      "averageRating": 4.8,
+      "totalReviews": 46,
+      "fiveStarCount": 74,
+      "fourStarCount": 13,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 590,
+    "createdAt": "2025-03-31T17:06:23.886Z",
+    "area": "badda",
+    "sub_area": "নটুন বাজার",
+    "address_line": "House 49, Road 14"
+  },
+  {
+    "id": "468b1be1-547e-443a-a10f-5f8e48ef2ea3",
+    "userId": "3919f9e5-055b-41b2-86fe-ac6eec92f750",
+    "fullName": "জাহানারা নাহার",
+    "email": "antonina88@gmail.com",
+    "phone": "+8801503877847",
+    "nidNumber": "91374853100060",
+    "experienceYears": 11,
+    "services": [
+      "Medication Management",
+      "Rehabilitation",
+      "Palliative Care",
+      "Mobility Assistance",
+      "Companionship",
+      "Dementia Care",
+      "Nursing",
+      "Diabetes Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "132, Banani",
+      "latitude": 23.79414406967736,
+      "longitude": 90.41712768696142
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 11 বছরের অভিজ্ঞতা। Medication Management, Rehabilitation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=20hms3sT",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-18T17:06:23.886Z"
+    },
+    "ratings": {
+      "averageRating": 4.65,
+      "totalReviews": 63,
+      "fiveStarCount": 63,
+      "fourStarCount": 11,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 588,
+    "createdAt": "2025-07-23T17:06:23.886Z",
+    "area": "gulshan",
+    "sub_area": "বারিধারা ডিওএইচএস",
+    "address_line": "House 25, Road 15"
+  },
+  {
+    "id": "71f998ed-4f58-421e-b26d-8e7c3b0f3f02",
+    "userId": "06e8b60a-0909-4da9-9032-b542b10553a5",
+    "fullName": "ফাতেমা দাস",
+    "email": "joshua_stamm53@yahoo.com",
+    "phone": "+8801972611774",
+    "nidNumber": "50037627121890",
+    "experienceYears": 13,
+    "services": [
+      "Companionship",
+      "Medication Management",
+      "Blood Pressure Monitoring",
+      "Diabetes Care",
+      "Wound Care",
+      "Palliative Care",
+      "Mental Health Support",
+      "Dementia Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Dhanmondi",
+      "address": "33, Dhanmondi",
+      "latitude": 23.708802694111085,
+      "longitude": 90.43167232428637
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Companionship, Medication Management এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=RujTmrQW",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-09T17:06:23.887Z"
+    },
+    "ratings": {
+      "averageRating": 4.8,
+      "totalReviews": 51,
+      "fiveStarCount": 42,
+      "fourStarCount": 14,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 539,
+    "createdAt": "2025-05-28T17:06:23.887Z",
+    "area": "jatrabari",
+    "sub_area": "যাত্রাবাড়ী",
+    "address_line": "House 25, Road 13"
+  },
+  {
+    "id": "22342178-ca0a-4ec0-b1eb-a2bd6a8d39c2",
+    "userId": "4220f7c1-418a-49ed-9cd7-c617b4d37e29",
+    "fullName": "বেগম শর্মা",
+    "email": "shanelle40@yahoo.com",
+    "phone": "+8801606347321",
+    "nidNumber": "38450250210687",
+    "experienceYears": 13,
+    "services": [
+      "Diabetes Care",
+      "Post-Surgery Care",
+      "Dementia Care",
+      "Respiratory Care",
+      "Physiotherapy",
+      "Personal Care",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "147, Banani",
+      "latitude": 23.745463172912686,
+      "longitude": 90.42714893086496
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Diabetes Care, Post-Surgery Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=EJWHyygg",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-03T17:06:23.887Z"
+    },
+    "ratings": {
+      "averageRating": 4.89,
+      "totalReviews": 24,
+      "fiveStarCount": 64,
+      "fourStarCount": 11,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 519,
+    "createdAt": "2025-07-22T17:06:23.887Z",
+    "area": "khilgaon",
+    "sub_area": "খিলগাঁও",
+    "address_line": "House 13, Road 3"
+  },
+  {
+    "id": "4a6a7f9d-723a-48ca-a47a-2fc0775396e1",
+    "userId": "4d392507-1eb4-4f15-88ae-b0d427515d58",
+    "fullName": "রোকেয়া হক",
+    "email": "bobbie15@hotmail.com",
+    "phone": "+8801739663905",
+    "nidNumber": "81035428267184",
+    "experienceYears": 15,
+    "services": [
+      "Personal Care",
+      "Rehabilitation",
+      "Post-Surgery Care",
+      "Nursing",
+      "Mental Health Support",
+      "Meal Preparation",
+      "Wound Care",
+      "Mobility Assistance"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Rampura",
+      "address": "108, Rampura",
+      "latitude": 23.755757106557922,
+      "longitude": 90.35983864194199
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 15 বছরের অভিজ্ঞতা। Personal Care, Rehabilitation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=SmJN9DsH",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-17T17:06:23.887Z"
+    },
+    "ratings": {
+      "averageRating": 4.58,
+      "totalReviews": 69,
+      "fiveStarCount": 79,
+      "fourStarCount": 7,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 541,
+    "createdAt": "2024-12-15T17:06:23.887Z",
+    "area": "mohammadpur",
+    "sub_area": "তাজমহল রোড",
+    "address_line": "House 2, Road 19"
+  },
+  {
+    "id": "c5ef11af-e632-45c5-8010-d7b593735b75",
+    "userId": "a6483480-0ee9-4846-9c45-b632fec14f32",
+    "fullName": "পারভিন দাস",
+    "email": "kristopher_rath@hotmail.com",
+    "phone": "+8801672558973",
+    "nidNumber": "27823190850964",
+    "experienceYears": 14,
+    "services": [
+      "Personal Care",
+      "Post-Surgery Care",
+      "Mobility Assistance",
+      "Companionship",
+      "Physiotherapy",
+      "Rehabilitation",
+      "Respiratory Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Motijheel",
+      "address": "165, Motijheel",
+      "latitude": 23.752683440441963,
+      "longitude": 90.36150821699283
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 14 বছরের অভিজ্ঞতা। Personal Care, Post-Surgery Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=3ZMRDbLq",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-01-28T17:06:23.887Z"
+    },
+    "ratings": {
+      "averageRating": 4.6,
+      "totalReviews": 78,
+      "fiveStarCount": 23,
+      "fourStarCount": 14,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 544,
+    "createdAt": "2025-01-13T17:06:23.887Z",
+    "area": "mohammadpur",
+    "sub_area": "জাপান গার্ডেন সিটি",
+    "address_line": "House 4, Road 14"
+  },
+  {
+    "id": "14ec6c13-55e2-4d59-8626-f386b4cd4d2c",
+    "userId": "c9b5f3bb-754b-422c-90bc-4e52163a002b",
+    "fullName": "আঞ্জুমান আক্তার",
+    "email": "joana_willms@yahoo.com",
+    "phone": "+8801710060967",
+    "nidNumber": "69218204930535",
+    "experienceYears": 1,
+    "services": [
+      "Physiotherapy",
+      "Wound Care",
+      "Palliative Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mohammadpur",
+      "address": "121, Mohammadpur",
+      "latitude": 23.710725680306727,
+      "longitude": 90.43453175099043
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 1 বছরের অভিজ্ঞতা। Physiotherapy, Wound Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=P6EbgLNW",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-14T17:06:23.887Z"
+    },
+    "ratings": {
+      "averageRating": 3.68,
+      "totalReviews": 26,
+      "fiveStarCount": 39,
+      "fourStarCount": 13,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 283,
+    "createdAt": "2024-12-06T17:06:23.887Z",
+    "area": "jatrabari",
+    "sub_area": "যাত্রাবাড়ী",
+    "address_line": "House 24, Road 8"
+  },
+  {
+    "id": "be07534f-57c5-4881-98d0-5f6382a7d011",
+    "userId": "dfffef7e-b886-4716-bdff-577cde35c776",
+    "fullName": "রাবেয়া রহমান",
+    "email": "luz.lesch@yahoo.com",
+    "phone": "+8801632026147",
+    "nidNumber": "52571282782677",
+    "experienceYears": 9,
+    "services": [
+      "Diabetes Care",
+      "Companionship",
+      "Mobility Assistance",
+      "Medication Management",
+      "Physiotherapy",
+      "Palliative Care",
+      "Blood Pressure Monitoring"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "140, Badda",
+      "latitude": 23.86801779465713,
+      "longitude": 90.40033342551365
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 9 বছরের অভিজ্ঞতা। Diabetes Care, Companionship এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Kf2Ezrme",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-11-13T17:06:23.887Z"
+    },
+    "ratings": {
+      "averageRating": 4.84,
+      "totalReviews": 87,
+      "fiveStarCount": 31,
+      "fourStarCount": 5,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 513,
+    "createdAt": "2025-10-29T17:06:23.887Z",
+    "area": "uttara",
+    "sub_area": "উত্তরা সেক্টর ১১",
+    "address_line": "House 23, Road 3"
+  },
+  {
+    "id": "c30984c1-a10a-4410-bcf4-fc74675b23ee",
+    "userId": "95969921-3e16-4eff-9f31-ecad16153620",
+    "fullName": "মাহমুদা নাহার",
+    "email": "belle59@hotmail.com",
+    "phone": "+8801876807999",
+    "nidNumber": "46156420757718",
+    "experienceYears": 11,
+    "services": [
+      "Personal Care",
+      "Medication Management",
+      "Blood Pressure Monitoring",
+      "Palliative Care",
+      "Companionship",
+      "Respiratory Care",
+      "Post-Surgery Care",
+      "Physiotherapy"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Khilgaon",
+      "address": "177, Khilgaon",
+      "latitude": 23.765184732534504,
+      "longitude": 90.3698099182614
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 11 বছরের অভিজ্ঞতা। Personal Care, Medication Management এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=x38xcGDr",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-01-23T17:06:23.888Z"
+    },
+    "ratings": {
+      "averageRating": 4.77,
+      "totalReviews": 21,
+      "fiveStarCount": 68,
+      "fourStarCount": 7,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 513,
+    "createdAt": "2025-01-07T17:06:23.888Z",
+    "area": "shyamoli",
+    "sub_area": "কলাবাগান",
+    "address_line": "House 10, Road 13"
+  },
+  {
+    "id": "4be08ec8-e0e4-4f97-82cf-4fd599383d70",
+    "userId": "95014529-7f54-4436-ac2a-7bacd833b5f0",
+    "fullName": "সাবিনা খাতুন",
+    "email": "dameon_schaefer-ryan49@hotmail.com",
+    "phone": "+8801427300487",
+    "nidNumber": "82053938779956",
+    "experienceYears": 1,
+    "services": [
+      "Mental Health Support",
+      "Mobility Assistance",
+      "Medication Management"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Rampura",
+      "address": "155, Rampura",
+      "latitude": 23.78473330016431,
+      "longitude": 90.42978519949938
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 1 বছরের অভিজ্ঞতা। Mental Health Support, Mobility Assistance এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=v3CstEtP",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-12-02T17:06:23.888Z"
+    },
+    "ratings": {
+      "averageRating": 3.57,
+      "totalReviews": 107,
+      "fiveStarCount": 92,
+      "fourStarCount": 14,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 250,
+    "createdAt": "2025-11-15T17:06:23.888Z",
+    "area": "badda",
+    "sub_area": "শাহজাদপুর",
+    "address_line": "House 49, Road 15"
+  },
+  {
+    "id": "01b497bc-0b76-4590-99f1-c422958c8229",
+    "userId": "7b42065a-9457-4ba0-bc99-c5a6fdf6ef81",
+    "fullName": "রোকেয়া শর্মা",
+    "email": "heather_tillman3@hotmail.com",
+    "phone": "+8801667079816",
+    "nidNumber": "01572074266850",
+    "experienceYears": 14,
+    "services": [
+      "Medication Management",
+      "Personal Care",
+      "Diabetes Care",
+      "Physiotherapy",
+      "Wound Care",
+      "Nursing"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Khilgaon",
+      "address": "166, Khilgaon",
+      "latitude": 23.8026784916091,
+      "longitude": 90.36053282895735
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 14 বছরের অভিজ্ঞতা। Medication Management, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Z2dVcCYu",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-06-26T17:06:23.888Z"
+    },
+    "ratings": {
+      "averageRating": 4.63,
+      "totalReviews": 90,
+      "fiveStarCount": 55,
+      "fourStarCount": 12,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 572,
+    "createdAt": "2025-06-23T17:06:23.888Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ১২",
+    "address_line": "House 18, Road 10"
+  },
+  {
+    "id": "9eb00be4-0234-4c8b-92c9-daebe5f620aa",
+    "userId": "092eabbd-cf9b-48f0-a8fa-ad5b32545ceb",
+    "fullName": "সাবিনা হক",
+    "email": "evan.bartoletti@hotmail.com",
+    "phone": "+8801830458573",
+    "nidNumber": "93334396688534",
+    "experienceYears": 14,
+    "services": [
+      "Mobility Assistance",
+      "Post-Surgery Care",
+      "Personal Care",
+      "Companionship",
+      "Rehabilitation",
+      "Palliative Care",
+      "Blood Pressure Monitoring",
+      "Respiratory Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Shyamoli",
+      "address": "77, Shyamoli",
+      "latitude": 23.712815696690413,
+      "longitude": 90.40992529304316
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 14 বছরের অভিজ্ঞতা। Mobility Assistance, Post-Surgery Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=INITSnSm",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-25T17:06:23.888Z"
+    },
+    "ratings": {
+      "averageRating": 4.65,
+      "totalReviews": 111,
+      "fiveStarCount": 83,
+      "fourStarCount": 12,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 543,
+    "createdAt": "2025-10-10T17:06:23.888Z",
+    "area": "old_dhaka",
+    "sub_area": "চকবাজার",
+    "address_line": "House 39, Road 20"
+  },
+  {
+    "id": "fa32ee87-3265-4be4-8fdd-ffcd9394a077",
+    "userId": "abccbaf0-2082-48ec-8cc2-761c70e940cf",
+    "fullName": "আয়েশা আহমেদ",
+    "email": "deon.lindgren10@gmail.com",
+    "phone": "+8801985350945",
+    "nidNumber": "78802508584807",
+    "experienceYears": 5,
+    "services": [
+      "Post-Surgery Care",
+      "Mental Health Support",
+      "Nursing",
+      "Medication Management",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Uttara",
+      "address": "18, Uttara",
+      "latitude": 23.728930588048417,
+      "longitude": 90.42184660816255
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Post-Surgery Care, Mental Health Support এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=0oOc5lWh",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-08T17:06:23.888Z"
+    },
+    "ratings": {
+      "averageRating": 4.26,
+      "totalReviews": 62,
+      "fiveStarCount": 87,
+      "fourStarCount": 5,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 421,
+    "createdAt": "2024-11-26T17:06:23.888Z",
+    "area": "motijheel",
+    "sub_area": "আরামবাগ",
+    "address_line": "House 18, Road 20"
+  },
+  {
+    "id": "5df19016-197e-4af0-9c9d-baf4d275f017",
+    "userId": "053ae6cd-7ba6-4304-9d81-9ad7c9b18c45",
+    "fullName": "বেগম রহমান",
+    "email": "mohammad96@yahoo.com",
+    "phone": "+8801359693172",
+    "nidNumber": "92216109687972",
+    "experienceYears": 15,
+    "services": [
+      "Rehabilitation",
+      "Personal Care",
+      "Mobility Assistance",
+      "Post-Surgery Care",
+      "Nursing"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "113, Mogbazar",
+      "latitude": 23.810634770190198,
+      "longitude": 90.35426074102676
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 15 বছরের অভিজ্ঞতা। Rehabilitation, Personal Care এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=w2B46In5",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-03-15T17:06:23.889Z"
+    },
+    "ratings": {
+      "averageRating": 4.71,
+      "totalReviews": 70,
+      "fiveStarCount": 23,
+      "fourStarCount": 5,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 593,
+    "createdAt": "2025-02-24T17:06:23.889Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ২",
+    "address_line": "House 22, Road 6"
+  },
+  {
+    "id": "a652d368-d7ce-4666-bd0e-1c3519093afd",
+    "userId": "f2e2cf56-1eec-4542-9334-93d6293bc20c",
+    "fullName": "আয়েশা খাতুন",
+    "email": "ramon6@gmail.com",
+    "phone": "+8801882536341",
+    "nidNumber": "78576363903963",
+    "experienceYears": 10,
+    "services": [
+      "Mental Health Support",
+      "Medication Management",
+      "Palliative Care",
+      "Mobility Assistance",
+      "Rehabilitation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Banani",
+      "address": "77, Banani",
+      "latitude": 23.714084209441825,
+      "longitude": 90.40754640298466
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Mental Health Support, Medication Management এ দক্ষ।",
+    "gender": "মহিলা",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=71USLe1O",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-01-18T17:06:23.889Z"
+    },
+    "ratings": {
+      "averageRating": 4.95,
+      "totalReviews": 66,
+      "fiveStarCount": 71,
+      "fourStarCount": 6,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 533,
+    "createdAt": "2024-12-26T17:06:23.889Z",
+    "area": "old_dhaka",
+    "sub_area": "ধোলাইপাড়",
+    "address_line": "House 42, Road 15"
+  },
+  {
+    "id": "3484cf67-0475-4206-aea2-61de247688aa",
+    "userId": "57d207a3-3a42-4ff4-893b-df23b0a1e1ba",
+    "fullName": "রাশেদ করিম",
+    "email": "electa48@hotmail.com",
+    "phone": "+8801385912010",
+    "nidNumber": "22071110319311",
+    "experienceYears": 6,
+    "services": [
+      "Mobility Assistance",
+      "Diabetes Care",
+      "Personal Care",
+      "Wound Care",
+      "Mental Health Support"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Shyamoli",
+      "address": "5, Shyamoli",
+      "latitude": 23.771329046927413,
+      "longitude": 90.3721258261025
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 6 বছরের অভিজ্ঞতা। Mobility Assistance, Diabetes Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=Niu4XdYK",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-11-06T17:06:23.889Z"
+    },
+    "ratings": {
+      "averageRating": 4.09,
+      "totalReviews": 57,
+      "fiveStarCount": 56,
+      "fourStarCount": 14,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 385,
+    "createdAt": "2025-10-30T17:06:23.889Z",
+    "area": "shyamoli",
+    "sub_area": "শ্যামলী রিং রোড",
+    "address_line": "House 11, Road 6"
+  },
+  {
+    "id": "32ba8a93-bd58-4e1c-8126-618da1f81c30",
+    "userId": "b0389771-c71f-4f54-ae1c-c1ba919a8773",
+    "fullName": "শফিক খান",
+    "email": "maynard.feest@yahoo.com",
+    "phone": "+8801827749151",
+    "nidNumber": "69958038166691",
+    "experienceYears": 6,
+    "services": [
+      "Meal Preparation",
+      "Companionship",
+      "Blood Pressure Monitoring",
+      "Respiratory Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mogbazar",
+      "address": "60, Mogbazar",
+      "latitude": 23.747072146943133,
+      "longitude": 90.37356968935069
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 6 বছরের অভিজ্ঞতা। Meal Preparation, Companionship এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=LHIZnx1V",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-07T17:06:23.889Z"
+    },
+    "ratings": {
+      "averageRating": 4.07,
+      "totalReviews": 52,
+      "fiveStarCount": 28,
+      "fourStarCount": 14,
+      "threeStarCount": 2
+    },
+    "hourlyRate": 408,
+    "createdAt": "2025-08-02T17:06:23.889Z",
+    "area": "dhanmondi",
+    "sub_area": "ধানমন্ডি ৮/এ",
+    "address_line": "House 43, Road 13"
+  },
+  {
+    "id": "60007787-9cb8-4bfa-9166-617093f7c777",
+    "userId": "e2652654-30d9-4e76-851e-345067c4ddbb",
+    "fullName": "নূরজাহান দাস",
+    "email": "jarod_hegmann57@hotmail.com",
+    "phone": "+8801900073944",
+    "nidNumber": "88400735662707",
+    "experienceYears": 13,
+    "services": [
+      "Dementia Care",
+      "Personal Care",
+      "Mobility Assistance",
+      "Post-Surgery Care",
+      "Companionship",
+      "Physiotherapy",
+      "Wound Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Badda",
+      "address": "121, Badda",
+      "latitude": 23.753497603037633,
+      "longitude": 90.35527632298471
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 13 বছরের অভিজ্ঞতা। Dementia Care, Personal Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=hc1I3MN1",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-01T17:06:23.889Z"
+    },
+    "ratings": {
+      "averageRating": 4.65,
+      "totalReviews": 86,
+      "fiveStarCount": 89,
+      "fourStarCount": 5,
+      "threeStarCount": 1
+    },
+    "hourlyRate": 562,
+    "createdAt": "2025-07-07T17:06:23.889Z",
+    "area": "mohammadpur",
+    "sub_area": "জাপান গার্ডেন সিটি",
+    "address_line": "House 35, Road 11"
+  },
+  {
+    "id": "f8a39cf1-643e-40f7-90fa-5b067c1fde2f",
+    "userId": "7d24a91a-4d4f-4c95-ad4d-2b58a37e2922",
+    "fullName": "করিম তালুকদার",
+    "email": "margarette.rempel44@hotmail.com",
+    "phone": "+8801708711209",
+    "nidNumber": "40722581763729",
+    "experienceYears": 15,
+    "services": [
+      "Meal Preparation",
+      "Respiratory Care",
+      "Physiotherapy",
+      "Mobility Assistance",
+      "Palliative Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Tejgaon",
+      "address": "160, Tejgaon",
+      "latitude": 23.80304588759301,
+      "longitude": 90.35154101343414
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 15 বছরের অভিজ্ঞতা। Meal Preparation, Respiratory Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=m7Zhb2Ly",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2024-12-21T17:06:23.889Z"
+    },
+    "ratings": {
+      "averageRating": 4.98,
+      "totalReviews": 94,
+      "fiveStarCount": 57,
+      "fourStarCount": 10,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 530,
+    "createdAt": "2024-12-14T17:06:23.889Z",
+    "area": "mirpur",
+    "sub_area": "মিরপুর ১২",
+    "address_line": "House 12, Road 16"
+  },
+  {
+    "id": "85900e1a-0990-4399-b755-342b15aab5f6",
+    "userId": "0776e1dc-4600-47ac-8675-4e1db8470f27",
+    "fullName": "শাহনাজ শর্মা",
+    "email": "ryder_boyle@gmail.com",
+    "phone": "+8801430658396",
+    "nidNumber": "35539548098087",
+    "experienceYears": 5,
+    "services": [
+      "Palliative Care",
+      "Meal Preparation",
+      "Respiratory Care",
+      "Mental Health Support",
+      "Wound Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Uttara",
+      "address": "181, Uttara",
+      "latitude": 23.745709741879413,
+      "longitude": 90.3743493752332
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 5 বছরের অভিজ্ঞতা। Palliative Care, Meal Preparation এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=vj5I1KvH",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-08-20T17:06:23.890Z"
+    },
+    "ratings": {
+      "averageRating": 4.49,
+      "totalReviews": 65,
+      "fiveStarCount": 55,
+      "fourStarCount": 12,
+      "threeStarCount": 3
+    },
+    "hourlyRate": 353,
+    "createdAt": "2025-08-07T17:06:23.890Z",
+    "area": "dhanmondi",
+    "sub_area": "ধানমন্ডি ২৭",
+    "address_line": "House 16, Road 12"
+  },
+  {
+    "id": "25bd5ca4-c7f1-42bb-8f14-150d968a3f48",
+    "userId": "a998037c-b1f1-4dd9-9ec3-cd719dd7e40a",
+    "fullName": "নাজমুল হোসেন",
+    "email": "kylie.cummerata@gmail.com",
+    "phone": "+8801844989034",
+    "nidNumber": "73846478877603",
+    "experienceYears": 3,
+    "services": [
+      "Blood Pressure Monitoring",
+      "Diabetes Care",
+      "Medication Management",
+      "Meal Preparation"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Motijheel",
+      "address": "27, Motijheel",
+      "latitude": 23.832184889285163,
+      "longitude": 90.41379975602632
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 3 বছরের অভিজ্ঞতা। Blood Pressure Monitoring, Diabetes Care এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=N7OS1z3C",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-10-11T17:06:23.890Z"
+    },
+    "ratings": {
+      "averageRating": 4.34,
+      "totalReviews": 90,
+      "fiveStarCount": 42,
+      "fourStarCount": 10,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 382,
+    "createdAt": "2025-09-20T17:06:23.890Z",
+    "area": "uttarkhan",
+    "sub_area": "ভাসানটেক",
+    "address_line": "House 43, Road 4"
+  },
+  {
+    "id": "29f56b77-4b4f-459c-b74c-60082f8e9e75",
+    "userId": "8450c28d-4ff8-46f1-aec7-9f5166748365",
+    "fullName": "মাহমুদা পারভীন",
+    "email": "emmy.bosco@gmail.com",
+    "phone": "+8801799953607",
+    "nidNumber": "73086956719305",
+    "experienceYears": 8,
+    "services": [
+      "Mobility Assistance",
+      "Medication Management",
+      "Personal Care",
+      "Mental Health Support",
+      "Wound Care"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Mirpur",
+      "address": "115, Mirpur",
+      "latitude": 23.87419978479123,
+      "longitude": 90.40100784572955
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 8 বছরের অভিজ্ঞতা। Mobility Assistance, Medication Management এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=hH5RM8oc",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-04-19T17:06:23.890Z"
+    },
+    "ratings": {
+      "averageRating": 4.8,
+      "totalReviews": 105,
+      "fiveStarCount": 70,
+      "fourStarCount": 13,
+      "threeStarCount": 0
+    },
+    "hourlyRate": 516,
+    "createdAt": "2025-03-26T17:06:23.890Z",
+    "area": "uttara",
+    "sub_area": "উত্তরা সেক্টর ১২",
+    "address_line": "House 7, Road 13"
+  },
+  {
+    "id": "5af3a973-b5c7-4348-b418-8a86753bc48c",
+    "userId": "52476698-a78b-49e5-9c83-fbb72c33699e",
+    "fullName": "রোকেয়া রহমান",
+    "email": "oral_kertzmann92@gmail.com",
+    "phone": "+8801912843650",
+    "nidNumber": "75708341112032",
+    "experienceYears": 10,
+    "services": [
+      "Respiratory Care",
+      "Mental Health Support",
+      "Personal Care",
+      "Diabetes Care",
+      "Dementia Care",
+      "Nursing",
+      "Post-Surgery Care",
+      "Mobility Assistance"
+    ],
+    "location": {
+      "district": "Dhaka",
+      "area": "Shyamoli",
+      "address": "78, Shyamoli",
+      "latitude": 23.745928865557318,
+      "longitude": 90.42580557655417
+    },
+    "role": "caregiver",
+    "description": "অভিজ্ঞ পরিচর্যাকারী। 10 বছরের অভিজ্ঞতা। Respiratory Care, Mental Health Support এ দক্ষ।",
+    "gender": "পুরুষ",
+    "profilePhoto": "https://api.dicebear.com/7.x/avataaars/svg?seed=D51gBlzF",
+    "verification": {
+      "nidVerified": true,
+      "backgroundCheckPassed": true,
+      "policeClearance": true,
+      "verificationDate": "2025-09-27T17:06:23.890Z"
+    },
+    "ratings": {
+      "averageRating": 4.89,
+      "totalReviews": 67,
+      "fiveStarCount": 96,
+      "fourStarCount": 7,
+      "threeStarCount": 4
+    },
+    "hourlyRate": 535,
+    "createdAt": "2025-09-06T17:06:23.890Z",
+    "area": "khilgaon",
+    "sub_area": "বাসাবো",
+    "address_line": "House 14, Road 8"
+  }
+]

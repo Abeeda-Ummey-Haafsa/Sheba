@@ -281,25 +281,26 @@ export default function Signup() {
           {role === "senior" && (
             <div className="space-y-6 text-center">
               <h3 className="text-xl font-semibold">
-                Senior Setup / সিনিয়র সেটআপ
+                Senior Portal / সিনিয়র পোর্টাল
               </h3>
               <p className="text-gray-600">
-                If you are a senior using a family-provided device, enter the
-                6-digit setup code or scan the QR provided by your family.
+                Access the senior-friendly interface designed for elderly users.
                 <br />
-                যদি আপনি পরিবারের দেওয়া ডিভাইস ব্যবহার করেন, পরিবার থেকে পাওয়া
-                ৬-অঙ্কের কোড লিখুন অথবা QR স্ক্যান করুন।
+                বয়স্কদের জন্য বিশেষভাবে তৈরি ইন্টারফেস ব্যবহার করুন।
+              </p>
+              <p className="text-sm text-orange-600 font-semibold">
+                Testing Mode: No authentication required
               </p>
               <div className="flex flex-col gap-3 max-w-sm mx-auto">
                 <a
                   href="/senior-setup"
-                  className="inline-block py-3 px-4 bg-gradient-to-r from-primary to-accent text-white rounded-lg font-semibold"
+                  className="inline-block py-3 px-4 bg-gradient-to-r from-primary to-accent text-white rounded-lg font-semibold hover:shadow-lg transition"
                 >
-                  Enter Setup Code / কোড লিখুন
+                  Enter Senior Portal / প্রবেশ করুন
                 </a>
                 <a
                   href="/"
-                  className="inline-block py-3 px-4 border rounded-lg text-primary font-semibold"
+                  className="inline-block py-3 px-4 border rounded-lg text-primary font-semibold hover:bg-gray-50 transition"
                 >
                   Back to Home / হোম
                 </a>
@@ -427,6 +428,21 @@ export default function Signup() {
                     exit={{ opacity: 0, height: 0 }}
                     className="space-y-5"
                   >
+                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                      <p className="text-blue-800 text-sm mb-3">
+                        💡 For detailed family registration with location
+                        mapping and senior information, use our enhanced family
+                        signup form.
+                      </p>
+                      <Link
+                        to="/family-signup"
+                        className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition"
+                      >
+                        Use Enhanced Family Signup / বিস্তারিত পরিবার
+                        রেজিস্ট্রেশন
+                      </Link>
+                    </div>
+
                     {/* Number of Seniors */}
                     <div>
                       <label className="block text-sm font-medium text-text mb-2">

@@ -17,6 +17,7 @@ import LiveTracking from "./pages/LiveTracking";
 import ActivityLogs from "./pages/ActivityLogs";
 import Profile from "./pages/Profile";
 import Debug from "./pages/Debug";
+import SmartMatch from "./pages/SmartMatch";
 import SeniorInterface from "./pages/SeniorInterface";
 import SeniorAuthBridge from "./pages/SeniorAuthBridge";
 import SeniorSetupScreen from "./pages/SeniorSetupScreen";
@@ -180,6 +181,14 @@ function AppRoutes() {
             element={
               <ProtectedRoute>
                 <FindCaregivers />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/smart-match"
+            element={
+              <ProtectedRoute>
+                <SmartMatch />
               </ProtectedRoute>
             }
           />

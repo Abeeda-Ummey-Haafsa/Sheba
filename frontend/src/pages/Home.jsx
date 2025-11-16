@@ -3,6 +3,7 @@ import SectionHeading from "../components/SectionHeading";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import logoImage from "../../images/WhatsApp Image 2025-11-15 at 00.41.38_732b5c76.jpg";
 
 const Hero = () => (
   <section className="min-h-[70vh] flex items-center bg-gradient-to-r from-primary/20 to-accent/10">
@@ -24,8 +25,12 @@ const Hero = () => (
         </div>
       </div>
       <div className="relative">
-        <div className="w-full h-80 bg-white rounded shadow flex items-center justify-center">
-          Image Placeholder
+        <div className="w-full h-80 bg-white rounded shadow overflow-hidden">
+          <img
+            src={logoImage}
+            alt="Seba Eldercare"
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </div>

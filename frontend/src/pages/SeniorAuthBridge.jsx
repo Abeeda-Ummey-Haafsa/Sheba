@@ -21,6 +21,15 @@ export default function SeniorAuthBridge() {
 
     const checkSenior = async () => {
       try {
+        // TESTING MODE: Skip device ID check, just show home
+        console.log("[SeniorAuthBridge] Testing mode - skipping device check");
+        if (mounted) {
+          setChecking(false);
+          setChecked(true);
+        }
+        return;
+
+        /* DISABLED FOR TESTING - Original device check logic
         const deviceId = localStorage.getItem("seba_device_id");
         console.log(
           "[SeniorAuthBridge] Device ID from localStorage:",
@@ -35,6 +44,7 @@ export default function SeniorAuthBridge() {
           }
           return;
         }
+        */
 
         console.log("[SeniorAuthBridge] Found device ID, querying Supabase...");
 
@@ -52,10 +62,17 @@ export default function SeniorAuthBridge() {
         if (!error && data && data.senior_profiles) {
           senior = data.senior_profiles;
         } else {
-          console.warn(
-            "[SeniorAuthBridge] Device not found in Supabase or no profile:",
-            error
-          );
+          // Only log once on mount, suppress 406 errors (table doesn't exist yet)
+          if (
+            error?.code !== "PGRST116" &&
+            !sessionStorage.getItem("senior_check_logged")
+          ) {
+            console.warn(
+              "[SeniorAuthBridge] Device not found in Supabase:",
+              error?.message || "No profile"
+            );
+            sessionStorage.setItem("senior_check_logged", "true");
+          }
 
           // Fallback: check for local mock mapping stored in localStorage
           try {

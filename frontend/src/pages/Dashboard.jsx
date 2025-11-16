@@ -1,15 +1,55 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useAuth } from "../context/AuthContext";
-import { supabase } from "../supabaseClient";
+import { supabase, isSupabaseConfigured } from "../supabaseClient";
 import toast from "react-hot-toast";
-import { initialSeniors } from "../mockData/seniors";
+
+const LOCAL_SENIORS_KEY = "seba_local_seniors";
 
 export default function Dashboard() {
   const { user, userMetadata } = useAuth();
   const [userSeniors, setUserSeniors] = useState([]);
   const [recentBookings, setRecentBookings] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  const readLocalSeniors = () => {
+    try {
+      if (typeof window === "undefined") return [];
+      const stored = localStorage.getItem(LOCAL_SENIORS_KEY);
+      if (!stored) return [];
+      const parsed = JSON.parse(stored);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (err) {
+      console.error("[Dashboard] Failed to read local seniors:", err);
+      return [];
+    }
+  };
+
+  const normalizeSenior = (senior) => {
+    if (!senior) return null;
+    const conditionsArray = Array.isArray(senior.medical_conditions)
+      ? senior.medical_conditions
+      : Array.isArray(senior.conditions)
+      ? senior.conditions
+      : typeof senior.conditions === "string"
+      ? senior.conditions
+          .split(",")
+          .map((item) => item.trim())
+          .filter(Boolean)
+      : [];
+
+    return {
+      id: senior.id,
+      name: senior.name || "Unnamed",
+      age: senior.age ?? null,
+      gender: senior.gender || null,
+      relation: senior.relation || "",
+      conditions: conditionsArray,
+      location: senior.address || senior.location || "",
+      device_id: senior.device_id || null,
+      photo_url: senior.photo_url || null,
+    };
+  };
 
   useEffect(() => {
     const displayName = userMetadata?.full_name || "User";
@@ -22,24 +62,27 @@ export default function Dashboard() {
 
     const fetchUserData = async () => {
       try {
-        // Fetch user's seniors (in a real app)
-        // const { data: seniors } = await supabase
-        //   .from('seniors')
-        //   .select('*')
-        //   .eq('guardian_id', user?.id);
-        // setUserSeniors(seniors || []);
+        let seniorsList = [];
 
-        // Use shared mock data
-        setUserSeniors(
-          initialSeniors.map((s) => ({
-            id: s.id,
-            name: s.name,
-            age: s.age,
-            condition: Array.isArray(s.conditions)
-              ? s.conditions.join(", ")
-              : s.conditions,
-          }))
-        );
+        if (isSupabaseConfigured() && user?.id) {
+          const { data: seniors, error } = await supabase
+            .from("seniors")
+            .select("*")
+            .eq("family_user_id", user?.id)
+            .order("created_at", { ascending: false });
+
+          if (error) {
+            throw error;
+          }
+
+          seniorsList = Array.isArray(seniors)
+            ? seniors.map(normalizeSenior).filter(Boolean)
+            : [];
+        } else {
+          seniorsList = readLocalSeniors().map(normalizeSenior).filter(Boolean);
+        }
+
+        setUserSeniors(seniorsList);
 
         // Mock recent bookings
         setRecentBookings([
@@ -57,16 +100,21 @@ export default function Dashboard() {
           },
         ]);
 
-        console.log("[Dashboard] Mock data loaded successfully");
+        console.log("[Dashboard] Data loaded successfully");
       } catch (error) {
         console.error("[Dashboard] Error fetching data:", error);
-        toast.error("Failed to load dashboard data");
+        const fallback = readLocalSeniors()
+          .map(normalizeSenior)
+          .filter(Boolean);
+        setUserSeniors(fallback);
+        if (isSupabaseConfigured()) {
+          toast.error("Failed to load dashboard data");
+        }
       } finally {
         setLoading(false);
       }
     };
 
-    // Always fetch, regardless of user state (uses mock data anyway)
     fetchUserData();
   }, [user?.id, userMetadata]);
 
@@ -147,37 +195,126 @@ export default function Dashboard() {
         animate="visible"
       >
         <div className="max-w-6xl mx-auto">
-          <motion.h2
-            className="text-3xl font-bold text-text mb-8"
-            variants={itemVariants}
-          >
-            Your Seniors
-          </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {userSeniors.map((senior) => (
-              <motion.div
-                key={senior.id}
-                variants={itemVariants}
-                whileHover={{ scale: 1.02 }}
-                className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition"
-              >
-                <h3 className="text-2xl font-bold text-text mb-2">
-                  {senior.name}
-                </h3>
-                <p className="text-gray-600 mb-4">Age: {senior.age} years</p>
-                <p className="text-gray-600 mb-4">
-                  Conditions: {senior.condition}
-                </p>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
-                >
-                  Manage Profile
-                </motion.button>
-              </motion.div>
-            ))}
+          <div className="flex justify-between items-center mb-8">
+            <motion.h2
+              className="text-3xl font-bold text-text"
+              variants={itemVariants}
+            >
+              Your Seniors
+            </motion.h2>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => (window.location.href = "/profile")}
+              className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
+            >
+              + Add Senior
+            </motion.button>
           </div>
+          {userSeniors.length === 0 ? (
+            <motion.div
+              variants={itemVariants}
+              className="bg-white border-2 border-dashed border-gray-300 rounded-xl p-12 text-center"
+            >
+              <p className="text-gray-500 text-lg mb-4">
+                No seniors added yet. Add a senior to get started!
+              </p>
+              <p className="text-gray-400 mb-6">
+                এখনও কোনো সিনিয়র যোগ করা হয়নি। শুরু করতে একজন সিনিয়র যোগ
+                করুন!
+              </p>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => (window.location.href = "/profile")}
+                className="px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
+              >
+                Add Your First Senior
+              </motion.button>
+            </motion.div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {userSeniors.map((senior) => (
+                <motion.div
+                  key={senior.id}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.02 }}
+                  className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition"
+                >
+                  <h3 className="text-2xl font-bold text-text mb-2">
+                    {senior.name}
+                  </h3>
+                  <p className="text-gray-600 mb-2">
+                    Age: {senior.age ? `${senior.age} years` : "Not set"}
+                  </p>
+                  {senior.relation && (
+                    <p className="text-gray-600 mb-2">
+                      Relation: {senior.relation}
+                    </p>
+                  )}
+                  <p className="text-gray-600 mb-4">
+                    Conditions:{" "}
+                    {senior.conditions?.length
+                      ? senior.conditions.join(", ")
+                      : "None listed"}
+                  </p>
+                  <div className="flex gap-2">
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={() => (window.location.href = "/profile")}
+                      className="flex-1 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
+                    >
+                      Manage Profile
+                    </motion.button>
+                    <motion.button
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      onClick={async () => {
+                        try {
+                          // Generate device pin
+                          const pin = `PIN-${Math.random()
+                            .toString(36)
+                            .slice(2, 8)
+                            .toUpperCase()}`;
+                          const raw = localStorage.getItem(
+                            "mock_senior_devices"
+                          );
+                          const map = raw ? JSON.parse(raw) : {};
+                          map[pin] = {
+                            id: senior.id,
+                            name: senior.name,
+                            full_name: senior.name,
+                            age: senior.age,
+                            gender: senior.gender,
+                            relation: senior.relation,
+                            address: senior.location,
+                            device_id: pin,
+                            photo_url: senior.photo_url,
+                          };
+                          localStorage.setItem(
+                            "mock_senior_devices",
+                            JSON.stringify(map)
+                          );
+                          await navigator.clipboard.writeText(pin);
+                          toast.success(
+                            `Device PIN ${pin} copied to clipboard!`
+                          );
+                        } catch (err) {
+                          console.error("Failed to create device pin:", err);
+                          toast.error("Failed to create device pin");
+                        }
+                      }}
+                      className="px-4 py-2 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600 transition"
+                      title="Generate Device PIN"
+                    >
+                      📱 PIN
+                    </motion.button>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          )}
         </div>
       </motion.section>
 

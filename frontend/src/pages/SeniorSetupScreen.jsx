@@ -1,130 +1,75 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
-import { supabase } from "../supabaseClient";
+import { useAuth } from "../context/AuthContext";
 
 export default function SeniorSetupScreen() {
-  const [pin, setPin] = useState("");
-  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const { loginAsSenior } = useAuth();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    // Accept either a 6-digit numeric code or a development mock pin like MOCK-XXXX
-    const isNumeric6 = /^[0-9]{6}$/.test(pin);
-    const isMockPin = /^MOCK-[A-Z0-9]{4,16}$/.test(pin);
-    if (!isNumeric6 && !isMockPin) {
-      toast.error(
-        "দয়া করে ৬ অঙ্কের কোড অথবা MOCK-পিন লিখুন (উদাহরণ: MOCK-AB12)"
-      );
-      return;
-    }
-    setLoading(true);
-    try {
-      if (isMockPin) {
-        // Development: check localStorage mock mapping
-        const raw = localStorage.getItem("mock_senior_devices");
-        const map = raw ? JSON.parse(raw) : {};
-        const mock = map[pin];
-        if (mock && mock.device_id) {
-          localStorage.setItem("seba_device_id", mock.device_id);
-          toast.success("Mock device paired. অ্যাপে ফিরে যান।");
-          navigate("/");
-          return;
-        } else {
-          toast.error(
-            "Mock pin পাওয়া যায়নি। পরিবার থেকে কোডটি গ্রহণ করুন বা প্রথমে প্রোফাইলে পিন তৈরি করুন।"
-          );
-          return;
-        }
-      }
+  const handleSignup = () => {
+    // Create a mock senior profile for testing
+    const mockSenior = {
+      id: `senior-test-${Date.now()}`,
+      name: "Test Senior",
+      full_name: "Test Senior User",
+      age: 70,
+      gender: "male",
+      device_id: `TEST-DEVICE-${Date.now()}`,
+    };
 
-      // Real flow: lookup setup_pin in Supabase
-      const { data, error } = await supabase
-        .from("senior_profiles")
-        .select("*, devices:senior_devices(*)")
-        .eq("setup_pin", pin)
-        .single();
+    // Log in as senior without PIN authentication
+    loginAsSenior(mockSenior);
 
-      if (error || !data) {
-        toast.error("কোড সঠিক নয়। পরিবারের সাথে যোগাযোগ করুন।");
-        return;
-      }
+    toast.success("স্বাগতম! Welcome to Seba Senior Portal");
 
-      // If found, store device id locally (family should have generated pairing)
-      const device = data.devices?.[0];
-      if (device && device.device_id) {
-        localStorage.setItem("seba_device_id", device.device_id);
-        toast.success("ডিভাইস সংযুক্তি সফল। অ্যাপে ফিরে যান।");
-        navigate("/");
-      } else {
-        toast.error(
-          "পেয়ার করা ডিভাইস পাওয়া যায়নি। পরিবারের সাথে যোগাযোগ করুন।"
-        );
-      }
-    } catch (err) {
-      console.error(err);
-      toast.error("ডিভাইস যাচাইকরণে ত্রুটি।");
-    } finally {
-      setLoading(false);
-    }
+    // Navigate to senior dashboard
+    setTimeout(() => {
+      navigate("/senior", { replace: true });
+    }, 500);
   };
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-emerald-50 flex items-center justify-center p-6">
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-md bg-white p-6 rounded-2xl shadow-lg"
+        className="w-full max-w-md bg-white p-8 rounded-2xl shadow-xl"
       >
-        <h1 className="text-3xl font-extrabold text-teal-600 mb-4">
-          সেবা সেটআপ
-        </h1>
-        <p className="mb-4 text-lg">
-          পরিবার আপনাকে একটি ৬-অঙ্কের কোড পাঠিয়েছে। কোড টাইপ করুন বা QR স্ক্যান
-          করুন।
-        </p>
+        <div className="text-center mb-8">
+          <h1 className="text-5xl font-extrabold text-teal-600 mb-3">সেবা</h1>
+          <h2 className="text-2xl font-bold text-gray-800 mb-2">
+            Senior Portal
+          </h2>
+          <p className="text-lg text-gray-600">
+            বয়স্কদের জন্য বিশেষ ইন্টারফেস
+          </p>
+        </div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input
-            type="text"
-            autoFocus
-            className="w-full h-16 text-2xl p-4 border rounded-lg"
-            value={pin}
-            onChange={(e) => {
-              // allow alphanumeric and hyphen; convert to uppercase and cap length
-              const cleaned = e.target.value
-                .toUpperCase()
-                .replace(/[^A-Z0-9-]/g, "")
-                .slice(0, 20);
-              setPin(cleaned);
-            }}
-            placeholder="৬ অঙ্কের কোড বা MOCK-পিন (e.g. MOCK-AB12)"
-            inputMode="text"
-            aria-label="৬ অঙ্কের কোড বা MOCK-পিন"
-            maxLength={20}
-          />
-          <div className="text-xs text-gray-500">
-            Enter a 6-digit code or a mock pin like <code>MOCK-XXXX</code>
-          </div>
+        <div className="space-y-4">
+          <p className="text-center text-gray-700 mb-6">
+            Click the button below to access your personalized senior dashboard.
+            <br />
+            <span className="text-sm text-gray-500">
+              (Testing mode - no authentication required)
+            </span>
+          </p>
 
           <button
-            type="submit"
-            disabled={loading}
-            className="w-full h-16 bg-teal-600 text-white text-2xl rounded-lg font-bold"
+            onClick={handleSignup}
+            className="w-full h-16 bg-gradient-to-r from-teal-600 to-emerald-600 text-white text-2xl rounded-lg font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
           >
-            {loading ? "যাচাই করা হচ্ছে..." : "কোড যাচাই করুন"}
+            সাইন আপ / Sign Up
           </button>
 
           <button
-            type="button"
             onClick={() => navigate(-1)}
-            className="w-full h-12 mt-2 text-teal-600 border border-teal-600 rounded-lg"
+            className="w-full h-12 mt-4 text-teal-600 border-2 border-teal-600 rounded-lg font-semibold hover:bg-teal-50 transition"
           >
-            ফিরে যান
+            ফিরে যান / Go Back
           </button>
-        </form>
+        </div>
       </motion.div>
     </div>
   );

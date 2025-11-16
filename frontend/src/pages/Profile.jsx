@@ -30,20 +30,116 @@ const passwordSchema = yup.object().shape({
 });
 
 const seniorSchema = yup.object().shape({
-  name: yup.string().min(2).required("নামের প্রয়োজন"),
-  age: yup.number().min(0).required("বয়স প্রয়োজন"),
-  gender: yup.string().required("লিঙ্গ নির্বাচন করুন"),
+  name: yup
+    .string()
+    .min(2, "Name must be at least 2 characters")
+    .required("Name is required"),
+  age: yup
+    .number()
+    .positive("Age must be positive")
+    .integer("Age must be a whole number")
+    .required("Age is required"),
+  gender: yup
+    .string()
+    .oneOf(["male", "female", "other"], "Please select a valid gender")
+    .required("Gender is required"),
   relation: yup.string().optional(),
   conditions: yup.array().optional(),
-  location: yup.string().required("ঠিকানা প্রয়োজন"),
-  lat: yup.number().optional(),
-  lon: yup.number().optional(),
+  area: yup.string().optional(),
+  sub_area: yup.string().optional(),
+  address_line: yup.string().optional(),
+  location: yup.string().optional(),
+  lat: yup.mixed().optional().nullable(),
+  lon: yup.mixed().optional().nullable(),
   medication: yup.string().optional(),
   emergency_contacts: yup.string().optional(),
   device_id: yup.string().optional(),
 });
 
-import { initialSeniors } from "../mockData/seniors";
+const LOCAL_SENIORS_KEY = "seba_local_seniors";
+
+// Mock senior details for testing
+const MOCK_SENIORS = [
+  {
+    id: "mock-senior-1",
+    name: "আব্দুল করিম",
+    age: 72,
+    gender: "male",
+    relation: "Father",
+    area: "mirpur",
+    sub_area: "মিরপুর ১০",
+    address_line: "বাড়ি নং ২৩, রোড ৭",
+    location: "বাড়ি নং ২৩, রোড ৭, মিরপুর ১০, মিরপুর, ঢাকা",
+    conditions: ["ডায়াবেটিস", "উচ্চ রক্তচাপ"],
+    medication: "Metformin 500mg (সকাল ও রাত), Amlodipine 5mg (সকালে)",
+    emergency_contacts: "+8801712345678, +8801987654321",
+    device_id: "TABLET-001",
+    lat: 23.8069,
+    lon: 90.3685,
+    photo_url: null,
+    created_at: new Date("2024-01-15").toISOString(),
+  },
+  {
+    id: "mock-senior-2",
+    name: "ফাতেমা বেগম",
+    age: 68,
+    gender: "female",
+    relation: "Mother",
+    area: "dhanmondi",
+    sub_area: "ধানমন্ডি ৩২",
+    address_line: "ফ্ল্যাট ৪বি, বাড়ি ১৫",
+    location: "ফ্ল্যাট ৪বি, বাড়ি ১৫, ধানমন্ডি ৩২, ধানমন্ডি, ঢাকা",
+    conditions: ["হৃদরোগ", "ডিমেনশিয়া"],
+    medication: "Aspirin 75mg (প্রতিদিন সকালে), Donepezil 5mg (রাতে)",
+    emergency_contacts: "+8801555666777, +8801888999000",
+    device_id: null,
+    lat: 23.7465,
+    lon: 90.3768,
+    photo_url: null,
+    created_at: new Date("2024-02-20").toISOString(),
+  },
+];
+
+// Dhaka location dataset
+const DHAKA_LOCATIONS = [
+  {
+    area: "mirpur",
+    area_bn: "মিরপুর",
+    sub_areas: [
+      "মিরপুর ১",
+      "মিরপুর ২",
+      "মিরপুর ১০",
+      "মিরপুর ১১",
+      "মিরপুর ১২",
+      "পল্লবী",
+    ],
+  },
+  {
+    area: "mohammadpur",
+    area_bn: "মহম্মদপুর",
+    sub_areas: ["বশির উদ্দিন রোড", "জাপান গার্ডেন সিটি", "তাজমহল রোড"],
+  },
+  {
+    area: "dhanmondi",
+    area_bn: "ধানমন্ডি",
+    sub_areas: ["ধানমন্ডি ২৭", "ধানমন্ডি ৩২", "সাত মসজিদ রোড"],
+  },
+  {
+    area: "gulshan",
+    area_bn: "গুলশান",
+    sub_areas: ["গুলশান ১", "গুলশান ২", "বনানী", "বারিধারা"],
+  },
+  {
+    area: "uttara",
+    area_bn: "উত্তরা",
+    sub_areas: ["উত্তরা সেক্টর ১", "উত্তরা সেক্টর ৪", "উত্তরা সেক্টর ১১"],
+  },
+  {
+    area: "banani",
+    area_bn: "বনানী",
+    sub_areas: ["ব্লক এ", "ব্লক বি", "ব্লক সি", "রোড ১১"],
+  },
+];
 
 // Fix leaflet default icon paths for Vite
 delete L.Icon.Default.prototype._getIconUrl;
@@ -90,11 +186,34 @@ export default function Profile() {
   const { user, userMetadata, signOut } = useAuth();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("personal");
-  const [seniors, setSeniors] = useState(initialSeniors);
+  const [seniors, setSeniors] = useState([]);
   const [loadingSeniors, setLoadingSeniors] = useState(false);
   const [showAddSenior, setShowAddSenior] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [editingSenior, setEditingSenior] = useState(null);
+  const [selectedArea, setSelectedArea] = useState(null);
+
+  const readLocalSeniors = () => {
+    try {
+      if (typeof window === "undefined") return [];
+      const stored = localStorage.getItem(LOCAL_SENIORS_KEY);
+      if (!stored) return [];
+      const parsed = JSON.parse(stored);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch (err) {
+      console.error("Failed to read local seniors:", err);
+      return [];
+    }
+  };
+
+  const persistLocalSeniors = (list) => {
+    try {
+      if (typeof window === "undefined") return;
+      localStorage.setItem(LOCAL_SENIORS_KEY, JSON.stringify(list));
+    } catch (err) {
+      console.error("Failed to persist local seniors:", err);
+    }
+  };
 
   const personalForm = useForm({
     resolver: yupResolver(profileSchema),
@@ -108,25 +227,59 @@ export default function Profile() {
   const seniorForm = useForm({ resolver: yupResolver(seniorSchema) });
 
   useEffect(() => {
-    // Fetch seniors from Supabase when configured, otherwise keep mock data
+    // Fetch seniors from Supabase when configured, otherwise use mock data
     const fetchSeniors = async () => {
       if (!isSupabaseConfigured() || !user?.id) {
-        setSeniors(initialSeniors);
+        const local = readLocalSeniors();
+        // If no local seniors exist, initialize with mock data
+        if (local.length === 0) {
+          setSeniors(MOCK_SENIORS);
+          persistLocalSeniors(MOCK_SENIORS);
+
+          // Also create a universal test PIN for senior dashboard testing
+          const mockDeviceMap = localStorage.getItem("mock_senior_devices");
+          const deviceMap = mockDeviceMap ? JSON.parse(mockDeviceMap) : {};
+
+          // Create a simple PIN that all users can use for testing
+          const testPIN = "TEST-001";
+          if (!deviceMap[testPIN]) {
+            deviceMap[testPIN] = {
+              id: MOCK_SENIORS[0].id,
+              name: MOCK_SENIORS[0].name,
+              full_name: MOCK_SENIORS[0].name,
+              age: MOCK_SENIORS[0].age,
+              gender: MOCK_SENIORS[0].gender,
+              relation: MOCK_SENIORS[0].relation,
+              address: MOCK_SENIORS[0].location,
+              lat: MOCK_SENIORS[0].lat,
+              lon: MOCK_SENIORS[0].lon,
+              device_id: testPIN,
+              photo_url: MOCK_SENIORS[0].photo_url,
+            };
+            localStorage.setItem(
+              "mock_senior_devices",
+              JSON.stringify(deviceMap)
+            );
+            console.log("✅ Universal test PIN created: TEST-001");
+          }
+        } else {
+          setSeniors(local);
+        }
         return;
       }
       setLoadingSeniors(true);
       try {
         const { data, error } = await supabase
-          .from("senior_profiles")
+          .from("seniors")
           .select("*")
-          .eq("family_id", user.id)
+          .eq("family_user_id", user.id)
           .order("created_at", { ascending: false });
         if (error) throw error;
         if (data) {
           setSeniors(
             data.map((s) => ({
               id: s.id,
-              name: s.full_name || s.name,
+              name: s.name,
               age: s.age,
               gender: s.gender,
               relation: s.relation,
@@ -136,6 +289,11 @@ export default function Profile() {
               emergency_contacts: s.emergency_contacts,
               device_id: s.device_id,
               photo_url: s.photo_url,
+              latitude: s.latitude,
+              longitude: s.longitude,
+              area: s.area,
+              sub_area: s.sub_area,
+              address_line: s.address_line,
             }))
           );
         }
@@ -153,11 +311,19 @@ export default function Profile() {
   useEffect(() => {
     // When editing a senior, populate the form values
     if (editingSenior) {
+      const area = editingSenior.area;
+      if (area) {
+        const areaData = DHAKA_LOCATIONS.find((loc) => loc.area === area);
+        setSelectedArea(areaData);
+      }
       seniorForm.reset({
         name: editingSenior.name || "",
         age: editingSenior.age || "",
         gender: editingSenior.gender || "",
         relation: editingSenior.relation || "",
+        area: editingSenior.area || "",
+        sub_area: editingSenior.sub_area || "",
+        address_line: editingSenior.address_line || "",
         location: editingSenior.location || "",
         conditions: editingSenior.conditions || [],
         medication: editingSenior.medication || "",
@@ -167,7 +333,23 @@ export default function Profile() {
         lon: editingSenior.lon || editingSenior.longitude || "",
       });
     } else {
-      seniorForm.reset();
+      seniorForm.reset({
+        name: "",
+        age: "",
+        gender: "",
+        relation: "",
+        area: "",
+        sub_area: "",
+        address_line: "",
+        location: "",
+        conditions: [],
+        medication: "",
+        emergency_contacts: "",
+        device_id: "",
+        lat: "",
+        lon: "",
+      });
+      setSelectedArea(null);
     }
   }, [editingSenior]);
 
@@ -202,39 +384,37 @@ export default function Profile() {
           editingSenior ? "Updating senior..." : "Adding senior..."
         );
 
-        const values = seniorForm.getValues();
-
-        // Handle photo upload if provided
-        let photoPath = editingSenior?.photo_url || null;
-        const file = values.photo;
-        if (file) {
-          const fileName = `senior-${Date.now()}-${file.name}`;
-          const { data: uploadData, error: uploadError } =
-            await supabase.storage
-              .from("senior_avatars")
-              .upload(fileName, file);
-          if (uploadError) throw uploadError;
-          photoPath = uploadData?.path || uploadData?.Key || fileName;
-        }
+        const values = { ...data };
+        const areaData = DHAKA_LOCATIONS.find(
+          (loc) => loc.area === values.area
+        );
 
         const record = {
-          full_name: values.name,
+          name: values.name,
           age: Number(values.age),
           gender: values.gender,
           relation: values.relation,
-          address: values.location,
+          area: values.area || null,
+          sub_area: values.sub_area || null,
+          address_line: values.address_line || null,
+          address:
+            values.location ||
+            `${values.address_line || ""}, ${values.sub_area || ""}, ${
+              areaData?.area_bn || ""
+            }, ঢাকা`.trim(),
           medical_conditions: values.conditions || [],
           medication_list: values.medication || null,
           emergency_contacts: values.emergency_contacts || null,
           device_id: values.device_id || null,
-          photo_url: photoPath,
-          family_id: user.id,
+          latitude: values.lat ? Number(values.lat) : null,
+          longitude: values.lon ? Number(values.lon) : null,
+          family_user_id: user.id,
           created_at: new Date(),
         };
 
         if (editingSenior && editingSenior.id) {
           const { error } = await supabase
-            .from("senior_profiles")
+            .from("seniors")
             .update(record)
             .eq("id", editingSenior.id);
           if (error) throw error;
@@ -242,7 +422,7 @@ export default function Profile() {
           toast.success("Senior updated!");
         } else {
           const { data: insertData, error } = await supabase
-            .from("senior_profiles")
+            .from("seniors")
             .insert([record])
             .select();
           if (error) throw error;
@@ -252,15 +432,15 @@ export default function Profile() {
 
         // Refresh list
         const { data: refreshed, error: fetchErr } = await supabase
-          .from("senior_profiles")
+          .from("seniors")
           .select("*")
-          .eq("family_id", user.id)
+          .eq("family_user_id", user.id)
           .order("created_at", { ascending: false });
         if (fetchErr) throw fetchErr;
         setSeniors(
           refreshed.map((s) => ({
             id: s.id,
-            name: s.full_name || s.name,
+            name: s.name,
             age: s.age,
             gender: s.gender,
             relation: s.relation,
@@ -270,6 +450,11 @@ export default function Profile() {
             emergency_contacts: s.emergency_contacts,
             device_id: s.device_id,
             photo_url: s.photo_url,
+            latitude: s.latitude,
+            longitude: s.longitude,
+            area: s.area,
+            sub_area: s.sub_area,
+            address_line: s.address_line,
           }))
         );
       } catch (err) {
@@ -283,16 +468,47 @@ export default function Profile() {
       }
     } else {
       // Local mock behavior
+      const areaData = DHAKA_LOCATIONS.find((loc) => loc.area === data.area);
+      const fallbackLocation = [
+        data.address_line,
+        data.sub_area,
+        areaData?.area_bn || data.area,
+        "ঢাকা",
+      ]
+        .filter(Boolean)
+        .join(", ");
+
+      const normalizedSenior = {
+        id: editingSenior?.id || Date.now(),
+        name: data.name,
+        age: data.age ? Number(data.age) : null,
+        gender: data.gender || null,
+        relation: data.relation || "",
+        area: data.area || null,
+        sub_area: data.sub_area || null,
+        address_line: data.address_line || null,
+        location: data.location || fallbackLocation || "",
+        conditions: Array.isArray(data.conditions) ? data.conditions : [],
+        medication: data.medication || "",
+        emergency_contacts: data.emergency_contacts || "",
+        device_id: data.device_id || null,
+        lat: data.lat ? Number(data.lat) : null,
+        lon: data.lon ? Number(data.lon) : null,
+        photo_url: editingSenior?.photo_url || null,
+        created_at: editingSenior?.created_at || new Date().toISOString(),
+      };
+
+      let updatedList;
       if (editingSenior) {
-        setSeniors(
-          seniors.map((s) =>
-            s.id === editingSenior.id ? { ...s, ...data } : s
-          )
+        updatedList = seniors.map((s) =>
+          s.id === editingSenior.id ? { ...s, ...normalizedSenior } : s
         );
         setEditingSenior(null);
       } else {
-        setSeniors([...seniors, { id: Date.now(), ...data }]);
+        updatedList = [...seniors, normalizedSenior];
       }
+      setSeniors(updatedList);
+      persistLocalSeniors(updatedList);
       setShowAddSenior(false);
       seniorForm.reset();
       toast.success(editingSenior ? "Senior updated!" : "Senior added!");
@@ -484,8 +700,25 @@ export default function Profile() {
                 <h2 className="text-2xl font-bold text-text">Manage Seniors</h2>
                 <button
                   onClick={() => {
-                    setShowAddSenior(true);
                     setEditingSenior(null);
+                    seniorForm.reset({
+                      name: "",
+                      age: "",
+                      gender: "",
+                      relation: "",
+                      area: "",
+                      sub_area: "",
+                      address_line: "",
+                      location: "",
+                      conditions: [],
+                      medication: "",
+                      emergency_contacts: "",
+                      device_id: "",
+                      lat: "",
+                      lon: "",
+                    });
+                    setSelectedArea(null);
+                    setShowAddSenior(true);
                   }}
                   className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition"
                 >
@@ -526,99 +759,6 @@ export default function Profile() {
                           className="p-2 bg-error/10 text-error rounded-lg hover:bg-error/20"
                         >
                           <FiX size={18} />
-                        </button>
-
-                        <button
-                          title="Create mock device pin and copy"
-                          onClick={async () => {
-                            try {
-                              // generate a mock device id
-                              const pin = `MOCK-${Math.random()
-                                .toString(36)
-                                .slice(2, 8)
-                                .toUpperCase()}`;
-                              const raw = localStorage.getItem(
-                                "mock_senior_devices"
-                              );
-                              const map = raw ? JSON.parse(raw) : {};
-                              // store a lightweight senior object
-                              map[pin] = {
-                                id: senior.id || `mock-${Date.now()}`,
-                                name:
-                                  senior.name || senior.full_name || "Senior",
-                                full_name:
-                                  senior.name || senior.full_name || "Senior",
-                                age: senior.age || null,
-                                gender: senior.gender || null,
-                                relation: senior.relation || null,
-                                address:
-                                  senior.location || senior.address || null,
-                                lat: senior.lat || senior.latitude || null,
-                                lon: senior.lon || senior.longitude || null,
-                                device_id: pin,
-                                photo_url: senior.photo_url || null,
-                              };
-                              localStorage.setItem(
-                                "mock_senior_devices",
-                                JSON.stringify(map)
-                              );
-                              // copy to clipboard
-                              await navigator.clipboard.writeText(pin);
-                              toast.success(
-                                `Mock pin ${pin} copied to clipboard`
-                              );
-                            } catch (err) {
-                              console.error("Failed to create mock pin:", err);
-                              toast.error("Failed to create mock pin");
-                            }
-                          }}
-                          className="p-2 bg-emerald-50 text-emerald-600 rounded-lg hover:bg-emerald-100"
-                        >
-                          Pin
-                        </button>
-
-                        <button
-                          title="Impersonate this senior (set device id and go home)"
-                          onClick={() => {
-                            // Read existing mock map and find first device mapping for this senior
-                            const raw = localStorage.getItem(
-                              "mock_senior_devices"
-                            );
-                            if (!raw) {
-                              toast.error(
-                                "No mock pin exists for this senior. Create one first."
-                              );
-                              return;
-                            }
-                            const map = JSON.parse(raw);
-                            const entry = Object.entries(map).find(
-                              ([, val]) => {
-                                return (
-                                  val.id === senior.id ||
-                                  val.name === senior.name ||
-                                  val.full_name === senior.name
-                                );
-                              }
-                            );
-                            if (!entry) {
-                              toast.error(
-                                "No mock pin found for this senior. Create one first."
-                              );
-                              return;
-                            }
-                            const [deviceId] = entry;
-                            localStorage.setItem("seba_device_id", deviceId);
-                            toast.success(
-                              "Impersonation set — navigating home..."
-                            );
-                            setTimeout(
-                              () => navigate("/", { replace: true }),
-                              400
-                            );
-                          }}
-                          className="p-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100"
-                        >
-                          Impersonate
                         </button>
                       </div>
                     </div>
@@ -714,40 +854,53 @@ export default function Profile() {
                 {editingSenior ? "Edit Senior" : "Add Senior"}
               </h2>
               <form
-                onSubmit={seniorForm.handleSubmit(onSeniorSubmit)}
+                onSubmit={seniorForm.handleSubmit(onSeniorSubmit, (errors) => {
+                  console.error("Form validation errors:", errors);
+                  const firstError = Object.values(errors)[0]?.message;
+                  toast.error(
+                    firstError || "Please fill in all required fields"
+                  );
+                })}
                 className="space-y-4"
               >
                 <div>
                   <label className="block text-sm font-semibold text-text mb-2">
-                    নাম (Full Name)
+                    নাম (Full Name) *
                   </label>
                   <input
                     {...seniorForm.register("name")}
-                    defaultValue={editingSenior?.name}
                     className="w-full px-4 py-2 border rounded-lg"
                     placeholder="নাম (বাংলায়)"
                   />
+                  {seniorForm.formState.errors.name && (
+                    <p className="text-error text-sm mt-1">
+                      {seniorForm.formState.errors.name.message}
+                    </p>
+                  )}
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-semibold text-text mb-2">
-                      বয়স (Age)
+                      বয়স (Age) *
                     </label>
                     <input
                       type="number"
                       {...seniorForm.register("age")}
-                      defaultValue={editingSenior?.age}
                       className="w-full px-4 py-2 border rounded-lg"
                     />
+                    {seniorForm.formState.errors.age && (
+                      <p className="text-error text-sm mt-1">
+                        {seniorForm.formState.errors.age.message}
+                      </p>
+                    )}
                   </div>
                   <div>
                     <label className="block text-sm font-semibold text-text mb-2">
-                      লিঙ্গ (Gender)
+                      লিঙ্গ (Gender) *
                     </label>
                     <select
                       {...seniorForm.register("gender")}
-                      defaultValue={editingSenior?.gender || ""}
                       className="w-full px-4 py-2 border rounded-lg"
                     >
                       <option value="">Select gender</option>
@@ -755,6 +908,11 @@ export default function Profile() {
                       <option value="female">মহিলা</option>
                       <option value="other">অন্যান্য</option>
                     </select>
+                    {seniorForm.formState.errors.gender && (
+                      <p className="text-error text-sm mt-1">
+                        {seniorForm.formState.errors.gender.message}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -764,7 +922,6 @@ export default function Profile() {
                   </label>
                   <input
                     {...seniorForm.register("relation")}
-                    defaultValue={editingSenior?.relation}
                     className="w-full px-4 py-2 border rounded-lg"
                     placeholder="Relation with the person"
                   />
@@ -772,29 +929,80 @@ export default function Profile() {
 
                 <div>
                   <label className="block text-sm font-semibold text-text mb-2">
-                    ছবি আপলোড (Profile Photo)
+                    এলাকা (Area)
+                  </label>
+                  <select
+                    {...seniorForm.register("area")}
+                    value={seniorForm.watch("area") || ""}
+                    onChange={(e) => {
+                      const areaValue = e.target.value;
+                      seniorForm.setValue("area", areaValue);
+                      const areaData = DHAKA_LOCATIONS.find(
+                        (loc) => loc.area === areaValue
+                      );
+                      setSelectedArea(areaData || null);
+                      seniorForm.setValue("sub_area", "");
+                    }}
+                    className="w-full px-4 py-2 border rounded-lg"
+                  >
+                    <option value="">এলাকা নির্বাচন করুন / Select area</option>
+                    {DHAKA_LOCATIONS.map((loc) => (
+                      <option key={loc.area} value={loc.area}>
+                        {loc.area_bn}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Sub-Area Selection */}
+                {selectedArea && (
+                  <div>
+                    <label className="block text-sm font-semibold text-text mb-2">
+                      উপ-এলাকা (Sub-Area)
+                    </label>
+                    <select
+                      {...seniorForm.register("sub_area")}
+                      value={seniorForm.watch("sub_area") || ""}
+                      className="w-full px-4 py-2 border rounded-lg"
+                    >
+                      <option value="">
+                        উপ-এলাকা নির্বাচন করুন / Select sub-area
+                      </option>
+                      {selectedArea.sub_areas.map((subArea) => (
+                        <option key={subArea} value={subArea}>
+                          {subArea}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+
+                {/* Address Line */}
+                <div>
+                  <label className="block text-sm font-semibold text-text mb-2">
+                    ঠিকানা (House/Road/Building)
                   </label>
                   <input
-                    type="file"
-                    accept="image/*"
-                    onChange={(e) => {
-                      const f = e.target.files?.[0];
-                      seniorForm.setValue("photo", f);
-                    }}
-                    className="w-full"
+                    {...seniorForm.register("address_line")}
+                    className="w-full px-4 py-2 border rounded-lg"
+                    placeholder="বাড়ি নং ১২৩, রোড ৫ / House #123, Road 5"
                   />
                 </div>
 
+                {/* Full Address (Auto-generated or manual) */}
                 <div>
                   <label className="block text-sm font-semibold text-text mb-2">
-                    ঠিকানা (Home Address)
+                    সম্পূর্ণ ঠিকানা (Full Address) - Optional
                   </label>
                   <input
                     {...seniorForm.register("location")}
-                    defaultValue={editingSenior?.location}
-                    className="w-full px-4 py-2 border rounded-lg"
-                    placeholder="Home address (you can add GPS pin later)"
+                    className="w-full px-4 py-2 border rounded-lg bg-gray-50"
+                    placeholder="Auto-filled from area selection or enter manually"
                   />
+                  <p className="text-xs text-gray-500 mt-1">
+                    This will be auto-generated from area + sub-area + address
+                    line
+                  </p>
                 </div>
 
                 <div>
@@ -865,9 +1073,11 @@ export default function Profile() {
                         <input
                           type="checkbox"
                           value={c.label}
-                          defaultChecked={editingSenior?.conditions?.includes?.(
-                            c.label
-                          )}
+                          checked={
+                            seniorForm
+                              .watch?.("conditions")
+                              ?.includes?.(c.label) || false
+                          }
                           onChange={(e) => {
                             const current =
                               seniorForm.getValues()?.conditions || [];
@@ -896,7 +1106,6 @@ export default function Profile() {
                   </label>
                   <textarea
                     {...seniorForm.register("medication")}
-                    defaultValue={editingSenior?.medication}
                     className="w-full px-4 py-2 border rounded-lg"
                     placeholder="List medications or upload photo in profile"
                   />
@@ -908,7 +1117,6 @@ export default function Profile() {
                   </label>
                   <input
                     {...seniorForm.register("emergency_contacts")}
-                    defaultValue={editingSenior?.emergency_contacts}
                     className="w-full px-4 py-2 border rounded-lg"
                     placeholder="Phone numbers, auto-include family"
                   />
@@ -920,7 +1128,6 @@ export default function Profile() {
                   </label>
                   <input
                     {...seniorForm.register("device_id")}
-                    defaultValue={editingSenior?.device_id}
                     className="w-full px-4 py-2 border rounded-lg"
                     placeholder="Optional: Pair with tablet/phone"
                   />
@@ -931,7 +1138,10 @@ export default function Profile() {
                 <div className="flex gap-3 pt-4">
                   <button
                     type="button"
-                    onClick={() => setShowAddSenior(false)}
+                    onClick={() => {
+                      setShowAddSenior(false);
+                      setEditingSenior(null);
+                    }}
                     className="flex-1 px-4 py-2 border rounded-lg hover:bg-gray-50"
                   >
                     Cancel
@@ -984,22 +1194,22 @@ export default function Profile() {
                       if (isSupabaseConfigured() && editingSenior?.id) {
                         try {
                           const { error } = await supabase
-                            .from("senior_profiles")
+                            .from("seniors")
                             .delete()
                             .eq("id", editingSenior.id);
                           if (error) throw error;
                           // refresh list
                           const { data: refreshed, error: fetchErr } =
                             await supabase
-                              .from("senior_profiles")
+                              .from("seniors")
                               .select("*")
-                              .eq("family_id", user.id)
+                              .eq("family_user_id", user.id)
                               .order("created_at", { ascending: false });
                           if (fetchErr) throw fetchErr;
                           setSeniors(
                             refreshed.map((s) => ({
                               id: s.id,
-                              name: s.full_name || s.name,
+                              name: s.name,
                               age: s.age,
                               gender: s.gender,
                               relation: s.relation,
@@ -1010,6 +1220,11 @@ export default function Profile() {
                               emergency_contacts: s.emergency_contacts,
                               device_id: s.device_id,
                               photo_url: s.photo_url,
+                              latitude: s.latitude,
+                              longitude: s.longitude,
+                              area: s.area,
+                              sub_area: s.sub_area,
+                              address_line: s.address_line,
                             }))
                           );
                           toast.success("Senior deleted");
@@ -1018,9 +1233,11 @@ export default function Profile() {
                           toast.error("Failed to delete senior");
                         }
                       } else {
-                        setSeniors(
-                          seniors.filter((s) => s.id !== editingSenior.id)
+                        const updated = seniors.filter(
+                          (s) => s.id !== editingSenior.id
                         );
+                        setSeniors(updated);
+                        persistLocalSeniors(updated);
                         toast.success("Senior deleted");
                       }
                       setShowDeleteConfirm(false);
